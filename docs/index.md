@@ -2,6 +2,8 @@
 title: Pilotprojekt nattfjärilar 2026
 ---
 
+<img src="assets/images/moth-icon.png" alt="Nattfjärilslogotyp" class="site-logo">
+
 # Pilotförsök för övervakning av nattfjärilar i Sverige: landskapseffekter och latitudgradient
 
 Välkommen till manualen för 2026 års pilotprojekt. Den här sidan visar dig var du hittar det du behöver, beroende på vilken del av projektet du deltar i.

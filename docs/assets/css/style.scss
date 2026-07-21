@@ -1,0 +1,53 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// --- Palette from the project's sticker/cover illustrations ---
+// cream:  #F6EADA
+// brown:  #63533F
+// accent: #C88030
+
+.page-header {
+  background-color: #63533F;
+  background-image: linear-gradient(120deg, #63533F, #C88030);
+}
+
+.project-name {
+  color: #F6EADA;
+}
+
+.project-tagline {
+  color: #F6EADA;
+  opacity: 0.9;
+}
+
+.main-content a {
+  color: #C88030;
+}
+
+.main-content a:hover {
+  color: #63533F;
+}
+
+.btn {
+  color: #63533F;
+  border-color: #63533F;
+}
+
+.btn:hover {
+  color: #F6EADA;
+  background-color: #63533F;
+  border-color: #63533F;
+}
+
+body {
+  background-color: #FFFDF9;
+}
+
+.site-logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 120px;
+  height: auto;
+}
