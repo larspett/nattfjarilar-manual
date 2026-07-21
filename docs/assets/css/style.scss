@@ -14,17 +14,24 @@
 }
 
 .project-name {
-  color: #3A2E22;
+  color: #F6EADA;
 }
 
 .project-tagline {
-  color: #3A2E22;
-  opacity: 0.85;
+  color: #F6EADA;
+  opacity: 0.95;
+}
+
+.header-author {
+  color: #F6EADA;
+  opacity: 0.9;
+  font-size: 1rem;
+  margin-top: -0.5rem;
 }
 
 .header-cover-image {
   display: block;
-  margin: 1.5rem auto;
+  margin: 3rem auto;
   max-width: 400px;
   width: 90%;
   height: auto;
