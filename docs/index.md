@@ -2,7 +2,7 @@
 title: Pilotprojekt nattfjärilar 2026
 ---
 
-<img src="assets/images/moth-icon.png" alt="Nattfjärilslogotyp" class="site-logo">
+<img src="assets/images/framsida.jpg" alt="Omslagsbild: pilotprojekt nattfjärilar 2026" class="site-logo" style="width: 100%; max-width: 500px;">
 
 # Pilotförsök för övervakning av nattfjärilar i Sverige: landskapseffekter och latitudgradient
 

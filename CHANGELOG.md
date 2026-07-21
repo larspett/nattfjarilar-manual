@@ -14,7 +14,8 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 ### Manual content
 - Manual skeleton drafted: index + Bakgrund, Fälltyper, Sätta ut fällor (deployment), Under experimentet, Hur du rapporterar, Efter inrapportering, Kontakt och stöd
 - **Drafted with Jekyll front matter, ready to push**: index.md (home page), falltyper/oversikt.md (all four trap models, full specs, plus grid-only Veldshop variant note), hur-du-satter-ut/site-specifikationer.md (deployment rules, lottery), hur-du-satter-ut/gradient-lund-abisko.md, hur-du-satter-ut/rutnat-lund-uppsala.md
-- **Site styling added**: moth icon logo (assets/images/moth-icon.png) on the home page, custom Cayman theme override (assets/css/style.scss) retinting the site header/links/buttons with the project's own palette (cream #F6EADA, brown #63533F, accent orange #C88030) instead of the default theme colours
+- **Site styling added**: moth icon logo (assets/images/moth-icon.png) added to assets; custom Cayman theme override (assets/css/style.scss) retinting the site header/links/buttons with the project's own palette (cream #F6EADA, brown #63533F, accent orange #C88030) instead of the default theme colours
+- **Front cover composite added to the site itself** (assets/images/framsida.jpg): the finished cover_illustration_manual_v2.jpg now displays at the top of the home page, replacing the standalone moth-icon logo (which the composite already includes as one panel)
 - **Hosting decided: GitHub Pages, serving from `/docs` on `main`** — repo also holds DECISIONS.md/CHANGELOG.md for project bookkeeping — **confirmed live**
 - Trap model specs finalized for all four models (LED-Emmer standard, LED-Emmer 2.0 Quad, EntoLight Twincolor, EntoLight Multicolor), including registration naming convention and powerbank troubleshooting
 - Deployment rules finalized: 4 sites ≥50m apart per gradient location, trap type assigned by lottery and fixed for the season
