@@ -1,10 +1,6 @@
 ---
-title: Pilotprojekt nattfjärilar 2026
+title: "Pilotförsök för övervakning av nattfjärilar i Sverige: landskapseffekter och latitudgradient"
 ---
-
-<img src="assets/images/framsida.jpg" alt="Omslagsbild: pilotprojekt nattfjärilar 2026" class="site-logo" style="width: 100%; max-width: 500px;">
-
-# Pilotförsök för övervakning av nattfjärilar i Sverige: landskapseffekter och latitudgradient
 
 Välkommen till manualen för 2026 års pilotprojekt. Den här sidan visar dig var du hittar det du behöver, beroende på vilken del av projektet du deltar i.
 
