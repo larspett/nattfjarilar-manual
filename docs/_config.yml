@@ -1,0 +1,16 @@
+theme: jekyll-theme-cayman
+title: Pilotprojekt nattfjärilar 2026
+description: Fältmanual för pilotprojektet med ljushinksfällor
+
+# Needed for GitHub Pages to correctly rewrite relative links between
+# the manual's markdown files (e.g. links to ../falltyper/oversikt.md)
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+# Show every markdown file, not just ones GitHub guesses are "pages"
+include:
+  - "*.md"
