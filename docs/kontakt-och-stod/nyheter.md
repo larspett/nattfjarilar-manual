@@ -6,7 +6,7 @@ title: Nyheter och senaste lärdomarna
 
 Den här sidan samlar dels ändringar i manualen, dels praktiska lärdomar som dykt upp under säsongen.
 
-**Aktuell version**: *[TBD: versionsnummer och datum.]*
+**Aktuell version**: v0.1.0 (2026-07-22)
 
 ## När det krånglar
 

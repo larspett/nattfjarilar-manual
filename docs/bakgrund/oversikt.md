@@ -6,7 +6,7 @@ title: Bakgrund
 
 ## Varför övervaka nattfjärilar?
 
-EU har beslutat att medlemsstaterna ska börja övervaka pollinatörers mångfald och förekomst, enligt en metod som fastställts av EU-kommissionen (förordning (EU) 2024/1991, med metoden specificerad i (EU) 2025/2188). Nattfjärilar är en av fyra pollinatörsgrupper som omfattas, tillsammans med bin, humlor, dagfjärilar och blomflugor.
+EU har beslutat att medlemsstaterna ska börja övervaka pollinatörers mångfald och förekomst, enligt en metod som fastställts av EU-kommissionen (förordning [(EU) 2024/1991](https://eur-lex.europa.eu/legal-content/SV/TXT/HTML/?uri=OJ:L_202401991), med metoden specificerad i [(EU) 2025/2188](https://eur-lex.europa.eu/legal-content/SV/TXT/HTML/?uri=OJ:L_202502188)). Nattfjärilar är en av fyra pollinatörsgrupper som omfattas, tillsammans med bin, humlor, dagfjärilar och blomflugor.
 
 Metodiken för nattfjärilsövervakning har utvecklats stegvis genom tidigare svenska pilotförsök och det europeiska SPRING-projektet, men flera praktiska frågor är fortfarande obesvarade för svenska förhållanden:
 
