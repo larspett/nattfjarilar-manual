@@ -47,4 +47,4 @@ Frågor om metod, placering eller liknande, se [Kontakt och stöd](kontakt-och-s
 
 ---
 
-**Aktuell version**: v0.1.0 (2026-07-22) · Den här manualen uppdateras löpande, se även [Nyheter och senaste lärdomarna](kontakt-och-stod/nyheter.md).
+**Aktuell version**: v0.1.0 (2026-07-22) · Den här manualen uppdateras löpande, se även [Nyheter och senaste lärdomarna](kontakt-och-stod/nyheter.md) · [Alla sidor](alla-sidor.md).
