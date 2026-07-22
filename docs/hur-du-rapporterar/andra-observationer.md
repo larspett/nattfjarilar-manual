@@ -19,6 +19,14 @@ Gå till inventeringen, öppna den art du vill justera under **Ändra förekomst
 
 Logga in på [butterfly-monitoring.net](https://butterfly-monitoring.net/) med samma uppgifter som i appen. Där kan du hitta din inventering (via kartan eller listan) och justera antal på samma sätt som i appen.
 
+Du kan också bläddra bland alla svenska nattfjärilsobservationer (inklusive dina egna) under **eBMS-data → Utforska data**, filtrera på metod **Moth Trap** och land **Sweden** för att bara se nattfjärilsdata.
+
+![Butterfly Monitoring Schemes, startsida](../assets/images/app/bilaga3-webb-schemes.jpg)
+
+![Meny, eBMS-data](../assets/images/app/bilaga3-webb-meny.jpg)
+
+![Utforska data, karta och filter](../assets/images/app/bilaga3-webb-utforska-data.jpg)
+
 ## Bra att veta
 
 - Att kunna ändra i efterhand är just varför det är viktigt att **inte** registrera sig i training mode, se [Registrera fälla](registrera-falla.md).

@@ -8,6 +8,8 @@ Innan du kan börja rapportera nattfjärilar behöver du dels installera appen B
 
 ## 1. Installera appen ButterflyCount
 
+![ButterflyCount-appen](../assets/images/app/bilaga1-app-badges.png)
+
 Ladda ner appen där du brukar hämta hem appar:
 
 - [GooglePlay](https://play.google.com/store/apps/details?id=uk.ac.ceh.ebms&hl=sv&gl=US)
@@ -31,12 +33,16 @@ Under samma inställningar, ladda ner artlistorna **Sweden** och **EBMS moths**.
 
 Innan du kan börja räkna nattfjärilar måste fällan registreras på [butterfly-monitoring.net/ebms-app](https://butterfly-monitoring.net/ebms-app).
 
+![Inloggning på butterfly-monitoring.net](../assets/images/app/bilaga2-webb-banner.png)
+
 1. Logga in med samma inloggningsuppgifter som i appen.
 2. Gå till **Mina data → Mina nattfjärilsfällor → Lägg till en lokal**.
 3. Fyll i **Land**, **Namn på lokal** och **Plats** (tryck på kartan).
 4. Välj typ av fälla: **LED Funnel trap**.
 5. Under **Types of lamp in trap**, se namngivning nedan.
 6. Tryck **Skicka**.
+
+![Mina nattfjärilsfällor, lista över registrerade lokaler](../assets/images/app/bilaga2-webb-mina-fallor.png)
 
 ### Namngivning
 

@@ -28,7 +28,7 @@ All sections have at least a first-pass draft:
 - **falltyper/oversikt.md** — all four trap models with full specs, registration naming, powerbank troubleshooting, plus the grid-only Veldshop variant note
 - **hur-du-satter-ut/** — site-specifikationer (deployment rules, lottery), gradient-lund-abisko, rutnat-lund-uppsala
 - **under-experimentet/vecko-rutin.md** — weekly deploy/empty/record cycle, weather guidance
-- **hur-du-rapporterar/** — registrera-falla, app-instrux (stub, needs screenshots), vad-som-raknas, andra-observationer
+- **hur-du-rapporterar/** — registrera-falla, **app-instrux (now populated with real screenshots, no longer a stub)**, vad-som-raknas, andra-observationer (now includes website "explore data" screenshots)
 - **efter-inrapportering/** — validering, forvantade-resultat (placeholder pending real pilot data)
 - **kontakt-och-stod/** — whatsapp-och-kontakt, nyheter (changelog + "När det krånglar" running list)
 
@@ -37,8 +37,8 @@ All sections have at least a first-pass draft:
 - Registration category for the Veldshop grid-only trap variant (falltyper, registrera-falla)
 - App-based (not just website) trap registration steps (registrera-falla)
 - Concrete per-site start dates from trap-performance modelling (vecko-rutin)
-- app-instrux.md needs actual numbered screenshots/short videos
 - WhatsApp group join link (whatsapp-och-kontakt)
+- **QA needed**: app screenshots (in app-instrux, registrera-falla, andra-observationer) were extracted from the old Instruktioner_nattfja_rilar_2026_v2.docx and matched to captions by document reading-order — Lars should do a quick visual pass to confirm each image is captioned correctly, a couple of the middle steps in the ButterflyCount sequence were matched with slightly less certainty than the rest
 
 ### Site / hosting
 - **Hosting**: GitHub Pages, serving from `/docs` on `main` — repo also holds DECISIONS.md/CHANGELOG.md for project bookkeeping
