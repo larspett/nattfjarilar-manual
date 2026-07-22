@@ -13,7 +13,8 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 
 ### Manual content
 - Manual skeleton drafted: index + Bakgrund, Fälltyper, Sätta ut fällor (deployment), Under experimentet, Hur du rapporterar, Efter inrapportering, Kontakt och stöd
-- **Drafted with Jekyll front matter, ready to push**: index.md (home page), falltyper/oversikt.md (all four trap models, full specs, plus grid-only Veldshop variant note), hur-du-satter-ut/site-specifikationer.md (deployment rules, lottery), hur-du-satter-ut/gradient-lund-abisko.md, hur-du-satter-ut/rutnat-lund-uppsala.md
+- **Drafted with Jekyll front matter, ready to push**: index.md (home page), falltyper/oversikt.md (all four trap models, full specs, plus grid-only Veldshop variant note), hur-du-satter-ut/site-specifikationer.md (deployment rules, lottery), hur-du-satter-ut/gradient-lund-abisko.md, hur-du-satter-ut/rutnat-lund-uppsala.md, **bakgrund/oversikt.md** (EU mandate rationale, both sub-projects' purpose, tools rationale, AP-sync status, deliverables timeline — sourced from the Naturvårdsverket contract document, adapted for participants)
+- **index.md "Varför gör vi detta?" filled in** (was TBD), same source
 - **Site styling added**: moth icon logo (assets/images/moth-icon.png) added to assets; custom Cayman theme override (assets/css/style.scss) retinting the site header/links/buttons with the project's own palette (cream #F6EADA, brown #63533F, accent orange #C88030) instead of the default theme colours
 - **Front cover composite added to the site itself** (assets/images/framsida.jpg): the finished cover_illustration_manual_v2.jpg now displays inside the header banner on the home page only (via a custom _layouts/default.html override), not stacked as a separate duplicate section
 - **Header colour fixed**: solid brown (#63533F) instead of the earlier brown-to-orange gradient, per feedback

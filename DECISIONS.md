@@ -65,3 +65,15 @@ Update it whenever a non-obvious choice is made.
 - **Why:** Earlier decision ("Manual format and platform" above) rejected GitHub/MkDocs as infrastructure the ~15-person audience didn't need. That still holds for the *editing* workflow, but GitHub Pages' built-in Jekyll processing (zero local setup, auto-builds on push) turns out to be a low-effort way to satisfy the original requirement (versioned website with section-jumping) without contradicting the earlier "keep it simple" reasoning.
 - **Impact:** Existing `/docs` skeleton can be used as-is. Each markdown file needs minimal Jekyll front matter to be processed. Relative `.md` links between pages work automatically via GitHub Pages' built-in `jekyll-relative-links` plugin — no need to rewrite links to `.html`.
 
+## Project scope: manual numbers vs. the funder contract
+
+**2026-07 — Manual uses the actual expanded scope (15 gradient sites, 4 trap models), not the Naturvårdsverket contract's original figures (10 localities, 3 trap models)**
+- **What:** The signed contract with Naturvårdsverket (Bilaga NV-26-076242) states 10 gradient localities and 3 trap types tested per site. The manual instead reflects 15 sites and 4 trap models throughout (Fälltyper, deployment, Bakgrund).
+- **Why:** After the contract was drafted (by Lars), a follow-up meeting with colleagues expanded the gradient and added a 4th trap model; the budget was increased accordingly but the contract document's text was never revised to match. The manual should reflect what's actually running, not the superseded contract figures.
+- **Impact:** Bakgrund's description of the gradient sub-project deliberately avoids stating a specific locality/trap-type count, to avoid re-introducing this conflict if the contract document is consulted again later.
+
+**2026-07 — Artportalen sync remains "goal, not promise" despite the contract stating it as settled**
+- **What:** The contract document states "validated data is synced to Artportalen" as if already agreed. This is NOT accurate — Artdatabanken has not committed, and there is politics involved in getting that agreement.
+- **Why:** Confirmed directly by Lars; the contract text on this point is aspirational/outdated, not a settled fact.
+- **Impact:** No manual content should be upgraded to state AP sync as certain, based on this document. The earlier "goal, not promise" framing (see Manual format and platform section above) stands.
+

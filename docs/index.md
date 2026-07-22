@@ -8,7 +8,7 @@ Välkommen till manualen för 2026 års pilotprojekt. Den här sidan visar dig v
 
 ## Varför gör vi detta?
 
-*[TBD: kort brödtext, 2-3 meningar om syftet med pilotprojektet. Fyll i här.]*
+Nattfjärilar är en av fyra pollinatörsgrupper som EU:s medlemsstater ska börja övervaka enligt ett nytt regelverk (förordning (EU) 2024/1991 med tillhörande metod i (EU) 2025/2188). Hur detta ska göras i Sverige är ännu inte fastställt: val av fälltyp, ljusstyrka, placering av fällor och dokumentation av omgivande miljö är alla obesvarade frågor. Det här pilotprojektet ska under 2026 ta fram det underlag som behövs inför att övervakningen ska implementeras skarpt från 2027.
 
 Läs mer om projektet i [Bakgrund](bakgrund/oversikt.md), inklusive varför vi använder de här digitala verktygen.
 
