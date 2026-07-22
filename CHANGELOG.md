@@ -30,7 +30,7 @@ All sections have at least a first-pass draft:
 
 - **index.md** — home page, front cover image, "Varför gör vi detta?" brief
 - **bakgrund/oversikt.md** — EU mandate rationale, both sub-projects' purpose, tools rationale, AP-sync status, deliverables timeline (sourced from the Naturvårdsverket contract document, adapted for participants — see DECISIONS.md for the contract-vs-actual-scope note)
-- **falltyper/oversikt.md** — all four trap models with full specs, registration naming, powerbank troubleshooting, plus the grid-only Veldshop variant note
+- **falltyper/oversikt.md** — all four trap models with full specs, registration naming, **real unboxing photos and parts lists for all four**, plus the grid-only Veldshop variant note
 - **hur-du-satter-ut/** — site-specifikationer (deployment rules, lottery), gradient-lund-abisko, rutnat-lund-uppsala
 - **under-experimentet/vecko-rutin.md** — weekly deploy/empty/record cycle, weather guidance
 - **hur-du-rapporterar/** — registrera-falla, **app-instrux (now populated with real screenshots, no longer a stub)**, vad-som-raknas, andra-observationer (now includes website "explore data" screenshots)
@@ -44,6 +44,7 @@ All sections have at least a first-pass draft:
 - Concrete per-site start dates from trap-performance modelling (vecko-rutin)
 - WhatsApp group join link (whatsapp-och-kontakt)
 - **QA needed**: app screenshots (in app-instrux, registrera-falla, andra-observationer) were extracted from the old Instruktioner_nattfja_rilar_2026_v2.docx and matched to captions by document reading-order — Lars should do a quick visual pass to confirm each image is captioned correctly, a couple of the middle steps in the ButterflyCount sequence were matched with slightly less certainty than the rest
+- ~~QA needed: Twincolor/Multicolor parts lists (falltyper)~~ **resolved**: confirmed the docx section titles ("Finsk modell twin" / "Finsk modell multi") were correct all along; only the internal "lampa (...)" description line inside each section had the colour name swapped, not the section itself. Manual page never displayed the erroneous colour name, so no content fix was needed beyond removing the caveat.
 
 ### Site / hosting
 - **Hosting**: GitHub Pages, serving from `/docs` on `main` — repo also holds DECISIONS.md/CHANGELOG.md for project bookkeeping
