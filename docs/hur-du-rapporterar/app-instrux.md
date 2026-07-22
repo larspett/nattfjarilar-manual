@@ -75,3 +75,7 @@ Om appen tappar tråden och hamnar tillbaka på Inventeringsdetaljer, gå till T
 ![Inventeringar, påbörjad rapportering](../assets/images/app/bilaga3-aterhamtning-2.png)
 
 Se även [Vad som ska rapporteras](vad-som-raknas.md) och [Ändra observationer](andra-observationer.md).
+
+---
+
+*Stötte du på ett tekniskt fel i appen eller på hemsidan som inte nämns här? Se [Rapportera ett tekniskt fel](../kontakt-och-stod/rapportera-tekniskt-fel.md) för hur du går vidare.*

@@ -72,3 +72,7 @@ Registrera dig **inte** i training mode, varken i appen eller på hemsidan. Obse
 ## Nästa steg
 
 När fällan är registrerad, se [Så använder du appen](app-instrux.md) för hur du rapporterar en vittjning.
+
+---
+
+*Stötte du på ett tekniskt fel vid registreringen som inte nämns här? Se [Rapportera ett tekniskt fel](../kontakt-och-stod/rapportera-tekniskt-fel.md) för hur du går vidare.*

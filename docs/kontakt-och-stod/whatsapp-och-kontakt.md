@@ -21,4 +21,4 @@ Har du förslag på förbättringar eller nya funktioner, hör av dig via ovanst
 
 ## Om något inte fungerar tekniskt
 
-Mejla oss, så hjälper vi till eller skapar en issue hos utvecklarna om det behövs.
+Se [Rapportera ett tekniskt fel](rapportera-tekniskt-fel.md).
