@@ -11,30 +11,39 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 
 ## Unreleased
 
-### Manual content
-- Manual skeleton drafted: index + Bakgrund, Fälltyper, Sätta ut fällor (deployment), Under experimentet, Hur du rapporterar, Efter inrapportering, Kontakt och stöd
-- **Drafted with Jekyll front matter, ready to push**: index.md (home page), falltyper/oversikt.md (all four trap models, full specs, plus grid-only Veldshop variant note), hur-du-satter-ut/site-specifikationer.md (deployment rules, lottery), hur-du-satter-ut/gradient-lund-abisko.md, hur-du-satter-ut/rutnat-lund-uppsala.md, **bakgrund/oversikt.md** (EU mandate rationale, both sub-projects' purpose, tools rationale, AP-sync status, deliverables timeline — sourced from the Naturvårdsverket contract document, adapted for participants)
-- **index.md "Varför gör vi detta?" filled in** (was TBD), same source
-- **Site styling added**: moth icon logo (assets/images/moth-icon.png) added to assets; custom Cayman theme override (assets/css/style.scss) retinting the site header/links/buttons with the project's own palette (cream #F6EADA, brown #63533F, accent orange #C88030) instead of the default theme colours
-- **Front cover composite added to the site itself** (assets/images/framsida.jpg): the finished cover_illustration_manual_v2.jpg now displays inside the header banner on the home page only (via a custom _layouts/default.html override), not stacked as a separate duplicate section
-- **Header colour fixed**: solid brown (#63533F) instead of the earlier brown-to-orange gradient, per feedback
-- **Fixed duplicate title**: home page banner and body content were showing two different H1 titles stacked ("Pilotprojekt nattfjärilar 2026" then "Pilotförsök för övervakning..."); index.md's front matter title now set to the full correct title, duplicate heading removed from the body
-- **Reverted header layout override**: the front-cover image is back in the main content (below the header), not inside the banner — the banner-embedding was based on a misread of feedback
-- **Header colour corrected**: solid accent orange/caramel (#C88030), the colour Lars actually confirmed as correct back when the gradient was first flagged, not the darker #63533F. Header text switched to dark brown (#3A2E22) for contrast against the lighter background.
-- **Header text reverted to light/cream** per feedback (white/cream read better than dark brown even against the lighter orange background); cover image spacing doubled (1.5rem → 3rem above/below); author byline added inside the header banner ("Lars B. Pettersson, Biologiska institutionen, Lunds universitet") via a minimal, tightly-scoped layout override (image placement untouched this time)
-- **Hosting decided: GitHub Pages, serving from `/docs` on `main`** — repo also holds DECISIONS.md/CHANGELOG.md for project bookkeeping — **confirmed live**
-- Trap model specs finalized for all four models (LED-Emmer standard, LED-Emmer 2.0 Quad, EntoLight Twincolor, EntoLight Multicolor), including registration naming convention and powerbank troubleshooting
-- Deployment rules finalized: 4 sites ≥50m apart per gradient location, trap type assigned by lottery and fixed for the season
-- Gradient site list finalized: 15 sites, Revinge to Abisko (incl. 2.5, 3a/3b, 10a/10b sub-numbering)
-- Reporting/taxonomy scope decided: macromoths mandatory, micro/other groups optional, Dyntaxa taxonomy mismatch noted as a known issue
-- Bakgrund section still needs final why/importance/urgency text (source: Naturvårdsverket document, not yet drafted)
+### Manual content — full skeleton drafted, ready for review
+All sections now have at least a first-pass draft:
 
-### Cover illustration (finished)
-- Gradient map (gradient_karta_cover_v3.jpg) — 15 sites on real Sweden boundary data, colour-graded south-to-north by rank, ideal-latitude reference bands, sticker colour palette — **confirmed final**
-- Grid-insets map (grid_insets_cover_v7.jpg) — 4-panel surround layout (Skåne 45/96, Uppland A/B), each with a real cropped OpenFreeMap Bright basemap, 1km reference squares, colour-matched to the gradient map — **confirmed final**
+- **index.md** — home page, front cover image, "Varför gör vi detta?" brief
+- **bakgrund/oversikt.md** — EU mandate rationale, both sub-projects' purpose, tools rationale, AP-sync status, deliverables timeline (sourced from the Naturvårdsverket contract document, adapted for participants — see DECISIONS.md for the contract-vs-actual-scope note)
+- **falltyper/oversikt.md** — all four trap models with full specs, registration naming, powerbank troubleshooting, plus the grid-only Veldshop variant note
+- **hur-du-satter-ut/** — site-specifikationer (deployment rules, lottery), gradient-lund-abisko, rutnat-lund-uppsala
+- **under-experimentet/vecko-rutin.md** — weekly deploy/empty/record cycle, weather guidance
+- **hur-du-rapporterar/** — registrera-falla, app-instrux (stub, needs screenshots), vad-som-raknas, andra-observationer
+- **efter-inrapportering/** — validering, forvantade-resultat (placeholder pending real pilot data)
+- **kontakt-och-stod/** — whatsapp-och-kontakt, nyheter (changelog + "När det krånglar" running list)
+
+### Known open TBDs (search each file for `[TBD:` to find them)
+- Consent-text exact wording and collection mechanism (index.md)
+- Registration category for the Veldshop grid-only trap variant (falltyper, registrera-falla)
+- App-based (not just website) trap registration steps (registrera-falla)
+- Concrete per-site start dates from trap-performance modelling (vecko-rutin)
+- app-instrux.md needs actual numbered screenshots/short videos
+- WhatsApp group join link (whatsapp-och-kontakt)
+- Version number and changelog dates (nyheter)
+
+### Site / hosting
+- **Hosting**: GitHub Pages, serving from `/docs` on `main` — repo also holds DECISIONS.md/CHANGELOG.md for project bookkeeping — confirmed live
+- **Styling**: custom Cayman theme override (assets/css/style.scss) — header background solid accent orange/caramel #C88030, header text light/cream, links/buttons in the project's brown/orange palette
+- **Home page**: finished front-cover composite (assets/images/framsida.jpg) displayed in main content below the header; author byline ("Lars B. Pettersson, Biologiska institutionen, Lunds universitet") added inside the header banner via a minimal layout override (docs/_layouts/default.html)
+- Known minor cosmetic issue, not being chased further: byline font doesn't scale with Cayman's desktop breakpoint (looks fine on phone, small relative to the title on wide desktop screens)
+
+### Cover illustration — finished
+- Gradient map (gradient_karta_cover_v3.jpg) — 15 sites on real Sweden boundary data, colour-graded south-to-north by rank, ideal-latitude reference bands, sticker colour palette — confirmed final
+- Grid-insets map (grid_insets_cover_v7.jpg) — 4-panel surround layout (Skåne 45/96, Uppland A/B), each with a real cropped OpenFreeMap Bright basemap, 1km reference squares — confirmed final
 - Interactive Leaflet HTML gradient map (gradient_karta_interaktiv.html) — for the online manual, separate from the print cover
-- Trap-models watercolor illustration and flat-line moth icon — both received finished from Lars
-- Front cover composite — assembled and exported by Lars from his own layout tool (cover_illustration_manual_v2.jpg) — **confirmed final**
+- Trap-models watercolor illustration and flat-line moth icon — received finished from Lars
+- Front cover composite — assembled and exported by Lars from his own layout tool (cover_illustration_manual_v2.jpg) — confirmed final
 - Point shapefile of all 36 grid points (moth_grid_points shapefile, WGS84) exported for GIS use
 
 ## v0.1.0 — YYYY-MM-DD
