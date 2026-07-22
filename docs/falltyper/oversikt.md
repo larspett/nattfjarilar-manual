@@ -20,7 +20,7 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 hink, 1 lock
 - 1 metalltratt
 - 2 äggkartongbitar
-- 1 lampa med 3 plastbitar som ställning
+- 1 ljusmodul med 3 vingar som ställning
 - 1 powerbank
 - 1 USBa (hane) till USBc (hane)-sladd
 - 1 plastpåse
@@ -42,7 +42,7 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 hink, 1 lock
 - 1 metalltratt
 - 2 äggkartongbitar
-- 1 lampa med 3 plastbitar som ställning
+- 1 ljusmodul med 3 vingar som ställning
 - 1 powerbank
 - 1 USBa (hane) till USBc (hane)-sladd
 - 1 USBc (hane) till USBa (hona)-sladd
@@ -62,7 +62,7 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 
 - 1 hink, 1 lock
 - 1 plasttratt, 1 plastcirkel
-- 1 lampa, 1 ljussensor
+- 1 ljusmodul, 1 ljussensor
 - 1 påse med skruvar x6, distansbrickor (svarta x6, metall x6), vingmuttrar x6
 - 3 metallbitar
 - 2 plastskivor, U-formade, 1 plastskiva oktagon
