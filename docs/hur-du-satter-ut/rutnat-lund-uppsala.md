@@ -4,11 +4,9 @@ title: Rutnät (Lund och Uppsala)
 
 # Rutnät (Lund och Uppsala)
 
-Två 3×3-rutnät med 18 fällor vardera, i Lund respektive Uppsala. Rutnätsdelen använder en egen fälltyp som inte förekommer i gradientdelen: **Veldshop standardmodell**. Den är i praktiken identisk med Vlinderstichtings standardmodell (samma UV-specifikation, se [Fälltyper](../falltyper/oversikt.md)), men saknar ljussensor och har små konstruktionsskillnader mot Vlinderstichting-modellen i tratt- och vindflöjelform.
+Försöket utförs i Lund och i Uppsala, på vardera lokalen placeras 2 st 3×3 fällors rutnät med ljushinksfällor för nattfjärilar . Rutnätsdelen använder fälltypen **LED-Emmer standardmodell 2.0** från Veldshop. I praktiken är denna fälla identisk med Vlinderstichtings standardmodell av **LED-Emmer** (samma UV-specifikation, se [Fälltyper](../falltyper/oversikt.md)) som används i gradientförsöket, men den saknar ljussensor och har små konstruktionsskillnader mot Vlinderstichting-modellen i tratt-, lock- och ljusmodulform (ljusmodulens vingar är anpassade för att passa till just denna tratten).
 
-*[TBD: registreringskategori för den här fälltypen, dvs. vad den ska anges som vid registrering i appen/på hemsidan.]*
-
-Den här delen sköts av två erfarna deltagare, så den här sidan är kort och praktisk snarare än en fullständig introduktion.
+Eftersom UV-specifikationen är identisk med **LED-Emmer standard** så registreras denna fälltyp som **LED-Emmer (standard)** i appen eller på hemsidan (Ledstrip > 395-405 SMD 2835, se [Fälltyper](../falltyper/oversikt.md)).
 
 ## Praktiskt
 

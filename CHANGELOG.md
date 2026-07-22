@@ -38,8 +38,8 @@ All sections have at least a first-pass draft:
 - **kontakt-och-stod/** — whatsapp-och-kontakt, nyheter (changelog + "När det krånglar" running list)
 
 ### Known open TBDs (search each file for `[TBD:` to find them)
-- Consent-text exact wording and collection mechanism (index.md)
-- Registration category for the Veldshop grid-only trap variant (falltyper, registrera-falla)
+- ~~Consent-text exact wording and collection mechanism~~ **resolved**: Lars confirmed consent directly with each participant individually (not a formal site checkbox); everyone consented except one person opting out of WhatsApp specifically, which the existing "frivilligt" wording already covers. bakgrund/oversikt.md's samtycke text updated to match index.md's.
+- ~~Registration category for the Veldshop grid-only trap variant~~ **resolved**: registers as standard LED-Emmer (identical UV spec)
 - App-based (not just website) trap registration steps (registrera-falla)
 - Concrete per-site start dates from trap-performance modelling (vecko-rutin)
 - WhatsApp group join link (whatsapp-och-kontakt)

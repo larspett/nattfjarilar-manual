@@ -25,7 +25,7 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 USBa (hane) till USBc (hane)-sladd
 - 1 plastpåse
 
-**Variant i rutnätsdelen**: en näraliknande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt- och vindflöjelform. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
+**Variant i rutnätsdelen**: en näraliknande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt-, lock- och ljusmodulform. Registreras ändå som **LED-Emmer (standard)** eftersom UV-specifikationen är identisk. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
 
 ## 2. LED-Emmer 2.0 Quad (uppgraderad)
 
