@@ -15,6 +15,11 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - Add an option to export/print the whole site as a PDF manual (discussed early on, for participants who prefer offline/print over the website)
 - Full English translation of the site as a parallel version
   - Note: EU-Lex regulation links (used in Bakgrund) switch language by swapping `/SV/` for `/EN/` in the URL, e.g. `.../legal-content/EN/TXT/HTML/?uri=OJ:L_202401991` — same pattern for both cited regulations
+- Add a **References** section (books, websites, apps cited/used throughout)
+- Add an **Acknowledgements** section
+- **Decide on and switch the project contact email**: currently nattflyn@gmail.com. Lars's own work email should stay reserved for scientific/academic exchanges; project participant communication should go through a dedicated address. Considering a proper LU list alias (nattfjarilar@biol.lu.se) instead of the Gmail one — this needs to be created by LU IT/admin unless Lars is granted list-admin rights himself (application submitted, pending)
+- Add a link to the GitHub repo's **Issues** page for reporting website/app problems — **done, and refined further**: rather than linking straight to the external ABLE issues tracker, added a new gatekeeper page (kontakt-och-stod/rapportera-tekniskt-fel.md) that explains what that repo/issue tracker actually is, what filing an issue there requires and means (GitHub account, English, visible to the whole European user base), and asks participants to email Lars first so reports get triaged/aggregated before anything goes to the international dev team. All four existing mentions (app-instrux.md, registrera-falla.md, nyheter.md, whatsapp-och-kontakt.md) now point to this page instead of the raw GitHub link.
+- Get a **DOI** for the manual as a citable product — either via a journal that supports living/dynamic documents (Pensoft ecosystem?) or via Zenodo
 
 ## v0.1.0 — 2026-07-22
 
