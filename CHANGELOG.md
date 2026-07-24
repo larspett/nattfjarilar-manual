@@ -20,6 +20,28 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - **Decide on and switch the project contact email**: currently nattflyn@gmail.com. Lars's own work email should stay reserved for scientific/academic exchanges; project participant communication should go through a dedicated address. Considering a proper LU list alias (nattfjarilar@biol.lu.se) instead of the Gmail one — this needs to be created by LU IT/admin unless Lars is granted list-admin rights himself (application submitted, pending)
 - Add a link to the GitHub repo's **Issues** page for reporting website/app problems — **done, and refined further**: rather than linking straight to the external ABLE issues tracker, added a new gatekeeper page (kontakt-och-stod/rapportera-tekniskt-fel.md) that explains what that repo/issue tracker actually is, what filing an issue there requires and means (GitHub account, English, visible to the whole European user base), and asks participants to email Lars first so reports get triaged/aggregated before anything goes to the international dev team. All four existing mentions (app-instrux.md, registrera-falla.md, nyheter.md, whatsapp-och-kontakt.md) now point to this page instead of the raw GitHub link.
 - Get a **DOI** for the manual as a citable product — either via a journal that supports living/dynamic documents (Pensoft ecosystem?) or via Zenodo
+- ~~App-based trap registration steps (registrera-falla)~~ **resolved**: se v0.3.0
+- ~~WhatsApp group join link (whatsapp-och-kontakt)~~ **resolved**: se v0.3.0
+- ~~QA needed: app screenshots~~ **resolved**: OCR-analys av alla Bilaga 1–3-skärmbilder bekräftade att alla bilder är korrekt matchade i XML-läsordning — inga ändringar behövdes
+- nattflyn@gmail.com renderas som mailto-länk inkonsekvent — kräver genomgång
+- Rutnät page: driving directions/parking/landowner contact for Silvåkra and Björnstorp; vittjningsschema; Uppland A/B maps still show preliminary planning positions — update once real coordinates registered
+- Concrete per-site start dates from trap-performance modelling (vecko-rutin)
+- validering.md step-by-step pending website UI being available
+- site-specifikationer.md: LUCAS-dokumentationsprotokoll med nya illustrationer (useful_site_overview.png, above.png, environment.png) — pendng
+- Monteringsvideor för LED-Emmer (standard) SV och EntoLight SV ännu ej uppladdade (daggräns nådd 2026-07-24) — ersätt platshållartext när klart
+
+## v0.3.0 — 2026-07-24
+
+### Rapportering — app-registrering
+- **registrera-falla.md**: ny sektion med steg-för-steg-guide för registrering direkt i appen, med 8 skärmbilder extraherade från videoinspelning; Veldshop-TBD löst (registreras som LED-Emmer standard); CSS-klass `.app-screenshot` tillagd i style.scss
+
+### Kontakt
+- **whatsapp-och-kontakt.md**: WhatsApp-länk och länk till svensk användarguide tillagda
+
+### Gradient och ljusberäkningar
+- **gradient-lund-abisko.md**: genomgripande omskrivning — referenskarta, lokalstabell med alla 15 lokaler, förklaring av de tre kompletterande lokalerna (Gotlands Tofta, Grötö, Norrfjärden) med referenser till NAT-PoMS/SPRING, breddgradsrationale (ljusbetingelser och arbetsbelastning), uppehållstabell för nordliga lokaler
+- **ljusberakningar.md**: ny fördjupningssida om beräkningsmetoden för ljusuppehåll — soldeklarationsformel, kalibrering mot Norrfjärden-observationer, diagram, osäkerhetsdiskussion, externa resurser
+- **ljusberakningar_diagram.jpg**: nytt diagram, solhöjd vid astronomisk midnatt april–september för sex gradientlokaler med tröskelvärde och kalibreringspunkt markerade
 
 ## v0.2.0 — 2026-07-24
 
@@ -50,9 +72,6 @@ All sections have at least a first-pass draft:
 ### Known open TBDs (search each file for `[TBD:` to find them)
 - ~~Consent-text exact wording and collection mechanism~~ **resolved**: Lars confirmed consent directly with each participant individually (not a formal site checkbox); everyone consented except one person opting out of WhatsApp specifically, which the existing "frivilligt" wording already covers. bakgrund/oversikt.md's samtycke text updated to match index.md's.
 - ~~Registration category for the Veldshop grid-only trap variant~~ **resolved**: registers as standard LED-Emmer (identical UV spec)
-- App-based (not just website) trap registration steps (registrera-falla)
-- Concrete per-site start dates from trap-performance modelling (vecko-rutin)
-- WhatsApp group join link (whatsapp-och-kontakt)
 - Rutnät page: driving directions/parking/landowner contact for Silvåkra and Björnstorp; vittjningsschema; Uppland A/B maps still show preliminary planning positions (not the real registered ones), need updating once available
 - **QA needed**: app screenshots (in app-instrux, registrera-falla, andra-observationer) were extracted from the old Instruktioner_nattfja_rilar_2026_v2.docx and matched to captions by document reading-order — Lars should do a quick visual pass to confirm each image is captioned correctly, a couple of the middle steps in the ButterflyCount sequence were matched with slightly less certainty than the rest
 - ~~QA needed: Twincolor/Multicolor parts lists (falltyper)~~ **resolved**: confirmed the docx section titles ("Finsk modell twin" / "Finsk modell multi") were correct all along; only the internal "lampa (...)" description line inside each section had the colour name swapped, not the section itself. Manual page never displayed the erroneous colour name, so no content fix was needed beyond removing the caveat.
