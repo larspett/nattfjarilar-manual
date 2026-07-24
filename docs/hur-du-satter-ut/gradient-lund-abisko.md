@@ -52,7 +52,9 @@ Redan så långt söderut som Dalarna kan denna effekt bli märkbar under sommar
 
 ### Fångsteffektivitet och arbetsbelastning
 
-Det finns också en praktisk dimension. De fyra fällmodellerna skiljer sig åt i ljusstyrka och spektralsammansättning — de finska EntoLight-modellerna är kraftfulla och kan potentiellt locka till sig betydligt fler individer. I södra Sverige, med hög artrikedom och rikliga nattfjärilspopulationer, riskerar det att ge fler fjärilar per vittjning än vad som är rimligt att hantera ensam. Längre norrut, där säsongen är kortare och fångstmängderna generellt lägre, kan den extra kapaciteten vara välbehövlig. Gradienten gör det möjligt att testa detta i praktiken och bidra till att fastställa realistiska arbetsbelastningsgränser inför framtida nationell övervakning.
+Det finns också en praktisk dimension. De fyra fällmodellerna skiljer sig åt i ljusstyrka och spektralsammansättning — de finska EntoLight-modellerna är kraftfulla och kan potentiellt locka till sig betydligt fler individer. I södra Sverige, med hög artrikedom och rikliga nattfjärilspopulationer, riskerar det att ge fler fjärilar per vittjning än vad som är rimligt att hantera ensam. 
+
+Längre norrut, där säsongen är kortare och fångstmängderna generellt lägre, kan den extra kapaciteten vara välbehövlig. Gradienten gör det möjligt att testa detta i praktiken och bidra till att fastställa realistiska arbetsbelastningsgränser inför framtida nationell övervakning.
 
 ## Ljusuppehåll vid nordliga lokaler
 
@@ -70,4 +72,6 @@ Lokaler 1–8 (Revinge–Umeå) har inga ljusbegränsningar och kan provtas hela
 
 ## Om urvalet
 
-Med bara 15 lokaler totalt är varje lokals data viktig. Vi har haft som målsättning att fördela ut lokaler jämt över landets breddgrader plus komplettera med några ytterligare lokaler. Med så stort spann av breddgrader och så varierande naturtyper är den fasta placeringen av fällor på varje lokal viktig. Fyra platser för fällor väljs i förväg, alla så likvärdiga som möjligt. Vilken fälla som ska stå var lottas sedan. Upplägget där vi undersöker 15 platser med fast placering av fällor är centralt för studiedesignen — en omdisponering mitt i säsongen skulle underminera möjligheten att jämföra fälltyper rättvist (se [Allmänna principer](site-specifikationer.md)).
+Med bara 15 lokaler totalt är varje lokals data viktig. Vi har haft som målsättning att fördela ut lokaler jämt över landets breddgrader plus komplettera med några ytterligare lokaler. Med så stort spann av breddgrader och så varierande naturtyper är den fasta placeringen av fällor på varje lokal viktig. 
+
+Fyra platser för fällor väljs i förväg, alla så likvärdiga som möjligt. Vilken fälla som ska stå var lottas sedan. Upplägget där vi undersöker 15 platser med fast placering av fällor är centralt för studiedesignen — en omdisponering mitt i säsongen skulle underminera möjligheten att jämföra fälltyper rättvist (se [Allmänna principer](site-specifikationer.md)).

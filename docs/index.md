@@ -45,4 +45,4 @@ Frågor om metod, placering eller liknande, se [Kontakt och stöd](kontakt-och-s
 
 ---
 
-**Aktuell version**: v0.2.0 (2026-07-24) · Den här manualen uppdateras löpande, se även [Nyheter och senaste lärdomarna](kontakt-och-stod/nyheter.md) · För en översikt av manualen, se [Alla sidor](alla-sidor.md).
+**Aktuell version**: v0.3.0 (2026-07-24) · Den här manualen uppdateras löpande, se även [Nyheter och senaste lärdomarna](kontakt-och-stod/nyheter.md) · För en översikt av manualen, se [Alla sidor](alla-sidor.md).
