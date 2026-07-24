@@ -6,6 +6,8 @@ title: Fälltyper
 
 I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt samma princip: en UV/LED-ljuskälla lockar till sig nattfjärilar, som sedan hamnar i en tratt och samlas i hinken/kärlet undertill. På din lokal i gradientprojektet får du en av dessa fyra, tilldelad genom lottning (se [Sätta ut fällor: gradient](../hur-du-satter-ut/gradient-lund-abisko.md)).
 
+![Alla fyra fällmodeller monterade och redo för utplacering](../assets/images/falltyper/modell-alla-1.jpg)
+
 ## 1. LED-Emmer (standard)
 
 ![LED-Emmer standard, uppackad](../assets/images/falltyper/modell1-standard.jpg)
@@ -24,6 +26,10 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 powerbank
 - 1 USBa (hane) till USBc (hane)-sladd
 - 1 plastpåse
+
+![LED-Emmer standard, monterad](../assets/images/falltyper/modell1-standard-monterad.jpg)
+
+*Monteringsvideo publiceras inom kort.*
 
 **Variant i rutnätsdelen**: en näraliknande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt-, lock- och ljusmodulform. Registreras ändå som **LED-Emmer (standard)** eftersom UV-specifikationen är identisk. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
 
@@ -48,6 +54,18 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 USBc (hane) till USBa (hona)-sladd
 - 1 plastpåse
 
+![LED-Emmer 2.0 Quad, monterad](../assets/images/falltyper/modell2-quad-monterad.jpg)
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/hnr4Ww46mHg"
+    title="Montering: LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## 3. EntoLight Twincolor
 
 ![EntoLight Twincolor, uppackad](../assets/images/falltyper/modell3-twincolor.jpg)
@@ -70,6 +88,10 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 powerbank, 1 adapter
 - 1 plastpåse
 
+![EntoLight Twincolor, monterad](../assets/images/falltyper/modell3-twincolor-monterad.jpg)
+
+*Monteringsvideo publiceras inom kort.*
+
 ## 4. EntoLight Multicolor
 
 ![EntoLight Multicolor, uppackad](../assets/images/falltyper/modell4-multicolor.jpg)
@@ -82,12 +104,12 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 
 **Innehåll i lådan**: samma som Twincolor (se ovan).
 
+![EntoLight Multicolor, monterad](../assets/images/falltyper/modell4-multicolor-monterad.jpg)
+
+*Monteringsvideo: se Twincolor ovan, monteringen är identisk.*
+
 ## Powerbank-felsökning (gäller främst Quad-modulen)
 
 - Om powerbanken (Sandberg) stängt ner sig: väck den via USBa-till-USBc-sladden som följde med i powerbankens kartong, koppla in något som laddar (mobil eller liknande) eller ljusmodulen med ljusreläet mörklagt (täck med handen).
 - Klicka **aldrig** på powerbankens av-knapp, dra bara ur sladden, annars behöver du väcka den på nytt.
 - Om Quad-modulen inte startar via USBa: prova USBc istället, den kan dra mer ström än vad USBa klarar av.
-
----
-
-*Fler bilder och ev. korta videor för montering läggs till efter hand.*

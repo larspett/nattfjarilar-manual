@@ -21,6 +21,16 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - Add a link to the GitHub repo's **Issues** page for reporting website/app problems — **done, and refined further**: rather than linking straight to the external ABLE issues tracker, added a new gatekeeper page (kontakt-och-stod/rapportera-tekniskt-fel.md) that explains what that repo/issue tracker actually is, what filing an issue there requires and means (GitHub account, English, visible to the whole European user base), and asks participants to email Lars first so reports get triaged/aggregated before anything goes to the international dev team. All four existing mentions (app-instrux.md, registrera-falla.md, nyheter.md, whatsapp-och-kontakt.md) now point to this page instead of the raw GitHub link.
 - Get a **DOI** for the manual as a citable product — either via a journal that supports living/dynamic documents (Pensoft ecosystem?) or via Zenodo
 
+## v0.2.0 — 2026-07-24
+
+### Fälltyper — bilder och video
+- Monterade fällor: fyra nya bilder (en per modell) tillagda efter respektive innehållslista
+- Översiktsbild med alla fyra monterade modeller tillagd högst upp på sidan
+- Monteringsvideo inbäddad för LED-Emmer Quad (SV, med LU-logotyp)
+- Platshållartext för LED-Emmer (standard) och EntoLight SV-videor (publiceras inom kort)
+- CSS-klass `.video-wrapper` tillagd i style.scss för responsiva 16:9-inbäddningar
+- Videofiler i docs/assets/videos/ med gitignore för opublicerade filer
+
 ## v0.1.0 — 2026-07-22
 
 First substantially complete version: full manual content skeleton, site hosting and styling all live.
