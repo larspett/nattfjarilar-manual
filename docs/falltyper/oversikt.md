@@ -39,7 +39,7 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
   </iframe>
 </div>
 
-**Variant i rutnätsdelen**: en näraliknande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt-, lock- och ljusmodulform. Registreras ändå som **LED-Emmer (standard)** eftersom UV-specifikationen är identisk. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
+**Variant i rutnätsdelen**: en näraliggande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt-, lock- och ljusmodulform. Registreras ändå som **LED-Emmer (standard)** eftersom UV-specifikationen är identisk. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
 
 ## 2. LED-Emmer 2.0 Quad (uppgraderad)
 
@@ -68,6 +68,18 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
   <iframe
     src="https://www.youtube.com/embed/hnr4Ww46mHg"
     title="Montering: LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+**Obs:** LED-Emmer Quad-tratten behöver också ha små silikonprickar monterade på insidan innan den sätts ihop. Se videon nedan:
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/F8BcoqJBZz4"
+    title="Tratten till LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -129,3 +141,13 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - Om powerbanken (Sandberg) stängt ner sig: väck den via USBa-till-USBc-sladden som följde med i powerbankens kartong, koppla in något som laddar (mobil eller liknande) eller ljusmodulen med ljusreläet mörklagt (täck med handen).
 - Klicka **aldrig** på powerbankens av-knapp, dra bara ur sladden, annars behöver du väcka den på nytt.
 - Om Quad-modulen inte startar via USBa: prova USBc istället, den kan dra mer ström än vad USBa klarar av.
+
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/g6WUtUxQUdE"
+    title="Lös powerbank-problem | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>

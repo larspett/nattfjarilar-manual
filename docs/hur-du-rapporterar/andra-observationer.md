@@ -6,6 +6,16 @@ title: Ändra observationer
 
 Observationer som du lagt in via appen ButterflyCount kan ändras både i appen och på hemsidan (butterfly-monitoring.net), oavsett var de ursprungligen registrerades. Samma inloggning används på båda ställena.
 
+<div class="video-wrapper-portrait">
+  <iframe
+    src="https://www.youtube.com/embed/_5r1490GXuU"
+    title="Se och ändra observationer | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## I appen
 
 Gå till inventeringen, öppna den art du vill justera under **Ändra förekomst**. Där kan du ändra:
@@ -14,6 +24,18 @@ Gå till inventeringen, öppna den art du vill justera under **Ändra förekomst
 - **Bildigenkännare** (vem som gjort bestämningen)
 - **Kommentar**
 - Lägga till fler bilder på samma art
+
+Här är en kort genomgång av hur du ändrar antal för en art direkt i appen:
+
+<div class="video-wrapper-portrait">
+  <iframe
+    src="https://www.youtube.com/embed/b2fphWfQHcg"
+    title="Ändra antal i ButterflyCount | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## På hemsidan
 

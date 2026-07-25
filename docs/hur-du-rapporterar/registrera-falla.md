@@ -50,37 +50,75 @@ Gå till [butterfly-monitoring.net/ebms-app](https://butterfly-monitoring.net/eb
 
 ### Direkt i appen
 
-<img src="../assets/images/app/reg-steg1-startsida.jpg" alt="Startsidan i ButterflyCount" class="app-screenshot">
+Här är en filmad genomgång av hela registreringsprocessen:
 
-Välj **Nattfjärilsinventering** på startsidan. Om du ser ett meddelande om ett sparat utkast, tryck **Start new** och fortsätt.
+<div class="video-wrapper-portrait">
+  <iframe
+    src="https://www.youtube.com/embed/w4kJjqw5moU"
+    title="Registrera lokal i ButterflyCount | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
-<img src="../assets/images/app/reg-steg2-lagg-till.jpg" alt="Nattfjärilsfällor — tryck Lägg till" class="app-screenshot">
+Steg för steg:
 
-Du kommer till **Inventeringsdetaljer** — tryck på **Nattfjärilsfälla** längst upp. I listan **Nattfjärilsfällor** som öppnas, tryck **Lägg till** i övre högra hörnet.
+**Steg 1.** Välj **Nattfjärilsinventering** på startsidan. Om du ser ett meddelande om ett sparat utkast, tryck **Start new**.
 
-<img src="../assets/images/app/reg-steg3-ny-falla-form.jpg" alt="Formulär för ny fälla" class="app-screenshot">
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg1-startsida.jpg" alt="Startsidan i ButterflyCount" class="app-screenshot">
+  <figcaption>Startsidan — välj Nattfjärilsinventering</figcaption>
+</figure>
 
-Fyll i **Namn** på din fälla (t.ex. lokalens namn och fällnummer, som **Ängen 1**).
+**Steg 2.** Du kommer till **Inventeringsdetaljer** — tryck på **Nattfjärilsfälla** längst upp. I listan som öppnas, tryck **Lägg till** i övre högra hörnet.
 
-<img src="../assets/images/app/reg-steg4-plats-karta.jpg" alt="Karta för att markera fällans plats" class="app-screenshot">
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg2-lagg-till.jpg" alt="Nattfjärilsfällor — tryck Lägg till" class="app-screenshot">
+  <figcaption>Nattfjärilsfällor — tryck Lägg till</figcaption>
+</figure>
 
-Tryck på **Plats** — en karta öppnas. Navigera till din lokal och tryck för att markera platsen. Bekräfta koordinaterna.
+**Steg 3.** Fyll i **Namn** på din fälla, t.ex. lokalens namn och fällnummer (**Ängen 1**).
 
-<img src="../assets/images/app/reg-steg5-typ-dropdown.jpg" alt="Välj fälltyp: LED trattfälla" class="app-screenshot">
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg3-ny-falla-form.jpg" alt="Formulär för ny fälla" class="app-screenshot">
+  <figcaption>Nytt fällaformulär — fyll i Namn, Plats och Typ</figcaption>
+</figure>
 
-Tryck på **Typ** och välj **LED trattfälla**.
+**Steg 4.** Tryck på **Plats** — en karta öppnas. Navigera till din lokal och tryck för att markera platsen.
 
-<img src="../assets/images/app/reg-steg6-lampa-dropdown.jpg" alt="Välj ljuskälla ur listan" class="app-screenshot">
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg4-plats-karta.jpg" alt="Karta för att markera fällans plats" class="app-screenshot">
+  <figcaption>Karta — markera fällans position och bekräfta koordinaterna</figcaption>
+</figure>
 
-Tryck **Lägg till lampa** — tryck sedan på **Typ** och välj rätt ljuskälla för din fällmodell ur listan (se namngivning nedan). Tryck tillbaka.
+**Steg 5.** Tryck på **Typ** och välj **LED trattfälla**.
 
-<img src="../assets/images/app/reg-steg7-lampa-sparad.jpg" alt="Fälla med ljuskälla sparad" class="app-screenshot">
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg5-typ-dropdown.jpg" alt="Välj fälltyp: LED trattfälla" class="app-screenshot">
+  <figcaption>Typ — välj LED trattfälla</figcaption>
+</figure>
 
-Tryck **Spara**.
+**Steg 6.** Tryck **Lägg till lampa** — tryck sedan på **Typ** och välj rätt ljuskälla för din fällmodell (se namngivning nedan). Tryck tillbaka.
 
-<img src="../assets/images/app/reg-steg8-falla-klar.jpg" alt="Fällan syns nu i listan" class="app-screenshot">
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg6-lampa-dropdown.jpg" alt="Välj ljuskälla ur listan" class="app-screenshot">
+  <figcaption>Lamp details — välj rätt ljuskälla för din fällmodell</figcaption>
+</figure>
 
-Fällan dyker nu upp i listan **Nattfjärilsfällor** och är redo att användas.
+**Steg 7.** Kontrollera att lampan syns i listan och tryck **Spara**.
+
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg7-lampa-sparad.jpg" alt="Fälla komplett — tryck Spara" class="app-screenshot">
+  <figcaption>Formuläret komplett med ljuskälla listad — tryck Spara</figcaption>
+</figure>
+
+**Steg 8.** Fällan dyker nu upp i listan **Nattfjärilsfällor** och är redo att användas.
+
+<figure class="app-figure">
+  <img src="../assets/images/app/reg-steg8-falla-klar.jpg" alt="Fällan syns nu i listan" class="app-screenshot">
+  <figcaption>Nattfjärilsfällor — den nya fällan visas i listan</figcaption>
+</figure>
 
 ### Namngivning
 
