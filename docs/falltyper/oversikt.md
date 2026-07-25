@@ -29,7 +29,15 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 
 ![LED-Emmer standard, monterad](../assets/images/falltyper/modell1-standard-monterad.jpg)
 
-*Monteringsvideo publiceras inom kort.*
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/GrrSlT9ah-M"
+    title="Montering: LED-Emmer | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
 **Variant i rutnätsdelen**: en näraliknande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt-, lock- och ljusmodulform. Registreras ändå som **LED-Emmer (standard)** eftersom UV-specifikationen är identisk. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
 
@@ -90,7 +98,15 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 
 ![EntoLight Twincolor, monterad](../assets/images/falltyper/modell3-twincolor-monterad.jpg)
 
-*Monteringsvideo publiceras inom kort.*
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/7UC9A0au6N8"
+    title="Montering: EntoLight (Twincolor & Multicolor) | Pilotprojekt nattfjärilar 2026"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## 4. EntoLight Multicolor
 
