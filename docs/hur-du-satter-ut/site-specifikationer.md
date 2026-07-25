@@ -30,6 +30,8 @@ Upplägget är anpassat från [LUCAS — Land Use/Cover Area frame Survey](https
 
 ### Hur du tar bilderna
 
+![Illustration uppifrån: person fotograferar österut med telefon i liggande läge, kompassros och Fälla-etikett](../assets/images/habitatdok-ovanifraan.png)
+
 Håll telefonen i **liggande läge (landscape)** för alla riktningsbilder. Sikta så att ungefär **en sjättedel av bilden är himmel** — det vill säga horisonten ska vara relativt nära bildens överkant. Använd kompassfunktionen i telefonen för att hitta rätt riktning.
 
 Ta följande **sex bilder vid varje fällplats**:
