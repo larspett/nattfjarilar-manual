@@ -6,6 +6,8 @@ title: "Pilotförsök för övervakning av nattfjärilar i Sverige: landskapseff
 
 Välkommen till manualen för 2026 års pilotprojekt. Den här sidan visar dig var du hittar det du behöver, beroende på vilken del av projektet du deltar i.
 
+*Framtagen av Lars B. Pettersson, Biologiska institutionen, Lunds universitet, med bidrag av Harriet Arnberg, Amanda Ernstsson och Ana Teodora Ştefan. [Om manualen och projektet](om-manualen.md)*
+
 ## Varför gör vi detta?
 
 Nattfjärilar är viktiga pollinatörer, men vi vet förvånansvärt lite om hur deras populationer mår över tid. Nu ska EU:s medlemsländer börja övervaka fyra olika pollinatörsgrupper regelbundet, och nattfjärilar är en av dem. Innan Sverige kan sätta igång på allvar behöver vi svara på några praktiska frågor — det är bestämt att de ska inventeras med ljusfällor, men vilken typ av fälla fungerar bäst? Hur starkt ljus behövs? Var i landskapet bör fällorna stå? Det är precis det som det här pilotprojektet ska ta reda på under 2026, inför att övervakningen ska börja skarpt från 2027. 
@@ -33,11 +35,11 @@ När du är igång, se [Veckorutin: sätta ut, tömma, rapportera](under-experim
 ## Efter inrapportering
 
 - [Validering](efter-inrapportering/validering.md)
-- [Vad blir det av din data?](efter-inrapportering/forvantade-resultat.md)
+- [Vad blir det av dina data?](efter-inrapportering/forvantade-resultat.md)
 
 ## Samtycke: delning av kontaktuppgifter
 
-Vi kommer dels att skicka ut info via nyhetsbrev och e-post, om du inte vill att din epost-adress ska synas där så hör bara av dig till [nattflyn@gmail.com](mailto:nattflyn@gmail.com). För att kunna ge möjlighet till snabbt utbyte av erfarenheter  och hjälp med support kommer vi även ha en WhatsApp-grupp men deltagande där är frivilligt. Dina kontaktuppgifter kan alltså komma att delas med andra deltagare i projektet via dessa två kanaler men e-posten kan anonymiseras och WhatsApp-gruppen är frivillig.
+Vi kommer dels att skicka ut info via nyhetsbrev och e-post, om du inte vill att din epost-adress ska synas där så hör bara av dig till [nattflyn@gmail.com](mailto:nattflyn@gmail.com). För att kunna ge möjlighet till snabbt utbyte av erfarenheter och hjälp med support kommer vi även ha en WhatsApp-grupp men deltagande där är frivilligt. Dina kontaktuppgifter kan alltså komma att delas med andra deltagare i projektet via dessa två kanaler men e-posten kan anonymiseras och WhatsApp-gruppen är frivillig.
 
 ## Kontakt och stöd
 
@@ -45,4 +47,4 @@ Frågor om metod, placering, WhatsApp-gruppen eller liknande, se [Kontakt och st
 
 ---
 
-**Aktuell version**: {{ site.version }} — {{ site.version_date }} · Den här manualen uppdateras löpande, se även [Nyheter och erfarenheter](kontakt-och-stod/nyheter.md) · För en översikt av manualen, se [Alla sidor](alla-sidor.md).
+**Aktuell version**: {{ site.version }} — {{ site.version_date }} · Den här manualen uppdateras löpande, se även [Nyheter och erfarenheter](kontakt-och-stod/nyheter.md) · För en översikt av manualen, se [Alla sidor](alla-sidor.md) · [Om manualen](om-manualen.md)
