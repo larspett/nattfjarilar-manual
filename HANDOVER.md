@@ -1,37 +1,135 @@
-# Handover: Pilotprojekt nattfjärilar 2026 — manual project
+# Handover — Pilotprojekt nattfjärilar 2026 manual
 
-If you're a fresh Claude session picking this up: read this file, then `DECISIONS.md` and `CHANGELOG.md` in this same repo root. Together those three are the full continuity record. Don't assume you have prior memory of this project even if you do, this file is the ground truth.
+Read this first in any new session. It is the single source of truth for continuity.
+The detailed technical record lives in DECISIONS.md and CHANGELOG.md at the repo root.
+
+---
 
 ## What this project is
 
-A field manual for a Swedish moth-monitoring pilot (2026), covering two sub-projects: **Landskapseffekter** (3×3 trap grids in Lund and Uppsala) and **Latitudgradient** (15 sites Lund–Abisko, four trap models compared). Run by Lars B. Pettersson, Biologiska institutionen, Lunds universitet.
+A field manual for a 2026 Swedish moth monitoring pilot, hosted as a public Jekyll/GitHub
+Pages website at https://larspett.github.io/nattfjarilar-manual/. About 15 participants
+run light traps at sites across Sweden (two sub-projects: a landscape grid in Lund/Uppsala,
+and a 15-site Lund-to-Abisko latitude gradient). The manual tells them everything they
+need to operate the traps, record catches, and report data.
 
-## Where everything lives
+Lars B. Pettersson (lars.pettersson@biol.lu.se), Biologiska institutionen, Lunds
+universitet, is the project lead and sole maintainer of the manual. Manual contributors:
+Harriet Arnberg, Amanda Ernstsson, Ana Teodora Ştefan (all LU). Funded by
+Naturvårdsverket, contract NV-26-076242.
 
-- **The manual itself**: `docs/` in this repo, built with Jekyll (Cayman theme + custom overrides), served live at https://larspett.github.io/nattfjarilar-manual/
-- **`DECISIONS.md`**: why things are the way they are, read this before re-litigating a design choice
-- **`CHANGELOG.md`**: current status, what's drafted, what's still open (search for "TBD" across `docs/` for the authoritative live list, `CHANGELOG.md`'s list can lag slightly behind the actual files)
-- **Cover illustrations** (gradient map, grid-insets map, trap illustration, moth icon, all finished) live as image assets under `docs/assets/images/`
+---
 
-## How Lars works (worth knowing before diving in)
+## Current state — v0.7.0 (2026-07-26)
 
-- Local repo lives inside **Box Drive** (Box-Box CloudStorage sync), which has caused file-drift issues with piecemeal handoffs. **Always hand off a full project zip** (repo root + `docs/`), not individual files, unless he explicitly asks for just one small file.
-- He wants the **ready-to-paste terminal commands** (`cd` / `unzip` / `git add` / `commit` / `push`) supplied alongside every zip, so he isn't reconstructing them each time.
-- He's comfortable in Terminal and with git, but hit real friction with GitHub Pages/Jekyll specifics (Liquid syntax errors, build failures) that needed debugging via the Actions tab logs, not guesswork.
-- Prefers `ljusmodul` and `vingar` as the standard terms for the trap's light component and its mounting fins, not "lampa."
-- Avoids Microsoft software generally (bloat/lock-in concerns); uses Typora for markdown.
+All pages have real content. The proofreading pass is complete. The site is live and
+participants have been given the URL.
 
-## Known technical gotchas (don't relearn these the hard way)
+**Pages in the manual (docs/):**
 
-- **GitHub Pages runs an old, strict Liquid parser** (Jekyll 3.10.0 / github-pages gem). Avoid `where_exp`, `group_by`, and filters with nested quotes, they've caused real build failures here. Stick to plain `{% for %}` / `{% if %}` / `{% unless %}` with simple filters (`relative_url`, `default`, `first`).
-- The site has a **custom layout override** (`docs/_layouts/default.html`) for: the header author byline, the front-cover image placement (main content, NOT inside the header banner, that was tried and explicitly reverted), and a site-wide top-of-page nav line. Any layout edit should touch only what's intended, this file has a history of scope-creep mistakes from over-broad edits.
-- `docs/alla-sidor.md` is a **self-updating sitemap** (uses `site.html_pages`), don't hand-maintain a page list elsewhere.
-- Real basemap images (OpenFreeMap for the cover, Lantmäteriet Topografiska Webbkartan for the in-manual rutnät maps) are cropped precisely from raw QGIS exports using their `.jgw` world files, see the DECISIONS.md entries on cover illustration for why real basemaps replaced illustrative ones (it solved a long-running "looks too pale" styling problem that many CSS-only attempts failed to fix).
+```
+index.md                         — home page, contributor credit, feedback link
+om-manualen.md                   — contributors, funding, AI disclaimer
+alla-sidor.md                    — auto-generated sitemap (do not edit manually)
+bakgrund/
+  bakgrund.md                    — EU mandate, project rationale, tools
+falltyper/
+  oversikt.md                    — all 4 trap models, specs, videos, powerbank tips
+hur-du-satter-ut/
+  site-specifikationer.md        — trap placement rules, lottery, LUCAS photo protocol
+  gradient-lund-abisko.md        — 15 gradient sites, darkness windows
+  ljusberakningar.md             — darkness window methodology (depth page)
+  rutnat-lund-uppsala.md         — grid sub-project (maps removed pending privacy discussion)
+under-experimentet/
+  vecko-rutin.md                 — weekly routine, weather, timing, Norrfjärden special case
+hur-du-rapporterar/
+  registrera-falla.md            — trap registration (web + app walkthrough with Short video)
+  app-instrux.md                 — ButterflyCount step-by-step with screenshots
+  vad-som-raknas.md              — what counts, species scope, håv/nets note
+  andra-observationer.md         — editing observations in app and website (2 Short videos)
+efter-inrapportering/
+  validering.md                  — validation overview (step-by-step TBD, website UI pending)
+  forvantade-resultat.md         — what data will show (placeholder pending real data)
+kontakt-och-stod/
+  whatsapp-och-kontakt.md        — contact, WhatsApp, feedback form link
+  rapportera-tekniskt-fel.md     — technical bug reporting (gated, email Lars first)
+  nyheter.md                     — changelog for participants + "när det krånglar" tips
+  synpunkter.md                  — embedded Google Sheet showing feedback status
+```
 
-## Recommended tooling going forward
+**Videos (all on YouTube, embedded in manual):**
 
-Given how much of the friction here was file/git mechanics rather than the actual content work, **Claude Code** (terminal or desktop) is likely a better fit than continuing pure chat handoffs for anything touching the repo directly, it can read/write files and run git commands in place, eliminating the zip round-trip entirely. Chat remains the right tool for the iterative design/content review itself (map crops, wording, colour choices), that part doesn't benefit from more autonomy, it benefits from fast back-and-forth.
+Assembly (landscape 16:9, `.video-wrapper`):
+- LED-Emmer SV: GrrSlT9ah-M | EN: tYH48SZjwUo
+- LED-Emmer Quad SV: hnr4Ww46mHg | EN: 62XC7lHacvI
+- LED-Emmer Quad funnel/silicone SV: F8BcoqJBZz4 | EN: OJanLABY1RU
+- EntoLight SV: 7UC9A0au6N8 | EN: a891Pv0Imhc
+- Powerbank troubleshooting SV: g6WUtUxQUdE | EN: cDKbjC3L4cM
 
-## Current status (see CHANGELOG.md for the authoritative version)
+Screen recording Shorts (portrait 9:16, `.video-wrapper-portrait`):
+- Registrera lokal: w4kJjqw5moU
+- Se och ändra observationer: _5r1490GXuU
+- Ändra antal: b2fphWfQHcg
 
-All 15 manual content pages have real first-pass content. Front cover is finished. Site is live with navigation, custom styling, and real photos/maps throughout Fälltyper and the rutnät pages. Remaining open items are small (a few TBDs, a backlog list of nice-to-haves like a PDF export option, English translation, and a DOI via Pensoft's RIO Journal), nothing structural is unfinished.
+**Feedback system:**
+- Form: https://forms.gle/5Vrf68vXGjDm9eEv9
+- Public view (embedded in synpunkter.md): Google Sheets Publik vy tab, gid=502981035
+- Status dropdown: Ny, Under behandling, Åtgärdad, Vidarebefordrad, Noterat ingen åtgärd
+
+---
+
+## Open items
+
+**Waiting on external actions:**
+- Arnberg & Pettersson 2026 link in app-instrux.md → add when correct doc is on LU Research Portal
+- Exact August dates for LUCAS habitat documentation campaign → update site-specifikationer.md
+- Nets for trap emptying (arriving ~2 weeks from 2026-07-24) → add note to vecko-rutin.md
+- Validering.md step-by-step → add in August once website UI (project filtering) is ready
+- Live data links → forvantade-resultat.md once pilot data arrives
+- Uppsala A/B grid coordinates → rutnat-lund-uppsala.md once real coordinates registered
+
+**Decisions pending:**
+- Rutnät position maps: removed from public manual pending discussion with collaborators
+  (privacy/disturbance risk). Maps exist in docs/assets/images/rutnat/
+- English translation → tomorrow's session
+- PDF generation → tomorrow's session
+
+**Terminology (final pass not yet done):**
+- kärnlokaler → huvudlokaler (gradient-lund-abisko.md)
+- Any remaining vittjning/vittja occurrences
+- bakgrund/oversikt links → now bakgrund/bakgrund (index.md updated; check others)
+
+---
+
+## Lars's working preferences
+
+- **File handoff**: Lars works from Box Drive (synced local repo). In chat sessions,
+  produce clean files and he downloads/places them. For git, supply exact terminal commands.
+- **Terminology**: ljusmodul (not lampa), vingar (support fins), tömning av fällan
+  (not vittjning), huvudlokaler (not kärnlokaler)
+- **Avoids**: Microsoft tools, em dashes (AI detection signal)
+- **Prefers**: minimal-intervention edits with clear reasoning, clean copy-ready text blocks
+- **Language**: manual is in Swedish; responses can be in English
+
+---
+
+## Technical details
+
+- Repo: github.com/larspett/nattfjarilar-manual (public)
+- Jekyll/Cayman theme, GitHub Pages, serving from /docs on main branch
+- Version in docs/_config.yml: `version` and `version_date` variables
+- Current version: v0.7.0 (2026-07-26)
+- CSS: docs/assets/css/style.scss — palette #C88030 (accent), #63533F (brown), #F6EADA (cream)
+- Custom layout: docs/_layouts/default.html — header byline, cover image, top nav
+- Liquid: use only basic constructs (for/if/unless/assign) — NO where_exp/group_by,
+  they break GitHub Pages' locked older Liquid parser
+- Video in git: NEVER — all MP4s gitignored, hosted on YouTube
+- CSS classes: `.video-wrapper` (16:9), `.video-wrapper-portrait` (9:16, 280×498px),
+  `.app-screenshot` (max-width 260px), `.app-figure` + figcaption styling
+
+---
+
+## Tomorrow's agenda
+
+1. English version of the manual (parallel edition)
+2. PDF generation from manual content

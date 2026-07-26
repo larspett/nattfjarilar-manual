@@ -97,3 +97,55 @@ First substantially complete version: full manual content skeleton, site hosting
 - Interactive Leaflet HTML gradient map (gradient_karta_interaktiv.html)
 - Trap-models watercolor illustration and moth icon
 - Point shapefile of all 36 grid points (WGS84)
+
+## v0.7.0 — 2026-07-26
+
+### Ny sida: Om manualen
+- **om-manualen.md**: ny sida med bidragsgivare (Harriet Arnberg, Amanda Ernstsson,
+  Ana Teodora Ştefan), finansiering (NV-26-076242), projektpartners (LU, SLU Ekologi,
+  SLU Artdatabanken) och AI-ansvarsfriskrivning
+- Bidragsgivarkreditering tillagd på index.md direkt under omslagsbilden
+- Länk till om-manualen.md tillagd i sidfoten på index.md
+
+### Synpunkter och feedback
+- **synpunkter.md**: ny sida i kontakt-och-stod/ med inbäddad publik Google Sheets-vy
+  (Publik vy-flik, gid=502981035) med inkomna synpunkter och status
+- Google Form (https://forms.gle/5Vrf68vXGjDm9eEv9) med fem kategorier:
+  appen, hemsidan, fällutrustning, manualen, övrigt
+- Formulärlänk tillagd i whatsapp-och-kontakt.md, rapportera-tekniskt-fel.md och index.md
+- Status-dropdown: Ny, Under behandling, Åtgärdad, Vidarebefordrad, Noterat ingen åtgärd
+
+## v0.6.0 — 2026-07-26
+
+### Videor och shorts
+- **falltyper/oversikt.md**: Quad-tratt-video (F8BcoqJBZz4) och powerbank-video
+  (g6WUtUxQUdE) tillagda
+- **registrera-falla.md**: Short-video (w4kJjqw5moU) + figcaptions + instruktion-före-bild
+- **andra-observationer.md**: två Shorts — översikt (_5r1490GXuU) och ändra antal
+  (b2fphWfQHcg); appsektionen nu före hemsidessektionen
+
+### Infrastruktur
+- **style.scss**: .video-wrapper-portrait och .app-figure/figcaption tillagda
+- **_config.yml**: version och version_date variabler ({{ site.version }},
+  {{ site.version_date }}) — versionssträngen hårdkodas inte längre i enskilda sidor
+
+### Övrigt
+- **nyheter.md**: platshållarmening borttagen, ändringslogg ifylld, länktext uppdaterad
+- **site-specifikationer.md**: above.png illustration tillagd före fotoprotokolltabell
+- **reg-steg7-lampa-sparad.jpg**: spinner-bild ersatt med ren frame (t=42s)
+
+## v0.5.0 — 2026-07-26
+
+### Korrekturläsning och terminologi
+- Genomgripande korrekturläsningspass av alla sidor
+- vittjning/vittja → tömning/tömma av fällan genomfört i berörda sidor
+- Intro-mening i falltyper/oversikt.md korrigerad: alla fyra fällmodeller används
+  parallellt per gradientlokal (inte en fälla per lokal som felaktigt angavs)
+- bakgrund/oversikt.md omdöpt till bakgrund/bakgrund.md; interna länkar uppdaterade
+- rutnat-lund-uppsala.md: fällpositionskartor borttagna i avvaktan på diskussion om
+  offentlig publicering av exakta positioner; TBDs och e-posttypo åtgärdade
+- ljusberakningar.md: omskriven med ny vinkel — standardisering av störande
+  bakgrundsljus snarare än "ljusuppehåll"; populärvetenskaplig ton
+- forvantade-resultat.md: språkligt polerad
+- om-manualen.md: heading "Ansvarig utgivare" ändrad till "Framtagen av"
+- Alla mailto-länkar för nattflyn@gmail.com genomgångna och korrigerade

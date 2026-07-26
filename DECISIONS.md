@@ -110,3 +110,49 @@ Update it whenever a non-obvious choice is made.
 - **What:** The site deployment overview (fallplatser-oversikt.png), overhead documentation illustration (habitatdok-ovanifraan.png), and trap watercolor illustrations were generated using ChatGPT image generation following Lars's detailed prompts and sketches.
 - **Why:** Produces a consistent visual style that complements the existing watercolor trap illustration. No external attribution required.
 - **Impact:** Images are effectively Lars's own work; treated the same as other project-produced assets.
+
+## Contributor attribution and AI disclaimer
+
+**2026-07-26 — om-manualen.md page created**
+- **What:** A dedicated page listing contributors, funding, project partners, and an AI
+  disclaimer. Credit line for contributors added visibly on index.md, not buried in footer.
+- **Why:** The manual may become a citable product (DOI pending). Contributors need proper
+  attribution. The AI disclaimer follows emerging best practice for research outputs.
+- **Impact:** "Framtagen av" used instead of "Ansvarig utgivare" (a specific Swedish press
+  law term that doesn't apply here).
+
+## Feedback and issue tracking
+
+**2026-07-26 — Google Form + Sheets over GitHub Issues**
+- **What:** Participant feedback collected via Google Form → private Google Sheet. A public
+  view (Publik vy tab) is embedded in synpunkter.md showing status of all items.
+- **Why:** GitHub Issues require an account, English, and are visible to the entire European
+  ABLE user base — too high a barrier for citizen scientist participants. Google Form is
+  zero-friction. The embedded public view gives transparency without GitHub overhead.
+- **Impact:** rapportera-tekniskt-fel.md still gates true technical bugs (ask Lars first,
+  then file on GitHub if genuinely new). The form handles everything else.
+- **Status values:** Ny, Under behandling, Åtgärdad, Vidarebefordrad, Noterat ingen åtgärd
+  ("Noterat ingen åtgärd" chosen over "Ej relevant" — softer, less dismissive)
+
+## Rutnät position maps removed from public manual
+
+**2026-07-26 — Exact trap positions withheld pending collaborator discussion**
+- **What:** Numbered position maps for Silvåkra, Björnstorp, Uppsala A/B removed from
+  rutnat-lund-uppsala.md. Replaced with a note pointing to separate participant documents.
+- **Why:** The manual is public. Precise GPS positions of research sites carry a small but
+  real risk of disturbance by the public or competing collectors. Decision made conservatively
+  pending discussion with collaborators (Anders Björkén, SLU).
+- **Impact:** Maps still exist as image assets in docs/assets/images/rutnat/ and can be
+  reinstated. The two people actually running the grid already know the positions.
+
+## Darkness window reframe
+
+**2026-07-26 — ljusberakningar.md rewritten as "standardising disturbing background light"**
+- **What:** The page originally framed the topic as "ljusuppehåll" (trap pauses). Rewritten
+  to frame it as: what threshold of background light makes light traps unsatisfactory, and
+  when can reliable sampling resume?
+- **Why:** Lars's preferred scientific framing — the threshold definition is the
+  contribution, not the dates. Also more honest: participants are invited to try earlier than
+  the calculated dates, and observations near the boundaries are valuable for calibration.
+- **Impact:** Column headers in the results table now read "Bakgrundsljuset stör från /
+  Provtagning kan återupptas" rather than "Fällorna stängs / öppnar igen".
