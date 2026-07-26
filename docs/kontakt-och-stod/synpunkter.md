@@ -12,4 +12,4 @@ Vill du lämna en synpunkt eller ett förslag? Använd det här formuläret:
 
 ## Inkomna synpunkter
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBpji_yqGm2CScCDCXLZ4flLo5_1t8jwpqCmehz2ZiQ6Y_9kOSG-XlxMxf0Kx6XbwYVK-Xx-5rKUaT/pubhtml" width="100%" height="600" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBpji_yqGm2CScCDCXLZ4flLo5_1t8jwpqCmehz2ZiQ6Y_9kOSG-XlxMxf0Kx6XbwYVK-Xx-5rKUaT/pubhtml?gid=502981035&single=true" width="100%" height="600" frameborder="0"></iframe>
