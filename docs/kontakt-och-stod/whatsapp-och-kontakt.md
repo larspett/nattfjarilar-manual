@@ -17,9 +17,13 @@ En WhatsApp-grupp finns för snabbt utbyte av erfarenheter och support. Deltagan
 
 Är du inte redan med i WhatsApp-gruppen men vill komma med? Skicka ett mail till [nattflyn@gmail.com](mailto:nattflyn@gmail.com).
 
-## Önskemål
+## Önskemål och felrapportering
 
-Har du förslag på förbättringar eller nya funktioner, hör av dig via kanalerna ovan.
+Har du en synpunkt på appen, hemsidan, fällutrustningen eller manualen, eller vill du föreslå en förbättring? Använd det här formuläret:
+
+**[Skicka in en synpunkt eller ett förslag](https://forms.gle/5Vrf68vXGjDm9eEv9)**
+
+Du kan följa status på inkomna synpunkter under [Synpunkter och förslag](synpunkter.md).
 
 ## Om något inte fungerar tekniskt
 
