@@ -4,7 +4,7 @@ title: Så använder du appen
 
 # Så använder du appen: steg för steg
 
-*Skärmbilderna nedan är hämtade från den tidigare fältinstruktionen (Arnberg & Pettersson 2026) och visar grundflödet i ButterflyCount. Layouten kan skilja sig något mot senaste appversionen, men stegen är desamma.*
+*Skärmbilderna nedan är hämtade från den tidigare fältinstruktionen (Arnberg & Pettersson 2026, tillgänglig via LU Research Portal) och visar grundflödet i ButterflyCount. Layouten kan skilja sig något mot senaste appversionen, men stegen är desamma.*
 
 ## Installation och grundinställning
 
@@ -20,7 +20,7 @@ title: Så använder du appen
 
 ![Nedladdade artlistor](../assets/images/app/bilaga1-steg3-artlistor.png)
 
-## Registrera en vittjning
+## Registrera en tömning av fällan
 
 **Steg 1**: Välj Nattfjärilsinventering på startsidan.
 

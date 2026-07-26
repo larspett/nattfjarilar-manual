@@ -1,79 +1,77 @@
 ---
-title: Beräkning av ljusuppehåll
+title: Störande bakgrundsljus och provtagningsbetingelser
 ---
 
-# Beräkning av ljusuppehåll
+# Störande bakgrundsljus och provtagningsbetingelser
 
-Den här sidan förklarar hur datumangivelserna för ljusuppehållen vid de nordligaste gradientlokalerna har beräknats. Den vänder sig till dig som vill förstå bakgrunden — det räcker att följa tabellen på [gradientsidan](gradient-lund-abisko.md) om du bara behöver veta när fällorna ska vara ute.
+Den här sidan förklarar hur vi definierar och beräknar när bakgrundsljuset under natten blir så pass störande att ljusbaserade nattfjärilsfällor inte längre fungerar tillfredsställande — och när provtagningen kan återupptas. Den vänder sig till dig som vill förstå bakgrunden; det räcker att följa tabellen på [gradientsidan](gradient-lund-abisko.md) om du bara behöver veta vilka perioder som gäller för din lokal.
 
-## Varför försvinner sommarnattens mörker?
+## Problemet: bakgrundsljus varierar med breddgrad och årstid
 
-Jorden är lutad 23,44° relativt sin omloppsbana runt solen. Den lutningen gör att solen vid midsommar aldrig går ned vid tillräckligt höga breddgrader — det som kallas midnattssolen. Exakt var gränsen går beror på vilket mörker man kräver: civil, nautisk eller astronomisk skymning, var och en med en definierad solhöjd under horisonten.
+Ljusfällor för nattfjärilar bygger på att fällans UV-ljus sticker ut mot en mörk bakgrund. Ju ljusare natten är, desto svagare kontrast och desto sämre fångstefektivitet. Detta är inte ett problem i södra Sverige, där sommarnätterna ändå är tillräckligt mörka, men längs en gradient upp till Abisko blir effekten påtaglig: vid tillräckligt höga breddgrader försvinner den astronomiska skymningen helt under en period runt midsommar.
 
-För ljusfällor handlar det inte om absolut mörker utan om att solens ljus inte ska störa fångsten. Det innebär att man behöver ta hänsyn till solhöjden vid astronomisk midnatt — den tidpunkt på dygnet då solen är som lägst.
+För att kunna jämföra fångster rättvist längs gradienten — och inför framtida nationell övervakning — behöver vi en standardiserad och principiellt förankrad definition av när bakgrundsljuset anses störande. Det är den definitionen som redovisas här.
 
 ## Solhöjden vid astronomisk midnatt
 
-Solens position kan beräknas med två faktorer: **solens deklination** (δ), som beskriver hur långt solen befinner sig norr eller söder om ekvatorplanet under årets gång, och **breddgraden** (φ) för den plats man vill beräkna för.
+Bakgrundsljusets intensitet under natten beror på solens position under horisonten. Det relevanta måttet är **solhöjden vid astronomisk midnatt** — den tidpunkt på dygnet då solen befinner sig som lägst.
 
-Deklinationen varierar sinusformigt under året, med maximum +23,44° vid midsommar och minimum -23,44° vid midvinter:
+Solens deklination (δ), det vill säga hur långt solen befinner sig norr eller söder om ekvatorplanet, varierar sinusformigt under året:
 
 > δ = −23,44° × cos(2π(N + 10) / 365)
 
-där N är årets dag (1 = 1 januari).
+där N är årets dag (1 = 1 januari). Maximum +23,44° nås vid midsommar, minimum −23,44° vid midvinter.
 
-Solhöjden vid astronomisk midnatt beräknas sedan som:
+Solhöjden vid astronomisk midnatt för en given breddgrad (φ) ges av:
 
 > h = δ + φ − 90°
 
-När h är negativt befinner sig solen under horisonten. Ju mer negativ h är, desto mörkare är natten. Vid h = 0° sker midnattssolen (solen precis vid horisonten vid midnatt).
+Negativa värden innebär att solen befinner sig under horisonten. Ju mer negativt h är, desto mörkare är natten och desto bättre betingelser för ljusfällor.
 
-## Kalibreringen mot fältobservationer
+## Tröskelvärdet: vad är störande bakgrundsljus?
 
-En rent astronomisk tröskel — exempelvis nautisk skymning vid h = −12° — stämmer inte nödvändigtvis med hur nattfjärilar faktiskt beter sig i ljusfällor. Beräkningarna i det här projektet är i stället kalibrerade mot fältobservationer.
+Var gränsen går för när bakgrundsljuset blir störande kan inte avgöras rent astronomiskt — det beror på hur nattfjärilar faktiskt reagerar på ljusförhållandena. Vi har i stället kalibrerat tröskeln mot fältobservationer.
 
-En av projektets deltagare genomförde ljusfångst vid **Norrfjärden (65,42°N)** under ett antal säsonger och rapporterade att fällorna fungerade väl till och med den 31 maj, men att natten inte var mörk nog att ge meningsfulla resultat under perioden runt midsommar. Den 31 maj ger vid Norrfjärdens breddgrad ett beräknat h-värde på **−2,73°**, vilket har använts som tröskel för projektet.
+En av projektets deltagare genomförde ljusfångst vid **Norrfjärden (65,42°N)** under ett antal säsonger. Erfarenheten var att fällorna gav meningsfulla resultat till och med den **31 maj**, men att bakgrundsljuset under natten runt midsommar var för störande för tillfredsställande fångst. Det datum då provtagningen bedömdes kunna **återupptas** var **1 augusti**.
 
-Det bör noteras att tröskelvärdet innehåller en osäkerhet: observatörens erfarenhet är att fällorna *inte fungerade* från en viss tidpunkt, men exakt var gränsen går för meningsfull fångst kan variera mellan lokaler och fälltyper. Se avsnittet om osäkerhet nedan.
+Den 31 maj ger vid Norrfjärdens breddgrad ett beräknat h-värde på **−2,73°**, vilket används som projektets tröskel för störande bakgrundsljus. Provtagning rekommenderas när h ≤ −2,73°; är h högre än så anses bakgrundsljuset vara för störande för jämförbara resultat.
 
 ## Diagram
 
-Figuren nedan visar solhöjden vid astronomisk midnatt för ett urval av projektets lokaler under april–september 2026. Kurvor som stiger över tröskeln (orange prickad linje) markerar perioder då fångst inte rekommenderas.
+Figuren nedan visar solhöjden vid astronomisk midnatt för ett urval av projektets lokaler under april–september 2026. Perioder då kurvan överstiger tröskeln (orange prickad linje) är perioder med störande bakgrundsljus.
 
 ![Solhöjd vid astronomisk midnatt för gradientlokaler](../assets/images/ljusberakningar_diagram.jpg)
 
-Lokaler söder om ungefär 65°N — från Lund till Umeå — håller sig under tröskeln under hela säsongen och kan provtas oavbrutet. För de fem nordligaste lokalerna passeras tröskeln runt midsommar.
+Lokaler söder om ungefär 65°N — från Revinge till Umeå — håller sig under tröskeln under hela säsongen. För de fem nordligaste lokalerna överstigs tröskeln under en period runt midsommar.
 
-## Beräknade uppehållsperioder för projektets lokaler
+## Perioder med störande bakgrundsljus
 
-Tabellen nedan visar de beräknade uppehållsperioderna baserat på det kalibrerade tröskelvärdet h = −2,73°. Angivna datum avser när kurvan för respektive lokal passerar tröskeln.
+Tabellen nedan visar de beräknade perioderna med störande bakgrundsljus för projektets nordligaste lokaler, baserat på tröskeln h = −2,73°.
 
-| Lokal | Breddgrad | Fällorna stängs | Fällorna öppnar | Uppehåll |
-|---|---|---|---|---|
-| Marsfjäll (9) | 65,10°N | 3 juni | 11 juli | 38 dagar |
-| Norrfjärden (10a) | 65,42°N | 1 juni | 13 juli | 42 dagar |
-| Luleå (10b) | 65,58°N | 30 maj | 15 juli | 46 dagar |
-| Överkalix (11) | 66,40°N | 26 maj | 19 juli | 54 dagar |
-| Abisko (12) | 68,36°N | 16 maj | 29 juli | 74 dagar |
+| Lokal | Bakgrundsljuset stör från | Provtagning kan återupptas | Antal dagar |
+|---|---|---|---|
+| Marsfjäll (9) | 3 juni | 11 juli | 38 dagar |
+| Norrfjärden (10a) | 1 juni | 13 juli | 42 dagar |
+| Luleå (10b) | 30 maj | 15 juli | 46 dagar |
+| Överkalix (11) | 26 maj | 19 juli | 54 dagar |
+| Abisko (12) | 16 maj | 29 juli | 74 dagar |
 
-Lokaler 1–8 (Revinge–Umeå, upp till 63,82°N) har inga beräknade uppehåll och kan provtas hela säsongen.
+Lokaler 1–8 (Revinge–Umeå) har inga perioder med störande bakgrundsljus och kan provtas hela säsongen.
 
 ## Osäkerhet och begränsningar
 
-**Asymmetri i kalibreringen.** De ursprungliga fältobservationerna antydde att fällorna slutade fungera runt 31 maj och återupptogs runt 1 augusti. De två datumen ger inte exakt samma tröskelvärde — 31 maj ger h = −2,73°, medan 1 augusti ger ett något lägre värde (~−6,7°). Skillnaden beror sannolikt på att fällorna inte testades aktivt i perioden närmast midsommar, utan att frånvaron av data tolkades som att de inte fungerade. Det konservativare värdet (31 maj, h = −2,73°) har valts, vilket ger kortare uppehållsperioder snarare än längre.
+**Asymmetri i kalibreringen.** Fältobservationerna antyder att provtagningen slutade fungera runt 31 maj och kunde återupptas runt 1 augusti. De två datumen ger inte exakt samma tröskelvärde — 31 maj ger h = −2,73°, medan 1 augusti ger ett något lägre värde (~−6,7°). Skillnaden beror sannolikt på att fällorna inte testades aktivt i perioden närmast midsommar. Det konservativare värdet (31 maj) används, vilket ger kortare perioder med störande bakgrundsljus snarare än längre.
 
-**Lokala variationer.** Molntäcke, topografi och lokalt ljusföroreningar kan förskjuta gränsen för meningsfull fångst i båda riktningarna. Beräkningarna avser astronomiska förutsättningar, inte faktiska väderbetingelser.
+**Lokala variationer.** Molntäcke, topografi och lokal ljusföroreningar kan påverka gränsen i båda riktningarna. Beräkningarna avser astronomiska förhållanden, inte faktiska väderbetingelser.
 
-**Uppmuntran att testa.** Observationerna från norra lokaler kring uppehållets gränsdatum är välkomna och värdefulla, även om resultaten kan vara begränsade. Alla data bidrar till att förbättra kalibreringen inför framtida säsonger.
+**Tidiga provtagningsförsök välkomnas.** Observationer från nordliga lokaler nära periodernas gränsdatum är värdefulla och bidrar till att kalibrera tröskeln inför framtida säsonger.
 
 ## Externa resurser
 
-För den som vill utforska solens rörelser mer i detalj rekommenderas:
-
 - [SMHI:s Soluret](https://www.smhi.se/kunskapsbanken/meteorologi/sol-och-mane/soluret-1.3798) — information om soluppgång och solnedgång i Sverige
 - [timeanddate.com](https://www.timeanddate.com/sun/sweden/) — interaktiv solkalkylator med exakta tider för valfri plats och datum
-- [Astronomisk almanacka, Lund Observatory](https://www.astro.lu.se/) — Lunds observatorium publicerar astronomisk referensdata
+- [Lunds observatorium](https://www.astro.lu.se/) — astronomisk referensdata
 
 ---
 
-*Beräkningarna på den här sidan kan reproduceras med den sinusoidala soldeklarationsmodellen ovan. För högre precision kan paket som [PyEphem](https://rhodesmill.org/pyephem/) (Python) användas, vilket tar hänsyn till fulla ephemerider och atmosfärisk refraktion.*
+*Beräkningarna på den här sidan kan reproduceras med den sinusoidala soldeklarationsmodellen ovan. För högre precision kan paket som [PyEphem](https://rhodesmill.org/pyephem/) (Python) användas, vilket beräknar solens position mer exakt och tar hänsyn till hur atmosfären böjer ljuset nära horisonten.*

@@ -10,8 +10,6 @@ Den här sidan samlar dels ändringar i manualen, dels praktiska erfarenheter so
 
 ## När det krånglar
 
-*(Byggs på efter hand, korta punkter snarare än långa förklaringar)*
-
 - Registrera dig inte i training mode — se [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)
 - Ha alltid ljussensorn **utanför** fällan, inte inne i hinken — gäller alla modeller utom LED-Emmer Quad (som saknar sensor)
 - Powerbanken startar inte? Se powerbank-felsökningsguiden och videon under [Fälltyper](../falltyper/oversikt.md#powerbank-felsökning-gäller-främst-quad-modulen)
@@ -24,7 +22,7 @@ Den här sidan samlar dels ändringar i manualen, dels praktiska erfarenheter so
 - Filmad genomgång av registrering i appen tillagd under [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)
 - Filmade genomgångar av att se och ändra observationer tillagda under [Ändra observationer](../hur-du-rapporterar/andra-observationer.md)
 - Sida om [lokal-dokumentationsprotokoll](../hur-du-satter-ut/site-specifikationer.md) uppdaterad med illustrationer och LUCAS-metodik
-- Ny fördjupningssida: [Beräkning av ljusuppehåll](../hur-du-satter-ut/ljusberakningar.md) — formel, kalibrering och diagram för nordliga lokaler
+- Ny fördjupningssida: [Störande bakgrundsljus och provtagningsbetingelser](../hur-du-satter-ut/ljusberakningar.md) — formel, kalibrering och diagram för nordliga lokaler
 
 ### v0.3.0 — 2026-07-24
 - Steg-för-steg-guide för att registrera fälla direkt i appen tillagd under [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)

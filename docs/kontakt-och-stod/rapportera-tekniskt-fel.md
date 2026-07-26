@@ -4,11 +4,11 @@ title: Rapportera ett tekniskt fel
 
 # Rapportera ett tekniskt fel i appen eller på hemsidan
 
-Observera: den här sidan gäller **tekniska fel i ButterflyCount-appen eller på butterfly-monitoring.net**, alltså sådant som ligger utanför vår egen manual. Fel eller oklarheter i själva manualen rapporterar du enklast direkt till [Lars](whatsapp-och-kontakt.md).
+Observera: den här sidan gäller **tekniska fel i ButterflyCount-appen eller på butterfly-monitoring.net**, alltså sådant som ligger utanför vår egen manual. Fel eller oklarheter i själva manualen rapporterar du enklast direkt till [nattflyn@gmail.com](mailto:nattflyn@gmail.com).
 
 ## Steg 1: hör av dig till oss först
 
-Innan du rapporterar något vidare, mejla **nattflyn@gmail.com** (eller använd WhatsApp-gruppen) och beskriv vad som händer. Av två skäl:
+Innan du rapporterar något vidare, mejla **[nattflyn@gmail.com](mailto:nattflyn@gmail.com)** eller hör av dig i WhatsApp-gruppen, och beskriv vad som händer. Av två skäl:
 
 - Många problem är redan kända, eller går att lösa direkt (t.ex. training mode, se [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)).
 - Appen och hemsidan används av nattfjärilsräknare i hela Europa. Om alla svenska deltagare rapporterar samma sak direkt till utvecklarna riskerar deras ärendelista att svämma över, vilket gör det svårare för dem att hitta de faktiskt nya problemen. Vi samlar därför ihop och skickar vidare det som verkligen behövs, istället för att var och en gör det separat.

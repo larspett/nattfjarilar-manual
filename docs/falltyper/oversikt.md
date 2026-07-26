@@ -4,7 +4,9 @@ title: Fälltyper
 
 # Fälltyper
 
-I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt samma princip: en UV/LED-ljuskälla lockar till sig nattfjärilar, som sedan hamnar i en tratt och samlas i hinken/kärlet undertill. På din lokal i gradientprojektet får du en av dessa fyra, tilldelad genom lottning (se [Sätta ut fällor: gradient](../hur-du-satter-ut/gradient-lund-abisko.md)).
+I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt samma princip: en UV/LED-ljuskälla lockar till sig nattfjärilar, som sedan hamnar i en tratt och samlas i hinken/kärlet undertill. Vill du läsa mer om hur nattfjärilar lockas till ljus så finns en artikel från 2024 som lyckades lista ut det med höghastighetsvideo (Fabian m.fl. 2024, tillgänglig via [Nature Communications](https://www.nature.com/articles/s41467-024-44785-3)). 
+
+På din lokal i gradientprojektet används alla fyra modeller samtidigt, placerade på var sin fällplats inom lokalen. Vilken fälltyp som hamnar på vilken plats avgörs genom lottning (se [Sätta ut fällor: gradient](../hur-du-satter-ut/gradient-lund-abisko.md)).
 
 ![Alla fyra fällmodeller monterade och redo för utplacering](../assets/images/falltyper/modell-alla-1.jpg)
 
@@ -61,6 +63,7 @@ I det här pilotprojektet används fyra olika ljushinkar. Alla fungerar enligt s
 - 1 USBa (hane) till USBc (hane)-sladd
 - 1 USBc (hane) till USBa (hona)-sladd
 - 1 plastpåse
+- 1 karta med 6 självhäftande silikonprickar
 
 ![LED-Emmer 2.0 Quad, monterad](../assets/images/falltyper/modell2-quad-monterad.jpg)
 

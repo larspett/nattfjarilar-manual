@@ -23,57 +23,90 @@ Update it whenever a non-obvious choice is made.
 - **Why:** Only the deployment/site-selection content genuinely differs between the grid and gradient sub-projects; everything else (trap types, reporting, taxonomy scope) is shared. A timeline split matches how a participant actually uses the manual (once at the start, repeatedly during the season) better than a project split would.
 - **Impact:** Deployment section has a gradient subsection (longer, ~75-80% of content) and a grid subsection (short, since it's run by two experienced people).
 
-**2026 — No standalone FAQ; "När det krånglar" + "senaste lärdomarna" instead**
+**2026 — No standalone FAQ; "När det krånglar" + "senaste erfarenheterna" instead**
 - **What:** Troubleshooting content lives as a running, dated list tied to the Nyheter/changelog page, not a separate static FAQ.
 - **Why:** Static FAQs get less attention over time; a page that's visibly "alive" (tied to update history) holds attention better for a small, engaged group.
 
 ## Project design and deployment rules
 
 **2026 — Trap type is randomly assigned per site and fixed for the season**
-- **What:** At each gradient site, 4 trap locations are chosen ≥50m apart, then trap type is assigned to each location by drawing lots. That assignment is fixed for the whole season; participants may experiment with trap placement outside official weekly trials, but not during them.
+- **What:** At each gradient site, 4 trap locations are chosen ≥50m apart, then trap type is assigned to each location by drawing lots. That assignment is fixed for the whole season.
 - **Why:** Protects the experimental design (site×trap-type confounding) against well-intentioned participant "improvements" mid-season.
-- **Impact:** Needs strong, close-to-sign-off-level communication in the manual, since the failure mode is a well-meaning participant changing something.
+- **Impact:** Needs strong communication in the manual.
 
 **2026 — Artportalen sync framed as a goal, not a promise**
 - **What:** Manual tells participants the concrete, deliverable fact (data can always be exported and manually imported to Artportalen) and frames automatic sync as a future aim, not a current feature.
-- **Why:** Automatic sync requires both participant consent and Artdatabanken's approval, which hasn't been granted. Overpromising a feature that depends on a third party's cooperation risks a manual that ages badly.
+- **Why:** Automatic sync requires both participant consent and Artdatabanken's approval, which hasn't been granted.
 
 **2026 — Participant contact/address list kept out of the manual entirely**
 - **What:** A separate, participant-only document handles names/addresses/contact sharing consent; the manual itself never includes this.
-- **Why:** Keeps the manual shareable/public-facing without a privacy dependency, and keeps the consent scope for that separate document clean and specific.
+- **Why:** Keeps the manual shareable/public-facing without a privacy dependency.
 
 ## Cover illustration
 
 **2026-07 — Sweden outline sourced from real boundary data, not hand-drawn**
-- **What:** Switched from a ~50-point freehand approximation to the actual Natural Earth boundary (3,388-point mainland + real islands) via the public `datasets/geo-countries` GitHub dataset.
-- **Why:** The hand-drawn version read as an unrecognizable blob; this was misdiagnosed for a while as a projection/tiling problem before the real cause (bad source geometry) was found.
+- **What:** Switched from a ~50-point freehand approximation to the actual Natural Earth boundary (3,388-point mainland + real islands).
+- **Why:** The hand-drawn version read as an unrecognizable blob.
 - **Impact:** Both the gradient map and grid-insets map use this same boundary data.
 
-**2026-07 — Grid-insets map uses real OpenFreeMap basemap images, not blank/illustrative panels**
-- **What:** Each of the four grid insets (Skåne 45/96, Uppland A/B) shows an actual cropped OpenFreeMap Bright export as its background, precisely georeferenced and cropped via world-file (.jgw) math.
-- **Why:** A long back-and-forth (line weight, dot size, background wash, deeper land fill) tried to fix a "the grid-insets map looks too pale/thin next to the other illustrations" problem by styling alone. None of it worked structurally. Real map tiles carry genuine visual density that styling tweaks on a blank background can't replicate.
-- **Impact:** This was the fix that actually worked; resolved a long-running back-and-forth. Front cover uses this version (grid_insets_cover_v7.jpg) as final.
+**2026-07 — Grid-insets map uses real OpenFreeMap basemap images**
+- **What:** Each of the four grid insets shows an actual cropped OpenFreeMap Bright export as its background.
+- **Why:** Real map tiles carry genuine visual density that styling tweaks on a blank background can't replicate. This was the fix that resolved a long-running "too pale" problem.
+- **Impact:** Front cover uses grid_insets_cover_v7.jpg as final.
 
-**2026-07 — Front cover is 4 independently-produced pieces assembled by Lars, not one Claude-built composite**
-- **What:** Moth icon, gradient map, grid-insets map, and trap-illustration are each finished separately; Lars assembles and exports the final joined composite himself from his own layout tool.
-- **Why:** A first assembly attempt (reverse-engineering proportions from a screenshot) was necessarily approximate; exporting from the source layout tool that already has the exact allocation is more reliable than reconstructing it.
+**2026-07 — Front cover is 4 independently-produced pieces assembled by Lars**
+- **What:** Moth icon, gradient map, grid-insets map, and trap-illustration are each finished separately; Lars assembles and exports the final composite himself.
+- **Why:** Exporting from the source layout tool is more reliable than reconstructing proportions from a screenshot.
 
-## Manual hosting (supersedes earlier "no GitHub" call)
+## Manual hosting
 
-**2026-07 — Manual is hosted on GitHub Pages, repo also serves as project bookkeeping**
-- **What:** The GitHub repo hosts the manual's markdown source (in `/docs`) and is also where DECISIONS.md and CHANGELOG.md live for project record-keeping. GitHub Pages is configured to serve directly from `main` branch, `/docs` folder — no separate build branch, no local tooling.
-- **Why:** Earlier decision ("Manual format and platform" above) rejected GitHub/MkDocs as infrastructure the ~15-person audience didn't need. That still holds for the *editing* workflow, but GitHub Pages' built-in Jekyll processing (zero local setup, auto-builds on push) turns out to be a low-effort way to satisfy the original requirement (versioned website with section-jumping) without contradicting the earlier "keep it simple" reasoning.
-- **Impact:** Existing `/docs` skeleton can be used as-is. Each markdown file needs minimal Jekyll front matter to be processed. Relative `.md` links between pages work automatically via GitHub Pages' built-in `jekyll-relative-links` plugin — no need to rewrite links to `.html`.
+**2026-07 — Manual is hosted on GitHub Pages**
+- **What:** The GitHub repo hosts the manual's markdown source (in `/docs`) and is also where DECISIONS.md and CHANGELOG.md live. GitHub Pages configured to serve from `main` branch, `/docs` folder.
+- **Why:** GitHub Pages' built-in Jekyll processing (zero local setup, auto-builds on push) satisfies the original requirement (versioned website with section-jumping) without contradicting the earlier "keep it simple" reasoning.
+- **Impact:** Each markdown file needs minimal Jekyll front matter. Relative `.md` links work via `jekyll-relative-links`.
+
+**2026-07 — Video files never go in git; hosted on YouTube instead**
+- **What:** All MP4 assembly videos are hosted as public YouTube videos and embedded via iframe. Local source files live in `docs/assets/videos/` but are gitignored. The 100MB GitHub file size limit makes large MP4s impossible; even files under the limit cause history bloat.
+- **Why:** Learned the hard way when a 238MB EntoLight video caused a rejected push. YouTube is the right tool for video hosting.
+- **Impact:** `docs/assets/videos/*_LU.mp4` is gitignored. EN edition videos stay local-only until that edition is underway.
+
+**2026-07 — Version managed via _config.yml variables**
+- **What:** `version` and `version_date` are set in `docs/_config.yml` and referenced in pages as `{{ site.version }}` and `{{ site.version_date }}`.
+- **Why:** Eliminates the need to hunt and update hardcoded version strings in multiple markdown files on each release.
+- **Impact:** Version bumps require only a single edit in `_config.yml`.
 
 ## Project scope: manual numbers vs. the funder contract
 
-**2026-07 — Manual uses the actual expanded scope (15 gradient sites, 4 trap models), not the Naturvårdsverket contract's original figures (10 localities, 3 trap models)**
-- **What:** The signed contract with Naturvårdsverket (Bilaga NV-26-076242) states 10 gradient localities and 3 trap types tested per site. The manual instead reflects 15 sites and 4 trap models throughout (Fälltyper, deployment, Bakgrund).
-- **Why:** After the contract was drafted (by Lars), a follow-up meeting with colleagues expanded the gradient and added a 4th trap model; the budget was increased accordingly but the contract document's text was never revised to match. The manual should reflect what's actually running, not the superseded contract figures.
-- **Impact:** Bakgrund's description of the gradient sub-project deliberately avoids stating a specific locality/trap-type count, to avoid re-introducing this conflict if the contract document is consulted again later.
+**2026-07 — Manual uses the actual expanded scope (15 gradient sites, 4 trap models)**
+- **What:** The signed contract with Naturvårdsverket states 10 gradient localities and 3 trap types. The manual reflects 15 sites and 4 trap models throughout.
+- **Why:** After the contract was drafted, a follow-up meeting expanded the gradient and added a 4th trap model; the budget was increased but the contract text was never revised.
 
 **2026-07 — Artportalen sync remains "goal, not promise" despite the contract stating it as settled**
-- **What:** The contract document states "validated data is synced to Artportalen" as if already agreed. This is NOT accurate — Artdatabanken has not committed, and there is politics involved in getting that agreement.
-- **Why:** Confirmed directly by Lars; the contract text on this point is aspirational/outdated, not a settled fact.
-- **Impact:** No manual content should be upgraded to state AP sync as certain, based on this document. The earlier "goal, not promise" framing (see Manual format and platform section above) stands.
+- **What:** The contract document states "validated data is synced to Artportalen" as if already agreed. This is NOT accurate — Artdatabanken has not committed.
+- **Why:** Confirmed directly by Lars; the contract text on this point is aspirational/outdated.
 
+## Darkness window calculations
+
+**2026-07 — Calibrated against Norrfjärden field observations, not purely astronomical**
+- **What:** The no-trap period for northern sites is calculated using a threshold midnight solar elevation of −2.73°, calibrated against a volunteer's field observations at Norrfjärden (65.42°N): trapping viable to 31 May, not viable from around midsommar.
+- **Why:** A purely astronomical threshold (e.g. nautical twilight at −12°) doesn't match how moths actually respond to light conditions. The empirical calibration grounds the calculation in real field experience.
+- **Impact:** Five sites (Marsfjäll and north) have calculated no-trap windows ranging from 38 to 74 days. Methodology documented in `ljusberakningar.md`. Uncertainty noted: the two calibration dates (May 31 / Aug 1) give slightly different thresholds; the conservative value (May 31) is used.
+
+## Habitat documentation protocol
+
+**2026-07 — LUCAS-adapted six-photo protocol, campaign in August**
+- **What:** Each trap position is documented with six standardised photos (trap view, canopy, N/E/S/W) using the LUCAS land-cover survey methodology. Phone held in landscape mode, ~1/6 sky. One-time campaign in August 2026.
+- **Why:** Enables systematic comparison of habitat context across sites and years, consistent with EU-wide survey standards. Coordinates captured automatically via app registration.
+- **Impact:** Illustrated in site-specifikationer.md with three illustrations (fallplatser-oversikt.png, habitatdok-ovanifraan.png, habitatdok-foton.png).
+
+## Video and media decisions
+
+**2026-07 — YouTube Shorts used for portrait screen recordings**
+- **What:** App walkthrough screen recordings (registration, editing observations) are uploaded as YouTube Shorts and embedded using `.video-wrapper-portrait` (280×498px fixed dimensions, 9:16 aspect ratio).
+- **Why:** Shorts are naturally portrait format; the fixed-dimension wrapper avoids the percentage-padding approach which doesn't work cleanly with constrained widths.
+- **Impact:** Separate CSS class from the landscape `.video-wrapper` used for assembly videos.
+
+**2026-07 — Watercolor illustrations generated in ChatGPT from Lars's sketches and instructions**
+- **What:** The site deployment overview (fallplatser-oversikt.png), overhead documentation illustration (habitatdok-ovanifraan.png), and trap watercolor illustrations were generated using ChatGPT image generation following Lars's detailed prompts and sketches.
+- **Why:** Produces a consistent visual style that complements the existing watercolor trap illustration. No external attribution required.
+- **Impact:** Images are effectively Lars's own work; treated the same as other project-produced assets.

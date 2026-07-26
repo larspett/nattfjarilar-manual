@@ -17,23 +17,38 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
   - Note: EU-Lex regulation links (used in Bakgrund) switch language by swapping `/SV/` for `/EN/` in the URL, e.g. `.../legal-content/EN/TXT/HTML/?uri=OJ:L_202401991` — same pattern for both cited regulations
 - Add a **References** section (books, websites, apps cited/used throughout)
 - Add an **Acknowledgements** section
-- **Decide on and switch the project contact email**: currently nattflyn@gmail.com. Lars's own work email should stay reserved for scientific/academic exchanges; project participant communication should go through a dedicated address. Considering a proper LU list alias (nattfjarilar@biol.lu.se) instead of the Gmail one — this needs to be created by LU IT/admin unless Lars is granted list-admin rights himself (application submitted, pending)
-- Add a link to the GitHub repo's **Issues** page for reporting website/app problems — **done, and refined further**: rather than linking straight to the external ABLE issues tracker, added a new gatekeeper page (kontakt-och-stod/rapportera-tekniskt-fel.md) that explains what that repo/issue tracker actually is, what filing an issue there requires and means (GitHub account, English, visible to the whole European user base), and asks participants to email Lars first so reports get triaged/aggregated before anything goes to the international dev team. All four existing mentions (app-instrux.md, registrera-falla.md, nyheter.md, whatsapp-och-kontakt.md) now point to this page instead of the raw GitHub link.
-- Get a **DOI** for the manual as a citable product — either via a journal that supports living/dynamic documents (Pensoft ecosystem?) or via Zenodo
-- ~~App-based trap registration steps (registrera-falla)~~ **resolved**: se v0.3.0
-- ~~WhatsApp group join link (whatsapp-och-kontakt)~~ **resolved**: se v0.3.0
-- ~~QA needed: app screenshots~~ **resolved**: OCR-analys av alla Bilaga 1–3-skärmbilder bekräftade att alla bilder är korrekt matchade i XML-läsordning — inga ändringar behövdes
-- nattflyn@gmail.com renderas som mailto-länk inkonsekvent — kräver genomgång
-- Rutnät page: driving directions/parking/landowner contact for Silvåkra and Björnstorp; vittjningsschema; Uppland A/B maps still show preliminary planning positions — update once real coordinates registered
-- Concrete per-site start dates from trap-performance modelling (vecko-rutin)
-- validering.md step-by-step pending website UI being available
-- site-specifikationer.md: LUCAS-dokumentationsprotokoll med nya illustrationer (useful_site_overview.png, above.png, environment.png) — pendng
-- Monteringsvideor för LED-Emmer (standard) SV och EntoLight SV ännu ej uppladdade (daggräns nådd 2026-07-24) — ersätt platshållartext när klart
+- **Project contact email**: currently nattflyn@gmail.com — considering LU list alias (nattfjarilar@biol.lu.se), application submitted, pending
+- Get a **DOI** for the manual — Pensoft/RIO Journal or Zenodo
+- validering.md step-by-step pending website UI (project filtering not yet available)
+- site-specifikationer.md: exact August campaign dates to be confirmed
+- Rutnät: driving directions/parking/landowner contact for Silvåkra and Björnstorp; vittjningsschema; Uppland A/B maps still show preliminary positions
+- nattflyn@gmail.com renders as mailto link inconsistently — needs find-and-replace pass
+- App/site screenshots need updating once ButterflyCount UI is fully translated to Swedish
+- LU logos on EN assembly videos still to be confirmed consistent
+- Nets for trap emptying (in production, ~2 weeks from 2026-07-24) — add note to vecko-rutin.md when distributed
+
+## v0.4.0 — 2026-07-25
+
+### Videos and screen recordings
+- **falltyper/oversikt.md**: two new video embeds — Quad funnel/silicone dots step (`F8BcoqJBZz4`) after the main Quad assembly video; powerbank troubleshooting (`g6WUtUxQUdE`) at the end of the felsökning section
+- **registrera-falla.md**: Short embed (`w4kJjqw5moU`) added at top of app-registration section; all 8 screenshots restructured to instruction-above-image with `<figure>`/`<figcaption>` to resolve caption ambiguity on desktop; spinner frame (step 7) replaced with clean settled-state frame
+- **andra-observationer.md**: two Shorts added — overview (`_5r1490GXuU`) at top of page, ändra-antal (`b2fphWfQHcg`) in the app section
+
+### Site documentation and illustrations
+- **site-specifikationer.md**: `above.png` illustration (overhead drone view with compass rose) added before photo protocol table
+- **ljusberakningar.md** + **ljusberakningar_diagram.jpg**: new — see v0.3.0 entry
+
+### Styling and infrastructure
+- **style.scss**: `.video-wrapper-portrait` class added (280×498px fixed, for 9:16 Shorts); `.app-figure` and `figcaption` styles added
+- **_config.yml**: `version` and `version_date` variables added — version string no longer hardcoded in individual pages, use `{{ site.version }}` and `{{ site.version_date }}`
+
+### Content
+- **nyheter.md**: title changed to "Nyheter och erfarenheter"; ändringslogg filled with dated entries v0.1.0–v0.4.0; two new "När det krånglar" bullets (sensor placement, powerbank video link)
 
 ## v0.3.0 — 2026-07-24
 
 ### Rapportering — app-registrering
-- **registrera-falla.md**: ny sektion med steg-för-steg-guide för registrering direkt i appen, med 8 skärmbilder extraherade från videoinspelning; Veldshop-TBD löst (registreras som LED-Emmer standard); CSS-klass `.app-screenshot` tillagd i style.scss
+- **registrera-falla.md**: ny sektion med steg-för-steg-guide för registrering direkt i appen, med 8 skärmbilder extraherade från videoinspelning; Veldshop-TBD löst; CSS-klass `.app-screenshot` tillagd i style.scss
 
 ### Kontakt
 - **whatsapp-och-kontakt.md**: WhatsApp-länk och länk till svensk användarguide tillagda
@@ -43,50 +58,42 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - **ljusberakningar.md**: ny fördjupningssida om beräkningsmetoden för ljusuppehåll — soldeklarationsformel, kalibrering mot Norrfjärden-observationer, diagram, osäkerhetsdiskussion, externa resurser
 - **ljusberakningar_diagram.jpg**: nytt diagram, solhöjd vid astronomisk midnatt april–september för sex gradientlokaler med tröskelvärde och kalibreringspunkt markerade
 
+### Veckorutin och site-specifikationer
+- **vecko-rutin.md**: omskriven — startdatum-TBD ersatt med praktisk vägledning; säsongsslutt (30 sept); väder- och tidsinstruktioner utbyggda; Norrfjärden roterande upplägg förklarat
+- **site-specifikationer.md**: LUCAS-protokoll och fotongivning tillagda; illustrationer (fallplatser-oversikt.png, habitatdok-foton.png)
+
 ## v0.2.0 — 2026-07-24
 
 ### Fälltyper — bilder och video
 - Monterade fällor: fyra nya bilder (en per modell) tillagda efter respektive innehållslista
 - Översiktsbild med alla fyra monterade modeller tillagd högst upp på sidan
 - Monteringsvideo inbäddad för LED-Emmer Quad (SV, med LU-logotyp)
-- Platshållartext för LED-Emmer (standard) och EntoLight SV-videor (publiceras inom kort)
 - CSS-klass `.video-wrapper` tillagd i style.scss för responsiva 16:9-inbäddningar
-- Videofiler i docs/assets/videos/ med gitignore för opublicerade filer
+- Videofiler i docs/assets/videos/ med gitignore
 
 ## v0.1.0 — 2026-07-22
 
 First substantially complete version: full manual content skeleton, site hosting and styling all live.
 
 ### Manual content — full skeleton drafted
-All sections have at least a first-pass draft:
-
 - **index.md** — home page, front cover image, "Varför gör vi detta?" brief
-- **bakgrund/oversikt.md** — EU mandate rationale, both sub-projects' purpose, tools rationale, AP-sync status, deliverables timeline (sourced from the Naturvårdsverket contract document, adapted for participants — see DECISIONS.md for the contract-vs-actual-scope note)
-- **falltyper/oversikt.md** — all four trap models with full specs, registration naming, **real unboxing photos and parts lists for all four**, plus the grid-only Veldshop variant note
-- **hur-du-satter-ut/** — site-specifikationer (deployment rules, lottery), gradient-lund-abisko, rutnat-lund-uppsala **(numbered 1-9 trap-position maps for all 4 grid squares — real registered coordinates for Silvåkra/Björnstorp, preliminary planning positions for the two Uppland sites pending real registration. Basemap switched from OpenFreeMap to Lantmäteriet Topografiska Webbkartan for these detailed close-ups (crisper at this zoom, ~5.5m/px vs ~11m/px before), plus a 250m scale bar added in the lower-right of each map. Front-cover grid-insets map is unaffected — keeps its original OpenFreeMap basemaps.)**
+- **bakgrund/oversikt.md** — EU mandate rationale, both sub-projects' purpose, tools rationale, AP-sync status, deliverables timeline
+- **falltyper/oversikt.md** — all four trap models with full specs, registration naming, real unboxing photos and parts lists
+- **hur-du-satter-ut/** — site-specifikationer, gradient-lund-abisko, rutnat-lund-uppsala (numbered 1–9 trap-position maps for all 4 grid squares; Lantmäteriet Topografiska Webbkartan basemaps; 250m scale bar)
 - **under-experimentet/vecko-rutin.md** — weekly deploy/empty/record cycle, weather guidance
-- **hur-du-rapporterar/** — registrera-falla, **app-instrux (now populated with real screenshots, no longer a stub)**, vad-som-raknas, andra-observationer (now includes website "explore data" screenshots)
-- **efter-inrapportering/** — validering, forvantade-resultat (placeholder pending real pilot data)
-- **kontakt-och-stod/** — whatsapp-och-kontakt, nyheter (changelog + "När det krånglar" running list)
-
-### Known open TBDs (search each file for `[TBD:` to find them)
-- ~~Consent-text exact wording and collection mechanism~~ **resolved**: Lars confirmed consent directly with each participant individually (not a formal site checkbox); everyone consented except one person opting out of WhatsApp specifically, which the existing "frivilligt" wording already covers. bakgrund/oversikt.md's samtycke text updated to match index.md's.
-- ~~Registration category for the Veldshop grid-only trap variant~~ **resolved**: registers as standard LED-Emmer (identical UV spec)
-- Rutnät page: driving directions/parking/landowner contact for Silvåkra and Björnstorp; vittjningsschema; Uppland A/B maps still show preliminary planning positions (not the real registered ones), need updating once available
-- **QA needed**: app screenshots (in app-instrux, registrera-falla, andra-observationer) were extracted from the old Instruktioner_nattfja_rilar_2026_v2.docx and matched to captions by document reading-order — Lars should do a quick visual pass to confirm each image is captioned correctly, a couple of the middle steps in the ButterflyCount sequence were matched with slightly less certainty than the rest
-- ~~QA needed: Twincolor/Multicolor parts lists (falltyper)~~ **resolved**: confirmed the docx section titles ("Finsk modell twin" / "Finsk modell multi") were correct all along; only the internal "lampa (...)" description line inside each section had the colour name swapped, not the section itself. Manual page never displayed the erroneous colour name, so no content fix was needed beyond removing the caveat.
+- **hur-du-rapporterar/** — registrera-falla, app-instrux (real screenshots), vad-som-raknas, andra-observationer
+- **efter-inrapportering/** — validering, forvantade-resultat (placeholder)
+- **kontakt-och-stod/** — whatsapp-och-kontakt, nyheter, rapportera-tekniskt-fel
 
 ### Site / hosting
-- **Navigation added**: Cayman has no built-in nav, so added a small "← Till startsidan · Alla sidor" line at the top of every page except the home page (via docs/_layouts/default.html), plus a new auto-generated overview page (docs/alla-sidor.md) listing every page — regenerates itself from site.html_pages, so it can't go stale. **Fixed a real build failure**: the first version used `where_exp`/`group_by` filters whose nested quotes broke GitHub Pages' locked older Liquid parser (confirmed via the Actions build log — "Liquid syntax error (line 5): Expected end_of_string but found id"); rewritten with plain `{% for %}`/`{% unless %}` only.
-- **Hosting**: GitHub Pages, serving from `/docs` on `main` — repo also holds DECISIONS.md/CHANGELOG.md for project bookkeeping
-- **Styling**: custom Cayman theme override (assets/css/style.scss) — header background solid accent orange/caramel #C88030, header text light/cream, links/buttons in the project's brown/orange palette
-- **Home page**: finished front-cover composite (assets/images/framsida.jpg) displayed in main content below the header; author byline with email ("Lars B. Pettersson, Biologiska institutionen, Lunds universitet · lars.pettersson@biol.lu.se") added inside the header banner via a minimal layout override (docs/_layouts/default.html)
-- Known minor cosmetic issue, not being chased further: byline font doesn't scale with Cayman's desktop breakpoint (looks fine on phone, small relative to the title on wide desktop screens)
+- GitHub Pages, serving from `/docs` on `main`
+- Custom Cayman theme override — header #C88030, cream text, project palette
+- Navigation line added via `_layouts/default.html`; auto-generated sitemap `alla-sidor.md`
+- Fixed Liquid syntax error from `where_exp`/`group_by` — rewritten with plain `{% for %}`/`{% unless %}`
 
 ### Cover illustration — finished
-- Gradient map (gradient_karta_cover_v3.jpg) — 15 sites on real Sweden boundary data, colour-graded south-to-north by rank, ideal-latitude reference bands, sticker colour palette
-- Grid-insets map (grid_insets_cover_v7.jpg) — 4-panel surround layout (Skåne 45/96, Uppland A/B), each with a real cropped OpenFreeMap Bright basemap, 1km reference squares
-- Interactive Leaflet HTML gradient map (gradient_karta_interaktiv.html) — for the online manual, separate from the print cover
-- Trap-models watercolor illustration and flat-line moth icon — received finished from Lars
-- Front cover composite — assembled and exported by Lars from his own layout tool (cover_illustration_manual_v2.jpg, later updated with more padding)
-- Point shapefile of all 36 grid points (moth_grid_points shapefile, WGS84) exported for GIS use
+- Gradient map (gradient_karta_cover_v3.jpg) — 15 sites, colour-graded, real Sweden boundary data
+- Grid-insets map (grid_insets_cover_v7.jpg) — 4-panel, real OpenFreeMap basemaps, 1km squares
+- Interactive Leaflet HTML gradient map (gradient_karta_interaktiv.html)
+- Trap-models watercolor illustration and moth icon
+- Point shapefile of all 36 grid points (WGS84)

@@ -61,4 +61,4 @@ Efter säsongen sammanställs och analyseras resultaten för att ge underlag til
 
 ## Samtycke: delning av kontaktuppgifter
 
-Vi kommer dels att skicka ut info via nyhetsbrev och e-post, om du inte vill att din e-postadress ska synas där så hör bara av dig till nattflyn@gmail.com. För att kunna ge möjlighet till snabbt utbyte av erfarenheter och hjälp med support kommer vi även ha en WhatsApp-grupp, men deltagande där är frivilligt. Dina kontaktuppgifter kan alltså komma att delas med andra deltagare i projektet via dessa två kanaler, men e-posten kan anonymiseras och WhatsApp-gruppen är frivillig.
+Vi kommer dels att skicka ut info via nyhetsbrev och e-post, om du inte vill att din e-postadress ska synas där så hör bara av dig till [nattflyn@gmail.com](mailto:nattflyn@gmail.com). För att kunna ge möjlighet till snabbt utbyte av erfarenheter och hjälp med support kommer vi även ha en WhatsApp-grupp, men deltagande där är frivilligt. Dina kontaktuppgifter kan alltså komma att delas med andra deltagare i projektet via dessa två kanaler, men e-posten kan anonymiseras och WhatsApp-gruppen är frivillig.

@@ -1,17 +1,19 @@
 ---
-title: Vad blir det av din data?
+title: Vad blir det av dina data?
 ---
 
-# Vad blir det av din data?
+# Vad blir det av dina data?
 
-*[Denna sida är tänkt att vara visuell snarare än textbaserad, med illustrationer/grafer istället för långa förklaringar. Innehåll fylls i när pilotdata finns, men strukturen läggs fast redan nu.]*
+Den här sidan kommer framför allt att vara visuell — ett sätt att se hur data flödar in under säsongen. Innehållet fylls på allteftersom pilotdata kommer in.
 
 ## Landskapseffekter
 
-Illustration av fångstheterogenitet inom rutnätet, dvs. hur mycket fångsten varierar mellan platser trots att samma fälltyp används överallt.
+Här visar vi hur mycket variation det finns i fångster mellan ljusfällor i landskapet: vad de fyra 1 km²-provytorna med 3 × 3 fällor av samma typ i Skåne och Uppland berättar. Dels den totala variationen i fångst mellan närliggande platser, dels hur den rumsliga mönstret förändras över säsongen.
 
 ## Latitudgradient
 
-Illustration av fångstframgång i relation till ljusregim (t.ex. längs breddgrad/säsong). **Viktigt**: presenteras utan uppdelning per fälltyp, för att inte skapa en snedvriden bild till förmån för eller nackdel för någon specifik fälla.
+Här illustrerar vi fångstframgång i relation till ljusregim — längs breddgraden och över säsongen — när data börjar komma in.
 
-*[Platshållarbild/mockup tills riktig pilotdata finns.]*
+## Fälltyper
+
+Vi kommer inte att löpande redovisa hur väl olika fällor presterar i förhållande till varandra under försökets gång, eftersom det riskerar att snedvrida resultaten. Det är heller inte givet att samma fälla fungerar likadant på olika breddgrader, eller att "bra" betyder detsamma i alla sammanhang. En fälla kan vara lagom effektiv i Skåne men otillräcklig i Norrbotten — eller tvärtom. De frågorna besvaras i den vetenskapliga analysen efter säsongen.

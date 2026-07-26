@@ -18,32 +18,8 @@ Se [Registrera fälla](../hur-du-rapporterar/registrera-falla.md), samma tillvä
 
 ## Praktiskt
 
-Varje rutnät har 9 fällpositioner, numrerade 1–9 med 1 i nordvästra hörnet och därefter radvis mot sydost (samma ordning som på kartorna nedan).
+Varje rutnät har 9 fällpositioner, numrerade 1–9 med 1 i nordvästra hörnet och därefter radvis mot sydost. De exakta positionerna framgår av det separata lokaldokumentet för din lokal.
 
-### Lund: Silvåkra
+## Markägarkontakter
 
-![Silvåkra, rutnät med 9 fällpositioner](../assets/images/rutnat/silvakra.jpg)
-
-*[TBD: vägbeskrivning, parkering, ev. markägarkontakt.]*
-
-### Lund: Björnstorp
-
-![Björnstorp, rutnät med 9 fällpositioner](../assets/images/rutnat/bjornstorp.jpg)
-
-*[TBD: vägbeskrivning, parkering, ev. markägarkontakt.]*
-
-### Uppsala, lokal A (preliminär plats)
-
-![Uppland A, preliminärt rutnät med 9 fällpositioner](../assets/images/rutnat/uppland-a.jpg)
-
-**Observera**: positionerna på den här kartan är en preliminär planeringsgrund, inte de faktiskt registrerade platserna. Kartan uppdateras när de riktiga positionerna är på plats.
-
-### Uppsala, lokal B (preliminär plats)
-
-![Uppland B, preliminärt rutnät med 9 fällpositioner](../assets/images/rutnat/uppland-b.jpg)
-
-**Observera**: positionerna på den här kartan är en preliminär planeringsgrund, inte de faktiskt registrerade platserna. Kartan uppdateras när de riktiga positionerna är på plats.
-
----
-
-*[TBD: vittjningsschema, ev. avvikelser mot standardprotokollet.]*
+För Skåne går kontakter med markägaren via [lars.pettersson@biol.lu.se](mailto:lars.pettersson@biol.lu.se) och för Uppland via [anders.glimskar@slu.se](mailto:anders.glimskar@slu.se).

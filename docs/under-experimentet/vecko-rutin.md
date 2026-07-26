@@ -25,8 +25,8 @@ Fällorna distribuerades till majoriteten av deltagarna under vecka 28-29, övri
 ### Utsättning
 Välj det tillfälle som passar dig praktiskt. Fällor med automatisk ljussensor (LED-Emmer standard och EntoLight-modellerna) kan ställas ut innan mörkret faller — sensorn slår på ljuset automatiskt. LED-Emmer Quad saknar sensor och lyser kontinuerligt, så den sätts lämpligen ut i skymningen. Ha alltid alla ljussensorer utanför ljushinkarna! EntoLight-modellerna fungerar möjligen powerbank och sensor i fällan men för jämförbarhetens skull — placera alla sensorer utanför fällorna.
 
-### Vittjning
-Vittja **på morgonen, helst innan klockan 10:00**, innan det hinner bli för varmt och soligt. Vid varmt väder ökar risken att fjärilarna är aktiva och flyger ut när fällan öppnas. Se till att ha rapporteringen klar samma dag om möjligt.
+### Tömning av fällor
+Töm fällorna **på morgonen, helst innan klockan 10:00**, innan det hinner bli för varmt och soligt. Vid varmt väder ökar risken att fjärilarna är aktiva och flyger ut när fällan öppnas. Vi kommer erbjuda håvar som går att ha över fällan vid tömningen, de beräknas komma första halvan av augusti. Försök helst rapportera dina observationer samma dag om möjligt.
 
 ## Hur många fällor?
 
@@ -36,11 +36,11 @@ Vittja **på morgonen, helst innan klockan 10:00**, innan det hinner bli för va
 
 ## Att tömma och rapportera
 
-Se [Så använder du appen](../hur-du-rapporterar/app-instrux.md) för hur du registrerar en vittjning steg för steg, och [Vad som räknas](../hur-du-rapporterar/vad-som-raknas.md) för vilka arter och individer som ska noteras.
+Se [Så använder du appen](../hur-du-rapporterar/app-instrux.md) för hur du registrerar en tömning steg för steg, och [Vad som räknas](../hur-du-rapporterar/vad-som-raknas.md) för vilka arter och individer som ska noteras.
 
 ## Tips och felsökning
 
 - Registrera dig aldrig i training mode — se [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)
 - Om powerbanken inte startar — se felsökningsguiden under [Fälltyper](../falltyper/oversikt.md#powerbank-felsökning-gäller-främst-quad-modulen)
 - Stöter du på tekniska problem med appen eller hemsidan — se [Rapportera ett tekniskt fel](../kontakt-och-stod/rapportera-tekniskt-fel.md)
-- Fler erfarenheter och tips samlas löpande under [Nyheter och lärdomar](../kontakt-och-stod/nyheter.md)
+- Fler erfarenheter och tips samlas löpande under [Nyheter och erfarenheter](../kontakt-och-stod/nyheter.md)

@@ -141,7 +141,7 @@ Registrera dig **inte** i training mode, varken i appen eller på hemsidan. Obse
 
 ## Nästa steg
 
-När fällan är registrerad, se [Så använder du appen](app-instrux.md) för hur du rapporterar en vittjning.
+När fällan är registrerad, se [Så använder du appen](app-instrux.md) för hur du rapporterar en tömning.
 
 ---
 
