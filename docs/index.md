@@ -10,7 +10,7 @@ Välkommen till manualen för 2026 års pilotprojekt. Den här sidan visar dig v
 
 Nattfjärilar är viktiga pollinatörer, men vi vet förvånansvärt lite om hur deras populationer mår över tid. Nu ska EU:s medlemsländer börja övervaka fyra olika pollinatörsgrupper regelbundet, och nattfjärilar är en av dem. Innan Sverige kan sätta igång på allvar behöver vi svara på några praktiska frågor — det är bestämt att de ska inventeras med ljusfällor, men vilken typ av fälla fungerar bäst? Hur starkt ljus behövs? Var i landskapet bör fällorna stå? Det är precis det som det här pilotprojektet ska ta reda på under 2026, inför att övervakningen ska börja skarpt från 2027. 
 
-Läs mer om projektet i [Bakgrund](bakgrund/oversikt.md), inklusive varför vi använder de här digitala verktygen.
+Läs mer om projektet i [Bakgrund](bakgrund/bakgrund.md), inklusive varför vi använder de här digitala verktygen.
 
 ## Vilken del av projektet är du med i?
 

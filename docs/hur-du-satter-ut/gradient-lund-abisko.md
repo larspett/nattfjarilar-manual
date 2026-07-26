@@ -16,7 +16,7 @@ Gradientdelen är pilotprojektets huvudkomponent: 15 lokaler längs ett nordsydl
 
 ![Karta över gradientlokalerna, Lund till Abisko](../assets/images/gradient_karta_cover_v3.jpg)
 
-De 12 kärnlokalerna är fördelade längs gradienten med ungefär lika stort avstånd i breddgrad. Till dessa kommer tre kompletterande lokaler med specifika syften:
+De 12 huvudlokalerna är fördelade längs gradienten med ungefär lika stort avstånd i breddgrad. Till dessa kommer tre kompletterande lokaler med specifika syften:
 
 | Nr | Lokal | Anmärkning |
 |---|---|---|
