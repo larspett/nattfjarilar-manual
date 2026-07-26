@@ -37,6 +37,10 @@ När du är igång, se [Veckorutin: sätta ut, tömma, rapportera](under-experim
 - [Validering](efter-inrapportering/validering.md)
 - [Vad blir det av dina data?](efter-inrapportering/forvantade-resultat.md)
 
+## Ge feedback
+
+Du kan ge feedback och förslag löpande på [sidan för synpunkter och förslag](kontakt-och-stod/synpunkter.md)
+
 ## Samtycke: delning av kontaktuppgifter
 
 Vi kommer dels att skicka ut info via nyhetsbrev och e-post, om du inte vill att din epost-adress ska synas där så hör bara av dig till [nattflyn@gmail.com](mailto:nattflyn@gmail.com). För att kunna ge möjlighet till snabbt utbyte av erfarenheter och hjälp med support kommer vi även ha en WhatsApp-grupp men deltagande där är frivilligt. Dina kontaktuppgifter kan alltså komma att delas med andra deltagare i projektet via dessa två kanaler men e-posten kan anonymiseras och WhatsApp-gruppen är frivillig.
