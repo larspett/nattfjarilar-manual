@@ -10,7 +10,7 @@ title: Om manualen
 Biologiska institutionen, Lunds universitet  
 [lars.pettersson@biol.lu.se](mailto:lars.pettersson@biol.lu.se)
 
-## Bidragsgivare
+## Bidrag från
 
 - Harriet Arnberg, Biologiska institutionen, Lunds universitet
 - Amanda Ernstsson, Biologiska institutionen, Lunds universitet
