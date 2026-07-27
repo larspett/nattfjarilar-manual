@@ -21,11 +21,93 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - Get a **DOI** for the manual — Pensoft/RIO Journal or Zenodo
 - validering.md step-by-step pending website UI (project filtering not yet available)
 - site-specifikationer.md: exact August campaign dates to be confirmed
-- Rutnät: driving directions/parking/landowner contact for Silvåkra and Björnstorp; vittjningsschema; Uppland A/B maps still show preliminary positions
+- Rutnät: driving directions/parking still TBD for Skåne A/B (landowner contact now added); vittjningsschema; Uppland A/B still need real registered GPS trap positions (currently uses an evenly-spaced grid derived from the official 1km squares, not placeholder/preliminary data — see v0.9.0)
 - nattflyn@gmail.com renders as mailto link inconsistently — needs find-and-replace pass
 - App/site screenshots need updating once ButterflyCount UI is fully translated to Swedish
 - LU logos on EN assembly videos still to be confirmed consistent
 - Nets for trap emptying (in production, ~2 weeks from 2026-07-24) — add note to vecko-rutin.md when distributed
+
+## v0.9.0 — 2026-07-27
+
+### Rutnät: fällpositionskartor återinförda, säkerhetsförskjutna
+Löser det som v0.8.0 loggade som ofullständigt (fel upplösning, ingen fungerande metod).
+
+- **Ny metod för skalstock**: istället för att lita på QGIS egen skalstocksdekoration (som visade fel mått), detekteras den befintliga 1×1 km-rutan direkt i varje bild via bildanalys (letar efter långa sammanhängande mörka linjer, till skillnad från text som bryts upp i korta segment) — ger en exakt pixel-till-meter-kalibrering per bild utan koordinater eller projektion inblandat. Alla fyra bilder gav samma kalibrering (~2057 px = 1000 m), vilket bekräftar att QGIS-exporterna var konsekventa. Skalstocken (250 m) ritas därefter direkt utifrån detta mått.
+- **Beskurna** till samma proportioner som originaldesignen (rutan upptar ~42% av bildbredden) och nedskalade till 1540×1540 px.
+- **Uppland A/B**: löste kvarvarande missanpassning mellan 3×3-rutnätet och 1×1 km-rutan genom att generera nya, jämnt fördelade punkter direkt från rutans egna fyra hörn (bilinjär interpolering, helt inom SWEREF99TM, ingen lat/lon-konvertering) istället för att felsöka det tidigare separat förskjutna punktlagret. Rutan och de nya punkterna är därmed garanterat i linje, eftersom punkterna är matematiskt härledda ur rutan.
+- **rutnat-lund-uppsala.md**: sidan återinförd med anonymiserade platsnamn (Skåne A/B, Uppland A/B — inga riktiga bynamn) och de säkerhetsförskjutna kartorna (`skane-a-public.jpg`, `skane-b-public.jpg`, `uppland-a-public.jpg`, `uppland-b-public.jpg`). Ny sektion **Markägarkontakter** tillagd (Skåne via Lars, Uppland via kontaktpersonen på SLU angiven i sidan). Förtydligande mening tillagd om varför kartornas geografiska placering är förskjuten.
+- **Bokföring**: de ursprungliga, oförskjutna bilderna med de faktiska positionerna flyttade till `docs/assets/images/precise-maps/` (döpta om till `skane-a/b-precise.jpg`, `uppland-a/b-precise.jpg`) och tillagda i `.gitignore` — behålls för Lars egen bokföring, pushas aldrig till det publika repot/webbplatsen.
+
+## v0.8.0 — 2026-07-27 (planned, not yet pushed)
+
+### Attempted (incomplete)
+- **rutnat-lund-uppsala.md position maps**: attempted displaced versions for all four sites
+  (Skåne A/B, Uppland A/B) — multiple approaches tried but none successfully reproduced
+  the original map style at the required resolution. Maps remain removed from the public
+  page. See DECISIONS.md and HANDOVER.md for the correct approach for next session.
+
+### Confirmed actual GPS positions
+- Skåne A (Silvåkra): 9 actual GPS positions matched to grid numbers 1-9 (confirmed)
+- Skåne B (Björnstorp): 9 actual GPS positions matched to grid numbers 1-9 (confirmed)
+- Uppland A/B: ideal positions as placeholder, actual GPS still needed
+
+### QGIS displacement scripts added to repo root
+- Skane_45_topo_displaced.py (1km W + 500m S)
+- Skane_96_topo_displaced.py (1km E + 500m S)
+- Uppland_A_topo_displaced.py (2km E + 500m S)
+- Uppland_B_topo_displaced.py (1km E + 500m S)
+
+## v0.7.0 — 2026-07-26
+
+### Ny sida: Om manualen
+- **om-manualen.md**: ny sida med bidragsgivare (Harriet Arnberg, Amanda Ernstsson,
+  Ana Teodora Ştefan), finansiering (NV-26-076242), projektpartners (LU, SLU Ekologi,
+  SLU Artdatabanken) och AI-ansvarsfriskrivning
+- Bidragsgivarkreditering tillagd på index.md direkt under omslagsbilden
+- Länk till om-manualen.md tillagd i sidfoten på index.md
+
+### Synpunkter och feedback
+- **synpunkter.md**: ny sida i kontakt-och-stod/ med inbäddad publik Google Sheets-vy
+  (Publik vy-flik, gid=502981035) med inkomna synpunkter och status
+- Google Form (https://forms.gle/5Vrf68vXGjDm9eEv9) med fem kategorier:
+  appen, hemsidan, fällutrustning, manualen, övrigt
+- Formulärlänk tillagd i whatsapp-och-kontakt.md, rapportera-tekniskt-fel.md och index.md
+- Status-dropdown: Ny, Under behandling, Åtgärdad, Vidarebefordrad, Noterat ingen åtgärd
+
+## v0.6.0 — 2026-07-26
+
+### Videor och shorts
+- **falltyper/oversikt.md**: Quad-tratt-video (F8BcoqJBZz4) och powerbank-video
+  (g6WUtUxQUdE) tillagda
+- **registrera-falla.md**: Short-video (w4kJjqw5moU) + figcaptions + instruktion-före-bild
+- **andra-observationer.md**: två Shorts — översikt (_5r1490GXuU) och ändra antal
+  (b2fphWfQHcg); appsektionen nu före hemsidessektionen
+
+### Infrastruktur
+- **style.scss**: .video-wrapper-portrait och .app-figure/figcaption tillagda
+- **_config.yml**: version och version_date variabler ({{ site.version }},
+  {{ site.version_date }}) — versionssträngen hårdkodas inte längre i enskilda sidor
+
+### Övrigt
+- **nyheter.md**: platshållarmening borttagen, ändringslogg ifylld, länktext uppdaterad
+- **site-specifikationer.md**: above.png illustration tillagd före fotoprotokolltabell
+- **reg-steg7-lampa-sparad.jpg**: spinner-bild ersatt med ren frame (t=42s)
+
+## v0.5.0 — 2026-07-26
+
+### Korrekturläsning och terminologi
+- Genomgripande korrekturläsningspass av alla sidor
+- vittjning/vittja → tömning/tömma av fällan genomfört i berörda sidor
+- Intro-mening i falltyper/oversikt.md korrigerad: alla fyra fällmodeller används
+  parallellt per gradientlokal (inte en fälla per lokal som felaktigt angavs)
+- bakgrund/oversikt.md omdöpt till bakgrund/bakgrund.md; interna länkar uppdaterade
+- rutnat-lund-uppsala.md: fällpositionskartor borttagna i avvaktan på diskussion om
+  offentlig publicering av exakta positioner; TBDs och e-posttypo åtgärdade
+- ljusberakningar.md: omskriven med ny vinkel — standardisering av störande
+  bakgrundsljus snarare än "ljusuppehåll"; populärvetenskaplig ton
+- forvantade-resultat.md: språkligt polerad
+- om-manualen.md: heading "Ansvarig utgivare" ändrad till "Framtagen av"
+- Alla mailto-länkar för nattflyn@gmail.com genomgångna och korrigerade
 
 ## v0.4.0 — 2026-07-25
 
@@ -97,74 +179,3 @@ First substantially complete version: full manual content skeleton, site hosting
 - Interactive Leaflet HTML gradient map (gradient_karta_interaktiv.html)
 - Trap-models watercolor illustration and moth icon
 - Point shapefile of all 36 grid points (WGS84)
-
-## v0.7.0 — 2026-07-26
-
-### Ny sida: Om manualen
-- **om-manualen.md**: ny sida med bidragsgivare (Harriet Arnberg, Amanda Ernstsson,
-  Ana Teodora Ştefan), finansiering (NV-26-076242), projektpartners (LU, SLU Ekologi,
-  SLU Artdatabanken) och AI-ansvarsfriskrivning
-- Bidragsgivarkreditering tillagd på index.md direkt under omslagsbilden
-- Länk till om-manualen.md tillagd i sidfoten på index.md
-
-### Synpunkter och feedback
-- **synpunkter.md**: ny sida i kontakt-och-stod/ med inbäddad publik Google Sheets-vy
-  (Publik vy-flik, gid=502981035) med inkomna synpunkter och status
-- Google Form (https://forms.gle/5Vrf68vXGjDm9eEv9) med fem kategorier:
-  appen, hemsidan, fällutrustning, manualen, övrigt
-- Formulärlänk tillagd i whatsapp-och-kontakt.md, rapportera-tekniskt-fel.md och index.md
-- Status-dropdown: Ny, Under behandling, Åtgärdad, Vidarebefordrad, Noterat ingen åtgärd
-
-## v0.6.0 — 2026-07-26
-
-### Videor och shorts
-- **falltyper/oversikt.md**: Quad-tratt-video (F8BcoqJBZz4) och powerbank-video
-  (g6WUtUxQUdE) tillagda
-- **registrera-falla.md**: Short-video (w4kJjqw5moU) + figcaptions + instruktion-före-bild
-- **andra-observationer.md**: två Shorts — översikt (_5r1490GXuU) och ändra antal
-  (b2fphWfQHcg); appsektionen nu före hemsidessektionen
-
-### Infrastruktur
-- **style.scss**: .video-wrapper-portrait och .app-figure/figcaption tillagda
-- **_config.yml**: version och version_date variabler ({{ site.version }},
-  {{ site.version_date }}) — versionssträngen hårdkodas inte längre i enskilda sidor
-
-### Övrigt
-- **nyheter.md**: platshållarmening borttagen, ändringslogg ifylld, länktext uppdaterad
-- **site-specifikationer.md**: above.png illustration tillagd före fotoprotokolltabell
-- **reg-steg7-lampa-sparad.jpg**: spinner-bild ersatt med ren frame (t=42s)
-
-## v0.5.0 — 2026-07-26
-
-### Korrekturläsning och terminologi
-- Genomgripande korrekturläsningspass av alla sidor
-- vittjning/vittja → tömning/tömma av fällan genomfört i berörda sidor
-- Intro-mening i falltyper/oversikt.md korrigerad: alla fyra fällmodeller används
-  parallellt per gradientlokal (inte en fälla per lokal som felaktigt angavs)
-- bakgrund/oversikt.md omdöpt till bakgrund/bakgrund.md; interna länkar uppdaterade
-- rutnat-lund-uppsala.md: fällpositionskartor borttagna i avvaktan på diskussion om
-  offentlig publicering av exakta positioner; TBDs och e-posttypo åtgärdade
-- ljusberakningar.md: omskriven med ny vinkel — standardisering av störande
-  bakgrundsljus snarare än "ljusuppehåll"; populärvetenskaplig ton
-- forvantade-resultat.md: språkligt polerad
-- om-manualen.md: heading "Ansvarig utgivare" ändrad till "Framtagen av"
-- Alla mailto-länkar för nattflyn@gmail.com genomgångna och korrigerade
-
-## v0.8.0 — 2026-07-27 (planned, not yet pushed)
-
-### Attempted (incomplete)
-- **rutnat-lund-uppsala.md position maps**: attempted displaced versions for all four sites
-  (Skåne A/B, Uppland A/B) — multiple approaches tried but none successfully reproduced
-  the original map style at the required resolution. Maps remain removed from the public
-  page. See DECISIONS.md and HANDOVER.md for the correct approach for next session.
-
-### Confirmed actual GPS positions
-- Skåne A (Silvåkra): 9 actual GPS positions matched to grid numbers 1-9 (confirmed)
-- Skåne B (Björnstorp): 9 actual GPS positions matched to grid numbers 1-9 (confirmed)
-- Uppland A/B: ideal positions as placeholder, actual GPS still needed
-
-### QGIS displacement scripts added to repo root
-- Skane_45_topo_displaced.py (1km W + 500m S)
-- Skane_96_topo_displaced.py (1km E + 500m S)
-- Uppland_A_topo_displaced.py (2km E + 500m S)
-- Uppland_B_topo_displaced.py (1km E + 500m S)

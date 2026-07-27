@@ -19,11 +19,10 @@ Här är en kort genomgång av hur du ändrar antal för en art direkt i appen:
 
 <div class="video-wrapper-portrait">
   <iframe
-    src="https://www.youtube.com/embed/b2fphWfQHcg?cc_load_policy=0"
+    src="https://www.youtube.com/embed/b2fphWfQHcg"
     title="Ändra antal i ButterflyCount | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>
@@ -34,11 +33,10 @@ Logga in på [butterfly-monitoring.net](https://butterfly-monitoring.net/) med s
 
 <div class="video-wrapper-portrait">
   <iframe
-    src="https://www.youtube.com/embed/_5r1490GXuU?cc_load_policy=0"
+    src="https://www.youtube.com/embed/_5r1490GXuU"
     title="Se och ändra observationer | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
-    referrerpolicy="strict-origin-when-cross-origin"
-	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>

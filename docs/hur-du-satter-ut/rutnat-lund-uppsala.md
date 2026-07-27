@@ -22,20 +22,20 @@ För Skåne går kontakter med markägaren via [lars.pettersson@biol.lu.se](mail
 
 ## Lokaler
 
-Varje rutnät har 9 fällpositioner, numrerade 1–9 med 1 i nordvästra hörnet och därefter radvis mot sydost. Kartorna nedan visar schematiska exempel på positionerna för respektive lokal i de verkliga lägenas omgivning. 
+Varje rutnät har 9 fällpositioner, numrerade 1–9 med 1 i nordvästra hörnet och därefter radvis mot sydost. Kartorna nedan visar rutnätets mönster och den typ av landskap fällorna står i, men den geografiska placeringen är medvetet förskjuten av säkerhetsskäl (för att inte röja de faktiska fällornas exakta plats) och visar alltså inte den verkliga platsen.
 
 ### Skåne A
 
-![Rutnätskarta Skåne A](../assets/images/rutnat/skane-a.jpg)
+![Rutnätskarta Skåne A](../assets/images/rutnat/skane-a-public.jpg)
 
 ### Skåne B
 
-![Rutnätskarta Skåne B](../assets/images/rutnat/skane-b.jpg)
+![Rutnätskarta Skåne B](../assets/images/rutnat/skane-b-public.jpg)
 
 ### Uppland A
 
-![Rutnätskarta Uppland A](../assets/images/rutnat/uppland-a.jpg)
+![Rutnätskarta Uppland A](../assets/images/rutnat/uppland-a-public.jpg)
 
 ### Uppland B
 
-![Rutnätskarta Uppland B](../assets/images/rutnat/uppland-b.jpg)
+![Rutnätskarta Uppland B](../assets/images/rutnat/uppland-b-public.jpg)
