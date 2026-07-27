@@ -16,10 +16,26 @@ Eftersom UV-specifikationen är identisk med **LED-Emmer standard** registreras 
 
 Se [Registrera fälla](../hur-du-rapporterar/registrera-falla.md), samma tillvägagångssätt som för gradientdelen men med endast en fälltyp att hålla reda på.
 
-## Praktiskt
-
-Varje rutnät har 9 fällpositioner, numrerade 1–9 med 1 i nordvästra hörnet och därefter radvis mot sydost. De exakta positionerna framgår av det separata lokaldokumentet för din lokal.
-
 ## Markägarkontakter
 
 För Skåne går kontakter med markägaren via [lars.pettersson@biol.lu.se](mailto:lars.pettersson@biol.lu.se) och för Uppland via [anders.glimskar@slu.se](mailto:anders.glimskar@slu.se).
+
+## Lokaler
+
+Varje rutnät har 9 fällpositioner, numrerade 1–9 med 1 i nordvästra hörnet och därefter radvis mot sydost. Kartorna nedan visar schematiska exempel på positionerna för respektive lokal i de verkliga lägenas omgivning. 
+
+### Skåne A
+
+![Rutnätskarta Skåne A](../assets/images/rutnat/skane-a.jpg)
+
+### Skåne B
+
+![Rutnätskarta Skåne B](../assets/images/rutnat/skane-b.jpg)
+
+### Uppland A
+
+![Rutnätskarta Uppland A](../assets/images/rutnat/uppland-a.jpg)
+
+### Uppland B
+
+![Rutnätskarta Uppland B](../assets/images/rutnat/uppland-b.jpg)

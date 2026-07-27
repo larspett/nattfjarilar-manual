@@ -156,3 +156,24 @@ Update it whenever a non-obvious choice is made.
   the calculated dates, and observations near the boundaries are valuable for calibration.
 - **Impact:** Column headers in the results table now read "Bakgrundsljuset stör från /
   Provtagning kan återupptas" rather than "Fällorna stängs / öppnar igen".
+
+## Rutnät position maps — displacement approach (unresolved)
+
+**2026-07-27 — Maps removed from public manual pending displaced versions**
+- **What:** The original silvakra.jpg, bjornstorp.jpg, uppland-a.jpg, uppland-b.jpg showed
+  exact GPS trap positions. These were removed from rutnat-lund-uppsala.md as a theft risk.
+  Displaced versions (fake positions on displaced basemap) were attempted but failed.
+- **Why it failed:** QGIS wide-tile exports (5.4-6.1m/px at 2166×796px or 3080×3080px)
+  cannot reproduce the ~1m/px resolution of the original Lantmäteriet basemaps. Any crop
+  to match original geographic coverage (1390m) at 5.4m/px = 257px → upscaled 6x,
+  producing pixelated/unusable backgrounds. Multiple coordinate system issues also caused
+  marker placement errors.
+- **Correct approach:** Lars must export from QGIS at 1540×1540px using "Export Map to
+  Image" with the displaced canvas viewport (same Python scripts, just different centre
+  coords) and Lantmäteriet basemap active. This gives the right resolution directly.
+  Claude then draws markers on top. QGIS displacement scripts are at repo root.
+- **Displacement amounts:** Skåne A: 1km W + 500m S; Skåne B/Uppland B: 1km E + 500m S;
+  Uppland A: 2km E + 500m S.
+- **Coordinate data:** ideal_positions_grid.csv has all 36 planned positions.
+  Actual GPS for Skåne A (9 pts) and B (9 pts) confirmed and matched to numbers 1-9.
+  Uppland A/B actual positions still needed from Lars.

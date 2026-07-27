@@ -1,135 +1,163 @@
 # Handover — Pilotprojekt nattfjärilar 2026 manual
 
 Read this first in any new session. It is the single source of truth for continuity.
-The detailed technical record lives in DECISIONS.md and CHANGELOG.md at the repo root.
+Detailed record lives in DECISIONS.md and CHANGELOG.md at the repo root.
 
 ---
 
 ## What this project is
 
 A field manual for a 2026 Swedish moth monitoring pilot, hosted as a public Jekyll/GitHub
-Pages website at https://larspett.github.io/nattfjarilar-manual/. About 15 participants
-run light traps at sites across Sweden (two sub-projects: a landscape grid in Lund/Uppsala,
-and a 15-site Lund-to-Abisko latitude gradient). The manual tells them everything they
-need to operate the traps, record catches, and report data.
+Pages website at https://larspett.github.io/nattfjarilar-manual/. ~15 participants run
+light traps at sites across Sweden (grid sub-project in Lund/Uppsala; 15-site
+Lund-to-Abisko latitude gradient). Current version: **v0.7.0 (2026-07-26)**.
 
 Lars B. Pettersson (lars.pettersson@biol.lu.se), Biologiska institutionen, Lunds
-universitet, is the project lead and sole maintainer of the manual. Manual contributors:
-Harriet Arnberg, Amanda Ernstsson, Ana Teodora Ştefan (all LU). Funded by
-Naturvårdsverket, contract NV-26-076242.
+universitet. Contributors: Harriet Arnberg, Amanda Ernstsson, Ana Teodora Ştefan (all LU).
+Funded by Naturvårdsverket, contract NV-26-076242.
 
 ---
 
-## Current state — v0.7.0 (2026-07-26)
+## Site is live and essentially complete
 
-All pages have real content. The proofreading pass is complete. The site is live and
-participants have been given the URL.
+All ~15 pages have real content. Proofreading pass completed 2026-07-26.
+Repo: github.com/larspett/nattfjarilar-manual (public)
 
-**Pages in the manual (docs/):**
-
+**Page inventory:**
 ```
-index.md                         — home page, contributor credit, feedback link
-om-manualen.md                   — contributors, funding, AI disclaimer
-alla-sidor.md                    — auto-generated sitemap (do not edit manually)
-bakgrund/
-  bakgrund.md                    — EU mandate, project rationale, tools
-falltyper/
-  oversikt.md                    — all 4 trap models, specs, videos, powerbank tips
-hur-du-satter-ut/
-  site-specifikationer.md        — trap placement rules, lottery, LUCAS photo protocol
-  gradient-lund-abisko.md        — 15 gradient sites, darkness windows
-  ljusberakningar.md             — darkness window methodology (depth page)
-  rutnat-lund-uppsala.md         — grid sub-project (maps removed pending privacy discussion)
-under-experimentet/
-  vecko-rutin.md                 — weekly routine, weather, timing, Norrfjärden special case
-hur-du-rapporterar/
-  registrera-falla.md            — trap registration (web + app walkthrough with Short video)
-  app-instrux.md                 — ButterflyCount step-by-step with screenshots
-  vad-som-raknas.md              — what counts, species scope, håv/nets note
-  andra-observationer.md         — editing observations in app and website (2 Short videos)
-efter-inrapportering/
-  validering.md                  — validation overview (step-by-step TBD, website UI pending)
-  forvantade-resultat.md         — what data will show (placeholder pending real data)
-kontakt-och-stod/
-  whatsapp-och-kontakt.md        — contact, WhatsApp, feedback form link
-  rapportera-tekniskt-fel.md     — technical bug reporting (gated, email Lars first)
-  nyheter.md                     — changelog for participants + "när det krånglar" tips
-  synpunkter.md                  — embedded Google Sheet showing feedback status
+index.md, om-manualen.md, alla-sidor.md
+bakgrund/bakgrund.md
+falltyper/oversikt.md
+hur-du-satter-ut/site-specifikationer.md, gradient-lund-abisko.md,
+  ljusberakningar.md, rutnat-lund-uppsala.md
+under-experimentet/vecko-rutin.md
+hur-du-rapporterar/registrera-falla.md, app-instrux.md,
+  vad-som-raknas.md, andra-observationer.md
+efter-inrapportering/validering.md, forvantade-resultat.md
+kontakt-och-stod/whatsapp-och-kontakt.md, rapportera-tekniskt-fel.md,
+  nyheter.md, synpunkter.md
 ```
 
-**Videos (all on YouTube, embedded in manual):**
+**Infrastructure:**
+- Jekyll/Cayman, GitHub Pages from /docs on main
+- Version: `{{ site.version }}` / `{{ site.version_date }}` in docs/_config.yml
+- CSS: docs/assets/css/style.scss — palette #C88030/#63533F/#F6EADA
+- CSS classes: `.video-wrapper` (16:9), `.video-wrapper-portrait` (9:16 280×498px),
+  `.app-screenshot` (max 260px), `.app-figure`/figcaption
+- DO NOT use where_exp/group_by in Liquid — breaks GitHub Pages' old Liquid parser
 
-Assembly (landscape 16:9, `.video-wrapper`):
+---
+
+## Open items — most urgent first
+
+### 1. Rutnät position maps (INCOMPLETE — maps currently removed from public page)
+
+The original maps (silvakra.jpg, bjornstorp.jpg, uppland-a.jpg, uppland-b.jpg) showed
+exact trap GPS positions — a theft risk. They need to be replaced with versions showing
+DISPLACED positions on blurred/displaced basemaps, matching the original style exactly.
+
+**What the original maps look like (THIS IS THE TARGET):**
+- 1540×1540px
+- Background: Lantmäteriet Topografisk Webbkarta, ~1m/px (NOT the wide 5.5m/px exports)
+- Orange circles (#C88030): actual GPS positions, radius ~35px at 1540px, white border,
+  numbered 1-9, font size ~28-30pt
+- White dots: ideal/planned grid positions, radius ~10px, dark grey border for visibility
+- Grey 1km² box outline: from edge of ideal grid positions + margin
+- Scale bar: 250m = ~167px at 1540px (= ~11% of image width)
+- 1km box = ~43-45% of image width (NOT 72% — Lars's 72% measurement was of the
+  marker cluster, not the box outline)
+- Thin brown border around whole image
+
+**What went wrong in this session:**
+Multiple attempts failed due to scale/resolution mismatch. The wide QGIS tile exports
+(5.4-6.1m/px at 2166×796px or 3080×3080px) cannot reproduce the ~1m/px resolution of
+the original maps when cropped to match the original geographic coverage. Every attempted
+crop+upscale produced either wrong scale or pixelated background.
+
+**The correct approach for next session:**
+Lars needs to export from QGIS at the SAME resolution as the original maps:
+- In QGIS, use the SAME Python script as the original (Skane_45_topo.py etc.) but with
+  the displaced coordinates (see Skane_45_topo_displaced.py etc. at repo root)
+- Export: Project → Import/Export → Export Map to Image
+- Set output to exactly 1540×1540px (matching original)
+- Ensure Lantmäteriet Topografisk Webbkarta is the active basemap
+- Export ONCE per site with decoration layers OFF (markers/decorations removed)
+- Then Claude draws orange circles, white dots, box and scale bar on top in Python
+
+**Displacement amounts (apply to QGIS Python scripts):**
+- Skåne A (Silvåkra): 1km West + 500m South → new centre lon=13.443195, lat=55.690476
+- Skåne B (Björnstorp): 1km East + 500m South → new centre lon=13.447993, lat=55.618321
+- Uppland A: 2km East + 500m South → new centre lon=17.769629, lat=59.914882
+- Uppland B: 1km East + 500m South → new centre lon=18.029761, lat=59.961888
+
+**Coordinate data available:**
+- Ideal positions (white dots, all 4 sites): docs/assets/images/rutnat/ideal_positions_grid.csv
+  (also in uploads from this session)
+- Actual GPS (orange circles): Skåne A and B confirmed (see DECISIONS.md); Uppland A/B
+  still placeholder (Lars needs to provide)
+- Skåne A actual (9 positions, already matched 1-9): see DECISIONS.md
+- Skåne B actual (9 positions, already matched 1-9): see DECISIONS.md
+
+**QGIS displacement scripts:** Skane_45_topo_displaced.py, Skane_96_topo_displaced.py,
+Uppland_A_topo_displaced.py, Uppland_B_topo_displaced.py — all at repo root.
+
+**When correct 1540×1540 basemaps are available**, use this drawing code structure:
+```python
+# R = 6378137.0
+# def wgs84_to_3857(lon, lat):
+#     x = lon * math.pi/180 * R
+#     y = math.log(math.tan(math.pi/4 + lat*math.pi/360)) * R
+#     return x, y
+# read_jgw → px_size, x0, y0
+# coord_to_px: apply dlon/dlat to displaced coords, convert to pixel via JGW
+# Draw: box (grey, width=2), white dots (r=10, dark outline), orange circles (r=35, font=28pt)
+# Scale bar: 250m = int(250/px_size) px before any scaling
+```
+
+### 2. Pending smaller items
+- **validering.md**: step-by-step pending website UI (project filtering not yet available)
+- **Arnberg & Pettersson 2026**: add link in app-instrux.md once correct doc on LU Research Portal
+- **Nets for trap emptying**: arriving ~Aug 2026, add note to vecko-rutin.md
+- **August habitat documentation campaign**: confirm exact dates, update site-specifikationer.md
+- **Uppland A/B actual GPS positions**: Lars to provide, then regenerate those two maps
+- **forvantade-resultat.md**: link to live data once pilot data arrives
+- **Videos**: re-export without burnt-in subtitles, upload .srt to YouTube; temp fix
+  `?cc_lang_pref=&cc_load_policy=0` already applied to all embed URLs
+- **kärnlokaler → huvudlokaler**: one occurrence in gradient-lund-abisko.md
+- **rutnat-lund-uppsala.md**: maps removed pending displaced versions; page has placeholder text
+
+### 3. Longer-term backlog
+- English translation (EU-Lex links: swap /SV/ → /EN/)
+- PDF export
+- DOI via RIO Journal (Pensoft)
+- References and Acknowledgements sections
+- Project email LU list alias (nattfjarilar@biol.lu.se, pending admin rights)
+
+---
+
+## YouTube videos
+
+Assembly (16:9, `.video-wrapper`):
 - LED-Emmer SV: GrrSlT9ah-M | EN: tYH48SZjwUo
 - LED-Emmer Quad SV: hnr4Ww46mHg | EN: 62XC7lHacvI
-- LED-Emmer Quad funnel/silicone SV: F8BcoqJBZz4 | EN: OJanLABY1RU
+- LED-Emmer Quad funnel SV: F8BcoqJBZz4 | EN: OJanLABY1RU
 - EntoLight SV: 7UC9A0au6N8 | EN: a891Pv0Imhc
-- Powerbank troubleshooting SV: g6WUtUxQUdE | EN: cDKbjC3L4cM
+- Powerbank SV: g6WUtUxQUdE | EN: cDKbjC3L4cM
 
-Screen recording Shorts (portrait 9:16, `.video-wrapper-portrait`):
+Screen recording Shorts (9:16, `.video-wrapper-portrait`):
 - Registrera lokal: w4kJjqw5moU
 - Se och ändra observationer: _5r1490GXuU
 - Ändra antal: b2fphWfQHcg
 
-**Feedback system:**
-- Form: https://forms.gle/5Vrf68vXGjDm9eEv9
-- Public view (embedded in synpunkter.md): Google Sheets Publik vy tab, gid=502981035
-- Status dropdown: Ny, Under behandling, Åtgärdad, Vidarebefordrad, Noterat ingen åtgärd
-
----
-
-## Open items
-
-**Waiting on external actions:**
-- Arnberg & Pettersson 2026 link in app-instrux.md → add when correct doc is on LU Research Portal
-- Exact August dates for LUCAS habitat documentation campaign → update site-specifikationer.md
-- Nets for trap emptying (arriving ~2 weeks from 2026-07-24) → add note to vecko-rutin.md
-- Validering.md step-by-step → add in August once website UI (project filtering) is ready
-- Live data links → forvantade-resultat.md once pilot data arrives
-- Uppsala A/B grid coordinates → rutnat-lund-uppsala.md once real coordinates registered
-
-**Decisions pending:**
-- Rutnät position maps: removed from public manual pending discussion with collaborators
-  (privacy/disturbance risk). Maps exist in docs/assets/images/rutnat/
-- English translation → tomorrow's session
-- PDF generation → tomorrow's session
-
-**Terminology (final pass not yet done):**
-- kärnlokaler → huvudlokaler (gradient-lund-abisko.md)
-- Any remaining vittjning/vittja occurrences
-- bakgrund/oversikt links → now bakgrund/bakgrund (index.md updated; check others)
+Feedback form: https://forms.gle/5Vrf68vXGjDm9eEv9
+Public embed (synpunkter.md): Google Sheets Publik vy tab, gid=502981035
 
 ---
 
 ## Lars's working preferences
 
-- **File handoff**: Lars works from Box Drive (synced local repo). In chat sessions,
-  produce clean files and he downloads/places them. For git, supply exact terminal commands.
-- **Terminology**: ljusmodul (not lampa), vingar (support fins), tömning av fällan
-  (not vittjning), huvudlokaler (not kärnlokaler)
-- **Avoids**: Microsoft tools, em dashes (AI detection signal)
-- **Prefers**: minimal-intervention edits with clear reasoning, clean copy-ready text blocks
-- **Language**: manual is in Swedish; responses can be in English
-
----
-
-## Technical details
-
-- Repo: github.com/larspett/nattfjarilar-manual (public)
-- Jekyll/Cayman theme, GitHub Pages, serving from /docs on main branch
-- Version in docs/_config.yml: `version` and `version_date` variables
-- Current version: v0.7.0 (2026-07-26)
-- CSS: docs/assets/css/style.scss — palette #C88030 (accent), #63533F (brown), #F6EADA (cream)
-- Custom layout: docs/_layouts/default.html — header byline, cover image, top nav
-- Liquid: use only basic constructs (for/if/unless/assign) — NO where_exp/group_by,
-  they break GitHub Pages' locked older Liquid parser
-- Video in git: NEVER — all MP4s gitignored, hosted on YouTube
-- CSS classes: `.video-wrapper` (16:9), `.video-wrapper-portrait` (9:16, 280×498px),
-  `.app-screenshot` (max-width 260px), `.app-figure` + figcaption styling
-
----
-
-## Tomorrow's agenda
-
-1. English version of the manual (parallel edition)
-2. PDF generation from manual content
+- Avoids em dashes (AI detection signal), Microsoft tools
+- Prefers minimal-intervention edits with clear reasoning
+- Terminology: ljusmodul, vingar, tömning av fällan (not vittjning)
+- Palette: cream #F6EADA, brown #63533F, accent #C88030
+- Primary Swedish regulatory sources over secondary

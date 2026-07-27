@@ -1,8 +1,8 @@
 theme: jekyll-theme-cayman
 title: Pilotprojekt nattfjärilar 2026
 description: Fältmanual för pilotprojektet med ljushinksfällor
-version: "v0.7.0"
-version_date: "2026-07-26"
+version: "v0.8.0"
+version_date: "2026-07-27"
 # Needed for GitHub Pages to correctly rewrite relative links between
 # the manual's markdown files (e.g. links to ../falltyper/oversikt.md)
 plugins:

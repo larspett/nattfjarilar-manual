@@ -149,3 +149,22 @@ First substantially complete version: full manual content skeleton, site hosting
 - forvantade-resultat.md: språkligt polerad
 - om-manualen.md: heading "Ansvarig utgivare" ändrad till "Framtagen av"
 - Alla mailto-länkar för nattflyn@gmail.com genomgångna och korrigerade
+
+## v0.8.0 — 2026-07-27 (planned, not yet pushed)
+
+### Attempted (incomplete)
+- **rutnat-lund-uppsala.md position maps**: attempted displaced versions for all four sites
+  (Skåne A/B, Uppland A/B) — multiple approaches tried but none successfully reproduced
+  the original map style at the required resolution. Maps remain removed from the public
+  page. See DECISIONS.md and HANDOVER.md for the correct approach for next session.
+
+### Confirmed actual GPS positions
+- Skåne A (Silvåkra): 9 actual GPS positions matched to grid numbers 1-9 (confirmed)
+- Skåne B (Björnstorp): 9 actual GPS positions matched to grid numbers 1-9 (confirmed)
+- Uppland A/B: ideal positions as placeholder, actual GPS still needed
+
+### QGIS displacement scripts added to repo root
+- Skane_45_topo_displaced.py (1km W + 500m S)
+- Skane_96_topo_displaced.py (1km E + 500m S)
+- Uppland_A_topo_displaced.py (2km E + 500m S)
+- Uppland_B_topo_displaced.py (1km E + 500m S)
