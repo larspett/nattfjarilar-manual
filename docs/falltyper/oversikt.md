@@ -33,7 +33,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/GrrSlT9ah-M?&cc_load_policy=0"
+    src="https://www.youtube.com/embed/GrrSlT9ah-M?cc_load_policy=0"
     title="Montering: LED-Emmer | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
