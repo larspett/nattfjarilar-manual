@@ -33,7 +33,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/GrrSlT9ah-M?cc_lang_pref=&cc_load_policy=0"
+    src="https://www.youtube.com/embed/GrrSlT9ah-M?&cc_load_policy=0"
     title="Montering: LED-Emmer | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -69,7 +69,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/hnr4Ww46mHg?cc_lang_pref=&cc_load_policy=0"
+    src="https://www.youtube.com/embed/hnr4Ww46mHg?cc_load_policy=0"
     title="Montering: LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -81,7 +81,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/F8BcoqJBZz4?cc_lang_pref=&cc_load_policy=0"
+    src="https://www.youtube.com/embed/F8BcoqJBZz4?cc_load_policy=0"
     title="Tratten till LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -115,7 +115,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/7UC9A0au6N8?cc_lang_pref=&cc_load_policy=0"
+    src="https://www.youtube.com/embed/7UC9A0au6N8?cc_load_policy=0"
     title="Montering: EntoLight (Twincolor & Multicolor) | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -147,7 +147,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/g6WUtUxQUdE?cc_lang_pref=&cc_load_policy=0"
+    src="https://www.youtube.com/embed/g6WUtUxQUdE?cc_load_policy=0"
     title="Lös powerbank-problem | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
