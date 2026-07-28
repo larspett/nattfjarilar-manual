@@ -161,6 +161,13 @@ body {
     page-break-inside: avoid;
   }
 
+  // Cap any image to the printable page width, regardless of its native pixel
+  // size — otherwise full-resolution photos print far larger than the page
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
   // Show link URLs since paper readers can't click
   .main-content a[href]::after {
     content: " (" attr(href) ")";

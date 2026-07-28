@@ -57,7 +57,80 @@ OUTPUT_DIR = Path("docs/assets/pdf")
 OUTPUT_FILE = OUTPUT_DIR / "manual.pdf"
 TMP_DIR = Path(".pdf_build_tmp")
 
-# ---------------------------------------------------------------------------
+# Update this by hand when the version bumps.
+MANUAL_VERSION = "0.9.1"
+MANUAL_VERSION_DATE = "2026-07-28"
+
+COVER_HTML = f"""
+<html>
+<head>
+<style>
+  body {{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFDF9;
+  }}
+  .cover {{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+  }}
+  h1 {{
+    color: #C88030;
+    font-size: 2.4em;
+    margin-bottom: 0.2em;
+  }}
+  h2 {{
+    color: #63533F;
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-top: 0;
+  }}
+  .meta {{
+    margin-top: 3em;
+    color: #63533F;
+    font-size: 1em;
+    line-height: 1.6;
+  }}
+</style>
+</head>
+<body>
+  <div class="cover">
+    <h1>Pilotprojekt nattfjärilar 2026</h1>
+    <h2>Fältmanual</h2>
+    <div class="meta">
+      Lars B. Pettersson<br>
+      Biologiska institutionen, Lunds universitet<br>
+      lars.pettersson@biol.lu.se<br>
+      <br>
+      Version {MANUAL_VERSION} &middot; {MANUAL_VERSION_DATE}
+    </div>
+  </div>
+</body>
+</html>
+"""
+
+
+def render_cover_page(tmp_dir: Path) -> Path:
+    """Render the generated cover page (title/version/author) to its own PDF."""
+    cover_html_path = tmp_dir / "cover.html"
+    tmp_dir.mkdir(exist_ok=True)
+    cover_html_path.write_text(COVER_HTML, encoding="utf-8")
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        page.goto("file://" + str(cover_html_path.resolve()))
+        out_path = tmp_dir / "page_cover.pdf"
+        page.pdf(path=str(out_path), format="A4", print_background=True)
+        browser.close()
+
+    return out_path
 
 
 def render_pages(base_url: str, pages: list[str], tmp_dir: Path) -> list[Path]:
@@ -118,7 +191,8 @@ def main() -> int:
             file=sys.stderr,
         )
 
-    pdf_paths = render_pages(BASE_URL, PAGES, TMP_DIR)
+    cover_path = render_cover_page(TMP_DIR)
+    pdf_paths = [cover_path] + render_pages(BASE_URL, PAGES, TMP_DIR)
     print(f"Merging {len(pdf_paths)} pages into {OUTPUT_FILE} ...")
     merge_pdfs(pdf_paths, OUTPUT_FILE)
     cleanup(TMP_DIR)
