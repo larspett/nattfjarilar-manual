@@ -17,7 +17,7 @@ Gå till inventeringen, öppna den art du vill justera under **Ändra förekomst
 
 Här är en kort genomgång av hur du ändrar antal för en art direkt i appen:
 
-<div class="video-wrapper-portrait">
+<div class="video-wrapper-portrait" data-video-url="https://youtube.com/shorts/jnCcrTTZ6Nk">
   <iframe
     src="https://www.youtube.com/embed/jnCcrTTZ6Nk"
     title="Ändra antal i ButterflyCount | Pilotprojekt nattfjärilar 2026"
@@ -32,7 +32,7 @@ Här är en kort genomgång av hur du ändrar antal för en art direkt i appen:
 
 Logga in på [butterfly-monitoring.net](https://butterfly-monitoring.net/) med samma uppgifter som i appen. Där kan du hitta din inventering (via kartan eller listan) och justera antal på samma sätt som i appen.
 
-<div class="video-wrapper-portrait">
+<div class="video-wrapper-portrait" data-video-url="https://youtube.com/shorts/HNRSdiz2gkQ"> 
   <iframe
     src="https://www.youtube.com/embed/HNRSdiz2gkQ"
     title="Se och ändra observationer | Pilotprojekt nattfjärilar 2026"

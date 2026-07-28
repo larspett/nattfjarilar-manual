@@ -52,7 +52,7 @@ Gå till [butterfly-monitoring.net/ebms-app](https://butterfly-monitoring.net/eb
 
 Här är en filmad genomgång av hela registreringsprocessen:
 
-<div class="video-wrapper-portrait">
+<div class="video-wrapper-portrait" data-video-url="https://youtube.com/shorts/VuQDXFuceyQ">
   <iframe
     src="https://www.youtube.com/embed/VuQDXFuceyQ"
     title="Registrera lokal i ButterflyCount | Pilotprojekt nattfjärilar 2026"

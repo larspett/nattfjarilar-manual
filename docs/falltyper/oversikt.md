@@ -31,7 +31,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 ![LED-Emmer standard, monterad](../assets/images/falltyper/modell1-standard-monterad.jpg)
 
-<div class="video-wrapper">
+<div class="video-wrapper" data-video-url="https://youtu.be/5JjvBHtwObg">
   <iframe
     src="https://www.youtube.com/embed/5JjvBHtwObg?cc_load_policy=1&cc_lang_pref=sv"
     title="Montering: LED-Emmer | Pilotprojekt nattfjärilar 2026"
@@ -68,7 +68,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 ![LED-Emmer 2.0 Quad, monterad](../assets/images/falltyper/modell2-quad-monterad.jpg)
 
-<div class="video-wrapper">
+<div class="video-wrapper" data-video-url="https://youtu.be/KGVXMc3BJPg">
   <iframe
     src="https://www.youtube.com/embed/KGVXMc3BJPg?cc_load_policy=1&cc_lang_pref=sv"
     title="Montering: LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
@@ -81,7 +81,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 **Obs:** LED-Emmer Quad-tratten behöver också ha små silikonprickar monterade på insidan innan den sätts ihop. Se videon nedan:
 
-<div class="video-wrapper">
+<div class="video-wrapper" data-video-url="https://youtu.be/Tq-d2nS3o_Q">
   <iframe
     src="https://www.youtube.com/embed/Tq-d2nS3o_Q?cc_load_policy=1&cc_lang_pref=sv"
     title="Tratten till LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
@@ -116,7 +116,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 ![EntoLight Twincolor, monterad](../assets/images/falltyper/modell3-twincolor-monterad.jpg)
 
-<div class="video-wrapper">
+<div class="video-wrapper" data-video-url="https://youtu.be/QI6Ho9qigdY">
   <iframe
     src="https://www.youtube.com/embed/QI6Ho9qigdY?cc_load_policy=1&cc_lang_pref=sv"
     title="Montering: EntoLight (Twincolor & Multicolor) | Pilotprojekt nattfjärilar 2026"
@@ -149,7 +149,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 - Klicka **aldrig** på powerbankens av-knapp, dra bara ur sladden, annars behöver du väcka den på nytt.
 - Om Quad-modulen inte startar via USBa: prova USBc istället, den kan dra mer ström än vad USBa klarar av.
 
-<div class="video-wrapper">
+<div class="video-wrapper" data-video-url="https://youtu.be/qp0osTlcAnk">
   <iframe
     src="https://www.youtube.com/embed/qp0osTlcAnk?cc_load_policy=1&cc_lang_pref=sv"
     title="Lös powerbank-problem | Pilotprojekt nattfjärilar 2026"
