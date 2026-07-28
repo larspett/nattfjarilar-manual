@@ -144,6 +144,7 @@ Update it whenever a non-obvious choice is made.
   pending discussion with collaborators (Anders Björkén, SLU).
 - **Impact:** Maps still exist as image assets in docs/assets/images/rutnat/ and can be
   reinstated. The two people actually running the grid already know the positions.
+- **Resolution (2026-07-27)**: rather than withhold the maps indefinitely, a displacement approach was developed and shipped instead (see entry below) — maps are back in the public manual, but show deliberately shifted, non-real positions.
 
 ## Darkness window reframe
 
@@ -157,23 +158,22 @@ Update it whenever a non-obvious choice is made.
 - **Impact:** Column headers in the results table now read "Bakgrundsljuset stör från /
   Provtagning kan återupptas" rather than "Fällorna stängs / öppnar igen".
 
-## Rutnät position maps — displacement approach (unresolved)
+## Project contact email
 
-**2026-07-27 — Maps removed from public manual pending displaced versions**
-- **What:** The original silvakra.jpg, bjornstorp.jpg, uppland-a.jpg, uppland-b.jpg showed
-  exact GPS trap positions. These were removed from rutnat-lund-uppsala.md as a theft risk.
-  Displaced versions (fake positions on displaced basemap) were attempted but failed.
-- **Why it failed:** QGIS wide-tile exports (5.4-6.1m/px at 2166×796px or 3080×3080px)
-  cannot reproduce the ~1m/px resolution of the original Lantmäteriet basemaps. Any crop
-  to match original geographic coverage (1390m) at 5.4m/px = 257px → upscaled 6x,
-  producing pixelated/unusable backgrounds. Multiple coordinate system issues also caused
-  marker placement errors.
-- **Correct approach:** Lars must export from QGIS at 1540×1540px using "Export Map to
-  Image" with the displaced canvas viewport (same Python scripts, just different centre
-  coords) and Lantmäteriet basemap active. This gives the right resolution directly.
-  Claude then draws markers on top. QGIS displacement scripts are at repo root.
+**2026-07-28 — LU list alias switchover deferred to mid-August**
+- **What:** The nattfjarilar@biol.lu.se list alias is now set up, but the manual and contact pages continue using nattflyn@gmail.com for the time being. Actual switchover targeted for mid-August.
+- **Why:** Participants are mid-season and actively using the current address; changing it now risks confusion and missed messages. Deferring to mid-August avoids disrupting an established channel during active fieldwork.
+- **Impact:** kontakt-och-stod/whatsapp-och-kontakt.md, rapportera-tekniskt-fel.md, and other pages referencing nattflyn@gmail.com stay as-is until the mid-August switch; CHANGELOG.md backlog item remains open until then.
+
+## Rutnät position maps — displacement approach RESOLVED
+
+**2026-07-27 — Displaced maps successfully completed (v0.9.0)**
+- **What:** All four displaced maps (Skåne A/B, Uppland A/B) are finished and live in rutnat-lund-uppsala.md, using real basemap exports and rigidly-shifted positions.
+- **Why the earlier attempts failed:** The first round of QGIS exports were wide, low-resolution tiles (5.4-6.1m/px) that couldn't reproduce the original basemap's sharpness — cropping to the required geographic coverage meant heavy upscaling and pixelation. Coordinate-system confusion also caused marker misplacement in a couple of early attempts.
+- **What actually fixed it:**
+  1. Lars re-exported from QGIS centered directly on each site's *displaced* coordinates (not the real ones) at proper resolution, using the Lantmäteriet Topografiska Webbkartan basemap.
+  2. Rather than trust QGIS's own scale bar decoration (which showed the wrong measurement), Claude detects the visible 1×1km reference square directly in each exported image via image analysis — finds long unbroken dark line-runs (distinguishing the square's border from text, which breaks into short segments) — giving an exact pixel-to-meter calibration per image with no coordinates or projection involved. All four images calibrated identically (~2057px = 1000m), confirming the QGIS exports were consistent. The 250m scale bar is drawn directly from that measurement.
+  3. For Uppland A/B specifically (no real GPS trap positions, only the official 1km survey squares), the 3×3 grid is generated fresh via bilinear interpolation directly from each square's own four corners (entirely within SWEREF99TM/EPSG:3006, no lat/lon conversion) rather than a separately-displaced point layer — this guarantees the grid and the square can never misalign, since the points are mathematically derived from the square itself.
+- **Impact:** Real GPS confirmed and used for Skåne A/B. Uppland A/B use the square-derived grid (not real registered trap positions — still on the backlog, see Unreleased in CHANGELOG.md). Original real-position images kept for Lars's own bookkeeping in `docs/assets/images/precise-maps/`, gitignored, never pushed publicly. Displacement amounts unchanged from below.
 - **Displacement amounts:** Skåne A: 1km W + 500m S; Skåne B/Uppland B: 1km E + 500m S;
   Uppland A: 2km E + 500m S.
-- **Coordinate data:** ideal_positions_grid.csv has all 36 planned positions.
-  Actual GPS for Skåne A (9 pts) and B (9 pts) confirmed and matched to numbers 1-9.
-  Uppland A/B actual positions still needed from Lars.

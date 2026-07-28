@@ -22,10 +22,24 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - validering.md step-by-step pending website UI (project filtering not yet available)
 - site-specifikationer.md: exact August campaign dates to be confirmed
 - Rutnät: driving directions/parking still TBD for Skåne A/B (landowner contact now added); vittjningsschema; Uppland A/B still need real registered GPS trap positions (currently uses an evenly-spaced grid derived from the official 1km squares, not placeholder/preliminary data — see v0.9.0)
-- nattflyn@gmail.com renders as mailto link inconsistently — needs find-and-replace pass
 - App/site screenshots need updating once ButterflyCount UI is fully translated to Swedish
 - LU logos on EN assembly videos still to be confirmed consistent
 - Nets for trap emptying (in production, ~2 weeks from 2026-07-24) — add note to vecko-rutin.md when distributed
+
+## v0.9.1 — 2026-07-28
+
+### YouTube-videor: undertextproblemet löst
+Efter flera försök: alla fem svenska videor (LED-Emmer, Quad, Quad-tratt/silikonprickar, EntoLight, powerbank-felsökning) laddades om med nya YouTube-ID:n och riktiga undertextspår istället för inbrända undertexter, vilket var den faktiska orsaken till att iframes laddade extremt långsamt eller misslyckades helt ("An error occurred"-fel). `referrerpolicy="strict-origin-when-cross-origin"` tillagd på alla videoinbäddningar. SV-inbäddningar använder nu `cc_load_policy=1&cc_lang_pref=sv` (undertexter på som standard) istället för tidigare `cc_load_policy=0`.
+- YouTube-kanalen flyttad till @dagfjarilar
+- **andra-observationer.md**: `referrerpolicy="strict-origin-when-cross-origin"` tillagd på de två kvarvarande Shorts-inbäddningarna (ändra antal, se och ändra observationer) — nu konsekvent med övriga videoinbäddningar
+
+### Terminologi och länkar
+- **kärnlokaler → huvudlokaler**: kvarvarande förekomst åtgärdad
+- **nattflyn@gmail.com**: find-and-replace-pass genomförd, mailto-länkar renderas nu konsekvent
+
+### Övrigt
+- **om-manualen.md**: rubriken "Bidragsgivare" ändrad till "Bidrag från"
+- Namnmiss på kartorna (rutnät) fixad
 
 ## v0.9.0 — 2026-07-27
 
