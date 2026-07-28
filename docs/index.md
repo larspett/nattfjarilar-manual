@@ -53,4 +53,4 @@ Frågor om metod, placering, WhatsApp-gruppen eller liknande, se [Kontakt och st
 
 **Aktuell version**: {{ site.version }} — {{ site.version_date }} · Den här manualen uppdateras löpande, se även [Nyheter och erfarenheter](kontakt-och-stod/nyheter.md) · För en översikt av manualen, se [Alla sidor](alla-sidor.md) · [Om manualen](om-manualen.md)
 
-📄 [Ladda ner manualen som PDF](assets/pdf/nattfjarilar-manual.pdf) — en utskriftsvänlig ögonblicksbild av sidan. Videolänkar visas som klickbara adresser istället för inbäddade spelare, och en del av layouten är inte fullt anpassad för utskrift.
+📄 [Ladda ner manualen som PDF](assets/pdf/nattfjarilar-manual.pdf) — en utskriftsvänlig ögonblicksbild av sidan. Videolänkar visas som klickbara adresser istället för inbäddade spelare, och en del av layouten (sidbrytningar, bildstorlekar) är en kompromiss mellan hur det ser ut online och möjligheten till utskrift.
