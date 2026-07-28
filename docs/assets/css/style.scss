@@ -161,11 +161,16 @@ body {
     page-break-inside: avoid;
   }
 
-  // Cap any image to the printable page width, regardless of its native pixel
-  // size — otherwise full-resolution photos print far larger than the page
+  // Cap any image to the printable page width AND a reasonable height, regardless
+  // of its native pixel size — otherwise full-resolution photos print far larger
+  // than the page and awkward page breaks push them onto near-empty pages
   img {
     max-width: 100% !important;
+    max-height: 4in !important;
+    width: auto !important;
     height: auto !important;
+    display: block;
+    margin: 0.5em auto;
   }
 
   // Show link URLs since paper readers can't click
