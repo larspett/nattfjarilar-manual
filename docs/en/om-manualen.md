@@ -1,5 +1,6 @@
 ---
 title: About this manual
+description: "Field manual for the pilot project using light-bucket traps"
 ---
 
 # About this manual

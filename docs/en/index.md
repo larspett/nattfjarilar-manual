@@ -1,5 +1,6 @@
 ---
 title: "Pilot study for monitoring moths in Sweden: landscape effects and latitude gradient"
+description: "Field manual for the pilot project using light-bucket traps"
 ---
 
 <img src="../assets/images/framsida.jpg" alt="Cover image: 2026 moth monitoring pilot project" class="header-cover-image">
