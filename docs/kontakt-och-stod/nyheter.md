@@ -18,6 +18,13 @@ Den här sidan samlar dels ändringar i manualen, dels praktiska erfarenheter so
 ## Ändringslogg
 
 ### {{ site.version }} — {{ site.version_date }}
+- Manualen kan nu laddas ner som PDF (se länken längst ner på startsidan eller på
+  Alla sidor) — praktiskt om du vill ha en offline- eller utskriftsversion. Vissa
+  saker fungerar annorlunda i PDF:en jämfört med webbsidan (videolänkar visas
+  som klickbara adresser istället för inbäddade spelare), det står förklarat
+  direkt vid nedladdningslänken.
+
+### v0.9.1 — 2026-07-28
 - Monteringsvideor för alla fyra fällmodeller tillagda under [Fälltyper](../falltyper/oversikt.md), inklusive en separat video för LED-Emmer Quad-tratten och en för powerbank-felsökning
 - Filmad genomgång av registrering i appen tillagd under [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)
 - Filmade genomgångar av att se och ändra observationer tillagda under [Ändra observationer](../hur-du-rapporterar/andra-observationer.md)

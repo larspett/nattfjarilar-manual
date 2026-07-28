@@ -26,7 +26,25 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - LU logos on EN assembly videos still to be confirmed consistent
 - Nets for trap emptying (in production, ~2 weeks from 2026-07-24) — add note to vecko-rutin.md when distributed
 
-## v0.9.1 — 2026-07-28
+## v0.10.0 — 2026-07-28
+
+### PDF export
+- Manualen kan nu laddas ner som en utskriftsvänlig PDF. Ny lokal byggprocess
+  (`build_pdf.py`, körs manuellt vid behov, ingår inte i CI) renderar samtliga
+  sidor via headless Chromium med en dedikerad utskrifts-stylesheet, genererar
+  ett titelblad (titel, version, kontaktuppgifter), och slår ihop allt till en
+  enda PDF.
+- Ny utskrifts-CSS i style.scss: döljer sidhuvud/navigering, visar
+  videoinbäddningar som klickbara länkar istället för iframes (kräver
+  `data-video-url`-attribut, tillagt på samtliga 8 videoinbäddningar),
+  begränsar bildstorlek för att undvika för stora bilder och udda sidbrytningar.
+- Nedladdningslänk med förklarande text tillagd på index.md och alla-sidor.md:
+  förtydligar att PDF:en är en ögonblicksbild och att viss layout/videolänkar
+  fungerar annorlunda i utskrift jämfört med webbsidan.
+- Filnamnet är medvetet oversionerat (`nattfjarilar-manual.pdf`) så
+  nedladdningslänken aldrig blir inaktuell vid en versionsuppdatering.
+  
+  ## v0.9.1 — 2026-07-28
 
 ### YouTube-videor: undertextproblemet löst
 Efter flera försök: alla fem svenska videor (LED-Emmer, Quad, Quad-tratt/silikonprickar, EntoLight, powerbank-felsökning) laddades om med nya YouTube-ID:n och riktiga undertextspår istället för inbrända undertexter, vilket var den faktiska orsaken till att iframes laddade extremt långsamt eller misslyckades helt ("An error occurred"-fel). `referrerpolicy="strict-origin-when-cross-origin"` tillagd på alla videoinbäddningar. SV-inbäddningar använder nu `cc_load_policy=1&cc_lang_pref=sv` (undertexter på som standard) istället för tidigare `cc_load_policy=0`.

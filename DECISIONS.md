@@ -177,3 +177,29 @@ Update it whenever a non-obvious choice is made.
 - **Impact:** Real GPS confirmed and used for Skåne A/B. Uppland A/B use the square-derived grid (not real registered trap positions — still on the backlog, see Unreleased in CHANGELOG.md). Original real-position images kept for Lars's own bookkeeping in `docs/assets/images/precise-maps/`, gitignored, never pushed publicly. Displacement amounts unchanged from below.
 - **Displacement amounts:** Skåne A: 1km W + 500m S; Skåne B/Uppland B: 1km E + 500m S;
   Uppland A: 2km E + 500m S.
+  
+  ## PDF export
+
+**2026-07-28 — Manual local build script over CI automation**
+- **What:** PDF export is a local script (`build_pdf.py`, Playwright + pypdf) run
+  manually whenever an updated PDF is wanted, not a GitHub Actions workflow
+  triggered on push.
+- **Why:** Consistent with the project's existing "keep infrastructure
+  proportional to a ~15-person audience" stance (see Manual format and platform,
+  Feedback and issue tracking above). A CI-automated rebuild would keep the PDF
+  perfectly in sync but adds a standing pipeline dependency (secrets, runner
+  updates, silent failure risk) for a document that only needs occasional
+  refreshing.
+- **Impact:** The PDF can lag behind the live site between manual runs. Rerun
+  the script and commit after any meaningful content change.
+
+**2026-07-28 — PDF filename is not versioned**
+- **What:** Output is always `docs/assets/pdf/nattfjarilar-manual.pdf`, not
+  `nattfjarilar-manual-v0.9.1.pdf`-style.
+- **Why:** A versioned filename would need the download link on index.md and
+  alla-sidor.md updated in lockstep with every version bump — an easy step to
+  forget, resulting in a dead link (404) until caught. A stable filename means
+  the PDF is simply overwritten in place; git history still preserves every
+  prior version if needed.
+- **Impact:** The PDF's own generated cover page (title, version, date) is the
+  only place version information appears on the document itself.

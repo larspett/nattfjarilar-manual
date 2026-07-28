@@ -4,7 +4,7 @@ build_pdf.py — Pilotprojekt nattfjärilar 2026 manual: PDF export
 
 Renders every page of the live manual (https://larspett.github.io/nattfjarilar-manual/)
 to PDF via a headless browser (print stylesheet applies automatically), then merges
-everything into a single docs/assets/pdf/manual.pdf.
+everything into a single versioned PDF under docs/assets/pdf/.
 
 Run this manually whenever you want to refresh the downloadable PDF (e.g. after a
 version bump). It is NOT wired into any CI — nothing runs unless you run it.
@@ -54,12 +54,16 @@ PAGES = [
 ]
 
 OUTPUT_DIR = Path("docs/assets/pdf")
-OUTPUT_FILE = OUTPUT_DIR / "manual.pdf"
-TMP_DIR = Path(".pdf_build_tmp")
 
-# Update this by hand when the version bumps.
-MANUAL_VERSION = "0.9.1"
+# Update MANUAL_VERSION/MANUAL_VERSION_DATE by hand when the version bumps —
+# these appear on the generated cover page only. The output filename is
+# intentionally NOT versioned (stays nattfjarilar-manual.pdf) so the download
+# links on index.md/alla-sidor.md never go stale on a version bump.
+MANUAL_VERSION = "0.10.0"
 MANUAL_VERSION_DATE = "2026-07-28"
+OUTPUT_FILENAME = "nattfjarilar-manual.pdf"
+OUTPUT_FILE = OUTPUT_DIR / OUTPUT_FILENAME
+TMP_DIR = Path(".pdf_build_tmp")
 
 COVER_HTML = f"""
 <html>
@@ -178,7 +182,7 @@ def merge_pdfs(pdf_paths: list[Path], output_file: Path) -> None:
 
 
 def cleanup(tmp_dir: Path) -> None:
-    for f in tmp_dir.glob("*.pdf"):
+    for f in tmp_dir.iterdir():
         f.unlink()
     tmp_dir.rmdir()
 
@@ -198,7 +202,7 @@ def main() -> int:
     cleanup(TMP_DIR)
 
     print(f"Done: {OUTPUT_FILE}")
-    print("Remember to git add/commit/push docs/assets/pdf/manual.pdf.")
+    print(f"Remember to git add/commit/push {OUTPUT_FILE}.")
     return 0
 
 
