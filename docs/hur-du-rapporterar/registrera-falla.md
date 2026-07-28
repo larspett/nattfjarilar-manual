@@ -54,7 +54,7 @@ Här är en filmad genomgång av hela registreringsprocessen:
 
 <div class="video-wrapper-portrait">
   <iframe
-    src="https://www.youtube.com/embed/w4kJjqw5moU?cc_load_policy=0"
+    src="https://www.youtube.com/embed/VuQDXFuceyQ"
     title="Registrera lokal i ButterflyCount | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"

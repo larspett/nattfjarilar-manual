@@ -33,7 +33,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/8gMXT2uHi9Q?cc_load_policy=1&cc_lang_pref=sv"
+    src="https://www.youtube.com/embed/5JjvBHtwObg?cc_load_policy=1&cc_lang_pref=sv"
     title="Montering: LED-Emmer | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -70,7 +70,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/Ri8q3RxJuLs?cc_load_policy=1&cc_lang_pref=sv"
+    src="https://www.youtube.com/embed/KGVXMc3BJPg?cc_load_policy=1&cc_lang_pref=sv"
     title="Montering: LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -83,7 +83,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/ebKkRL1649s?cc_load_policy=1&cc_lang_pref=sv"
+    src="https://www.youtube.com/embed/Tq-d2nS3o_Q?cc_load_policy=1&cc_lang_pref=sv"
     title="Tratten till LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -118,7 +118,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/jxqbZqvKwDA?cc_load_policy=1&cc_lang_pref=sv"
+    src="https://www.youtube.com/embed/QI6Ho9qigdY?cc_load_policy=1&cc_lang_pref=sv"
     title="Montering: EntoLight (Twincolor & Multicolor) | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -151,7 +151,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
 
 <div class="video-wrapper">
   <iframe
-    src="https://www.youtube.com/embed/-qIPNYsBOPY?cc_load_policy=1&cc_lang_pref=sv"
+    src="https://www.youtube.com/embed/qp0osTlcAnk?cc_load_policy=1&cc_lang_pref=sv"
     title="Lös powerbank-problem | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
