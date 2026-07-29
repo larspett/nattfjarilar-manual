@@ -19,6 +19,14 @@ This page collects both changes to the manual and practical experiences that com
 ## Changelog
 
 ### {{ site.version }} — {{ site.version_date }}
+- The manual is now also available in English! Use the button at the top of
+  the page to switch language. An English PDF version is also available to
+  download.
+- New page: [QR codes for the equipment](../hur-du-satter-ut/qr-koder-utrustning.md) —
+  in August we'll be asking for your help labelling traps, light modules, and
+  powerbanks with QR-code stickers.
+
+### v0.10.0 — 2026-07-28
 - The manual can now be downloaded as a PDF (see the link at the bottom of the home page or on
   All pages) — handy if you'd like an offline or print version. Some
   things work differently in the PDF compared with the website (video links appear

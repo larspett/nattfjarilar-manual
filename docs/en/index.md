@@ -20,7 +20,7 @@ Read more about the project in [Background](bakgrund/bakgrund.md), including why
 - **Landscape effects (Lund/Uppsala)**: you manage a grid of 3 x 3 live traps for moths, so-called light buckets, within 1 x 1 km landscape squares. The traps are the Dutch standard model LED-Emmer, but version 2.0 from Veldshop. Go to [Deploying traps: grid](hur-du-satter-ut/rutnat-lund-uppsala.md).
 - **Latitude gradient (Lund-Abisko)**: you manage one of the 15 gradient sites, where all four trap models are tested in parallel at their own trap position within the site. Sampling happens once a week. Go to [Deploying traps: gradient](hur-du-satter-ut/gradient-lund-abisko.md).
 
-See also [General principles for trap site selection and allocation](hur-du-satter-ut/site-specifikationer.md) and [Trap types](falltyper/oversikt.md).
+See also [General principles for trap site selection and allocation](hur-du-satter-ut/site-specifikationer.md), [Trap types](falltyper/oversikt.md), and [QR codes for the equipment](hur-du-satter-ut/qr-koder-utrustning.md).
 
 ## During the season
 

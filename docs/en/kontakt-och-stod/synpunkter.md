@@ -11,6 +11,8 @@ Want to leave a comment or a suggestion? Use this form:
 
 **[Submit a comment or suggestion](https://forms.gle/5Vrf68vXGjDm9eEv9)**
 
+*Please note: this form is in Swedish. If you'd prefer to write in English, just email your comment to [nattflyn@gmail.com](mailto:nattflyn@gmail.com) instead.*
+
 ## Submitted comments
 
 <div style="overflow-x: auto;">

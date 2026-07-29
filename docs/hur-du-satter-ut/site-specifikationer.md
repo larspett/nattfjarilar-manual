@@ -26,6 +26,8 @@ När platserna är valda, dra lott om vilken av de fyra fälltyperna (se [Fällt
 
 Under **en avgränsad kampanj i augusti 2026** (exakta datum meddelas) dokumenterar vi varje fällplats med ett standardiserat fotouppsättning. Dokumentationen görs en gång och behöver inte upprepas om inte lokalen förändras dramatiskt.
 
+Ungefär samtidigt kommer vi också be er hjälpa till att märka upp utrustningen med QR-koder, se [QR-koder till utrustningen](qr-koder-utrustning.md).
+
 Upplägget är anpassat från [LUCAS — Land Use/Cover Area frame Survey](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Land_use/cover_area_frame_survey_(LUCAS)), EU:s standardiserade marktäckeinventering. [LUCAS-metodiken](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=LUCAS_-_Land_use_and_land_cover_survey#:~:text=of%20landscape%20fragmentation.-,The%20LUCAS%20survey,by%20surveyors%20on%20the%20ground.) föreskriver ett liknande fotouppsättning vid varje provpunkt för att möjliggöra systematiska jämförelser av miljöer.
 
 ### Hur du tar bilderna

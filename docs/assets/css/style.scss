@@ -173,6 +173,27 @@ body {
     margin: 0.5em auto;
   }
 
+  // .app-figure is inline-block on the live site (keeps screenshots compact),
+  // but that prevents margin:auto from centering it in print — force block.
+  // .app-screenshot also sets its own non-auto margin with higher specificity
+  // than the bare `img` rule above, so it needs an explicit override too.
+  .app-figure {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+  }
+  .app-screenshot {
+    margin: 0.5em auto !important;
+  }
+
+  // Nudge the cover illustration down slightly so its top edge isn't flush
+  // against the page edge / print margin, where it was reading as cut off
+  .header-cover-image {
+    margin-top: 0.4in !important;
+    display: block;
+  }
+
   // Show link URLs since paper readers can't click
   .main-content a[href]::after {
     content: " (" attr(href) ")";

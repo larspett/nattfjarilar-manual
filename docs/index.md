@@ -19,7 +19,7 @@ Läs mer om projektet i [Bakgrund](bakgrund/bakgrund.md), inklusive varför vi a
 - **Landskapseffekter (Lund/Uppsala)**: du sköter rutnät med 3 x 3 levandefällor för nattfjärilar, s.k. ljushinkar, i 1 x 1 km landskapsrutor. Fällorna är den holländska standardmodellen LED-Emmer fast i version 2.0 från Veldshop. Gå till [Sätta ut fällor: rutnät](hur-du-satter-ut/rutnat-lund-uppsala.md).
 - **Latitudgradient (Lund-Abisko)**: du sköter en av de 15 gradientlokalerna, där alla fyra fällmodeller testas parallellt på var sin fällplats inom lokalen. Provtagning sker en gång i veckan. Gå till [Sätta ut fällor: gradient](hur-du-satter-ut/gradient-lund-abisko.md).
 
-Se även [Allmänna principer för fällplatsval och lottning](hur-du-satter-ut/site-specifikationer.md) och [Fälltyper](falltyper/oversikt.md).
+Se även [Allmänna principer för fällplatsval och lottning](hur-du-satter-ut/site-specifikationer.md), [Fälltyper](falltyper/oversikt.md) och [QR-koder till utrustningen](hur-du-satter-ut/qr-koder-utrustning.md).
 
 ## Under säsongen
 

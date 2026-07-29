@@ -18,6 +18,14 @@ Den här sidan samlar dels ändringar i manualen, dels praktiska erfarenheter so
 ## Ändringslogg
 
 ### {{ site.version }} — {{ site.version_date }}
+
+- Manualen finns nu även på engelska! Använd knappen längst upp på sidan för
+  att växla språk. En engelsk PDF-version finns också att ladda ner. Har du
+  engelsktalande kollegor eller kontakter som är intresserade av projektet,
+  tveka inte att dela den engelska versionen med dem.
+
+### v0.10.0 — 2026-07-28
+
 - Manualen kan nu laddas ner som PDF (se länken längst ner på startsidan eller på
   Alla sidor) — praktiskt om du vill ha en offline- eller utskriftsversion. Vissa
   saker fungerar annorlunda i PDF:en jämfört med webbsidan (videolänkar visas

@@ -24,6 +24,8 @@ Do you have a comment about the app, the website, the trap equipment, or the man
 
 **[Submit a comment or suggestion](https://forms.gle/5Vrf68vXGjDm9eEv9)**
 
+*Please note: this form is in Swedish. If you'd prefer, you can use [this English version](https://forms.gle/AwpVWosEwWKSpiD4A) instead — it doesn't feed into the tracking list, but sends your comment directly by email.*
+
 You can follow the status of submitted comments under [Comments and suggestions](synpunkter.md).
 
 ## If something isn't working technically

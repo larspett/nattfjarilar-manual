@@ -27,6 +27,8 @@ Once the positions are chosen, draw lots for which of the four trap types (see [
 
 During **a dedicated campaign in August 2026** (exact dates to be announced) we'll document every trap position with a standardised set of photos. This documentation is done once and doesn't need to be repeated unless the site changes dramatically.
 
+Around the same time, we'll also ask you to help label the equipment with QR codes — see [QR codes for the equipment](qr-koder-utrustning.md).
+
 The approach is adapted from [LUCAS — Land Use/Cover Area frame Survey](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Land_use/cover_area_frame_survey_(LUCAS)), the EU's standardised land-cover survey. The [LUCAS methodology](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=LUCAS_-_Land_use_and_land_cover_survey#:~:text=of%20landscape%20fragmentation.-,The%20LUCAS%20survey,by%20surveyors%20on%20the%20ground.) prescribes a similar set of photos at every sample point, to enable systematic comparisons of environments.
 
 ### How to take the photos
