@@ -205,7 +205,31 @@ Update it whenever a non-obvious choice is made.
 - **Impact:** The PDF's own generated cover page (title, version, date) is the
   only place version information appears on the document itself.
 
-## English translation
+## Methods paper (planned, not started)
+
+**2026-07-29 — Manual's DOI backlog item refined into a methods-paper plan**
+- **What:** Rather than getting a bare DOI for the manual (e.g. via Zenodo), the
+  plan is now to write a proper methods/protocol paper describing the
+  standardised workflow — the grid+gradient nested design, the
+  background-light-interference threshold methodology (ljusberakningar.md),
+  and the LUCAS-adapted habitat documentation protocol — submitted to a
+  Pensoft journal (Biodiversity Data Journal or RIO Journal), which yields a
+  citable DOI as part of publication.
+- **Why:** These three pieces are genuine, reusable methodological
+  contributions beyond just "a field manual" — worth a citable paper in their
+  own right, and folding the DOI into that publication avoids treating "get a
+  DOI" and "write a paper" as two separate backlog items when one deliverable
+  covers both. A separate validation/results paper isn't possible yet — the
+  project's own design (see forvantade-resultat.md) deliberately withholds
+  comparative trap performance until after the season, to avoid biasing
+  results — so only the methods paper is actionable now.
+- **Impact:** This has NOT been started. A future handover session should
+  initiate it, using the same dialogue-based drafting approach previously
+  used for the ADMIRE Moths application (see /areas/admire-moths.md in
+  Claude's memory for that approach, if picking this up in a fresh session).
+  Separately: the ADMIRE Moths application itself, if accepted, should also
+  result in its own RIO Journal submission — a distinct piece of work from
+  this manual's methods paper.
 
 **2026-07-29 — /en/ folder mirror instead of Jekyll's built-in i18n**
 - **What:** English pages live under a new `/en/` folder, mirroring the

@@ -15,7 +15,7 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - Add a **References** section (books, websites, apps cited/used throughout)
 - Add an **Acknowledgements** section
 - **Project contact email**: currently nattflyn@gmail.com — considering LU list alias (nattfjarilar@biol.lu.se), application submitted, pending
-- Get a **DOI** for the manual — Pensoft/RIO Journal or Zenodo
+- Get a **DOI** for the manual — on hold, plan refined 2026-07-29: rather than a bare DOI registration (Zenodo), write a proper methods/protocol paper describing the standardised workflow (grid + gradient design, background-light-interference threshold methodology, LUCAS-adapted habitat documentation protocol), submitted to a Pensoft journal (Biodiversity Data Journal or RIO Journal) — this yields the DOI as part of publication rather than as a separate step. **Not started** — a future handover session should initiate this using the same dialogue-based drafting approach previously used for the ADMIRE Moths application (see DECISIONS.md and /areas/admire-moths.md notes). Separately: the ADMIRE Moths application itself, if accepted, should also result in its own RIO Journal submission.
 - validering.md step-by-step pending website UI (project filtering not yet available)
 - site-specifikationer.md: exact August campaign dates to be confirmed
 - Rutnät: driving directions/parking still TBD for Skåne A/B (landowner contact now added); vittjningsschema; Uppland A/B still need real registered GPS trap positions (currently uses an evenly-spaced grid derived from the official 1km squares, not placeholder/preliminary data — see v0.9.0)
