@@ -48,6 +48,6 @@ Take the following **six photos at every trap position**:
 
 ![Example of the six photo directions: trap (view), sky (straight up), north, east, south, west](../../assets/images/habitatdok-foton.png)
 
-The coordinates for each trap position are captured automatically from the app when you register it, and don't need to be noted separately (see [Register your trap](../../hur-du-rapporterar/registrera-falla.md)).
+The coordinates for each trap position are captured automatically from the app when you register it, and don't need to be noted separately (see [Register your trap](../hur-du-rapporterar/registrera-falla.md)).
 
 Curious what this type of photo can show at a landscape level? The [LUCAS Statistical Atlas](https://ec.europa.eu/eurostat/statistical-atlas/?config=LUCAS) gives an interactive view of land data and land cover across the whole EU.

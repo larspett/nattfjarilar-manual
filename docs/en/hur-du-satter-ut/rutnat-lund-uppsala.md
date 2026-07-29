@@ -15,7 +15,7 @@ Since the UV specification is identical to the **LED-Emmer standard**, this trap
 
 ## Registration
 
-See [Register your trap](../../hur-du-rapporterar/registrera-falla.md) — the same approach as for the gradient part, but with only one trap type to keep track of.
+See [Register your trap](../hur-du-rapporterar/registrera-falla.md) — the same approach as for the gradient part, but with only one trap type to keep track of.
 
 ## Landowner contacts
 
