@@ -50,3 +50,5 @@ Ta följande **sex bilder vid varje fällplats**:
 Koordinaterna för varje fällplats hämtas automatiskt ur appen vid registrering och behöver inte noteras separat (se [Registrera fälla](../hur-du-rapporterar/registrera-falla.md)).
 
 Nyfiken på vad den här typen av foton kan visa på landskapsnivå? [LUCAS Statistical Atlas](https://ec.europa.eu/eurostat/statistical-atlas/?config=LUCAS) ger en interaktiv bild av markdata och marktäcke över hela EU.
+
+[![Exempel från LUCAS Statistical Atlas: markdata och marktäcke över norra Europa](../assets/images/lucas-atlas-eurostat.jpg)](https://ec.europa.eu/eurostat/statistical-atlas/?config=LUCAS)
