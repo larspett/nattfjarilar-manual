@@ -59,7 +59,7 @@ Further north, where the season is shorter and catch volumes generally lower, th
 
 ## Light pause at northern sites
 
-Five of the project's sites are far enough north that the summer night disappears completely for a period. During these weeks, traps should not be set out. The table below shows calculated pause periods based on astronomical twilight, calibrated against field observations from Norrfjärden (see [Calculating the light pause](ljusberakningar.md) for the calculation method).
+Five of the project's sites are far enough north that the summer night disappears completely for a period. During these weeks, traps should not be put out. The table below shows calculated pause periods based on astronomical twilight, calibrated against field observations from Norrfjärden (see [Calculating the light pause](ljusberakningar.md) for the calculation method).
 
 | Site | Traps close | Traps reopen | Pause |
 |---|---|---|---|

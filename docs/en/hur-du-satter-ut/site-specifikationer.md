@@ -1,9 +1,9 @@
 ---
-title: Setting out traps - general principles
+title: Putting out traps - general principles
 description: "Field manual for the pilot project using light-bucket traps"
 ---
 
-# Setting out traps: general principles
+# Putting out traps: general principles
 
 This applies to the gradient part of the project (see [Grid](rutnat-lund-uppsala.md) for that part).
 

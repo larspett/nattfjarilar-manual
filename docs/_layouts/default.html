@@ -18,7 +18,11 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <p class="header-author">Lars B. Pettersson, Biologiska institutionen, Lunds universitet · <a href="mailto:lars.pettersson@biol.lu.se">lars.pettersson@biol.lu.se</a></p>
+      {% if page.url contains "/en/" %}
+        <p class="header-author">Lars B. Pettersson, Department of Biology, Lund University · <a href="mailto:lars.pettersson@biol.lu.se">lars.pettersson@biol.lu.se</a></p>
+      {% else %}
+        <p class="header-author">Lars B. Pettersson, Biologiska institutionen, Lunds universitet · <a href="mailto:lars.pettersson@biol.lu.se">lars.pettersson@biol.lu.se</a></p>
+      {% endif %}
       {% if page.url contains "/en/" %}
         <a href="{{ page.url | remove_first: '/en' | relative_url }}" class="btn">Svenska</a>
       {% else %}
