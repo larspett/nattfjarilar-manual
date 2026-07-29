@@ -7,7 +7,7 @@ description: "Field manual for the pilot project using light-bucket traps"
 
 In this pilot project, four different light-bucket traps are used. All work on the same principle: a UV/LED light source attracts moths, which then end up in a funnel and are collected in the bucket/container underneath. If you'd like to read more about how moths are attracted to light, there's a 2024 article that worked it out using high-speed video (Fabian et al. 2024, available via [Nature Communications](https://www.nature.com/articles/s41467-024-44785-3)).
 
-At your site in the gradient project, all four models are used at the same time, placed at their own trap position within the site. Which trap type ends up at which position is decided by drawing lots (see [Putting out traps: gradient](../hur-du-satter-ut/gradient-lund-abisko.md)).
+At your site in the gradient project, all four models are used at the same time, placed at their own trap position within the site. Which trap type ends up at which position is decided by drawing lots (see [Deploying traps: gradient](../hur-du-satter-ut/gradient-lund-abisko.md)).
 
 ![All four trap models assembled and ready for deployment](../../assets/images/falltyper/modell-alla-1.jpg)
 
