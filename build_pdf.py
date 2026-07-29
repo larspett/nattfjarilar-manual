@@ -31,7 +31,7 @@ BASE_URL = "https://larspett.github.io/nattfjarilar-manual"
 
 # Page order matches the manual's actual reading order (per HANDOVER.md page
 # inventory), NOT alphabetical. Update this list if pages are added/removed/renamed.
-PAGES = [
+SV_PAGES = [
     "",  # index.md
     "/om-manualen",
     "/bakgrund/bakgrund",
@@ -53,19 +53,25 @@ PAGES = [
     "/kontakt-och-stod/synpunkter",
 ]
 
+# Same reading order, same pages, just under /en/. Keep this list in lockstep
+# with SV_PAGES above — if a Swedish page is added/removed/renamed, mirror the
+# change here once the English translation exists.
+EN_PAGES = ["/en" + p if p else "/en" for p in SV_PAGES]
+
 OUTPUT_DIR = Path("docs/assets/pdf")
 
 # Update MANUAL_VERSION/MANUAL_VERSION_DATE by hand when the version bumps —
-# these appear on the generated cover page only. The output filename is
-# intentionally NOT versioned (stays nattfjarilar-manual.pdf) so the download
-# links on index.md/alla-sidor.md never go stale on a version bump.
+# these appear on the generated cover page only. Output filenames are
+# intentionally NOT versioned so the download links on index.md/alla-sidor.md
+# (both languages) never go stale on a version bump.
 MANUAL_VERSION = "0.10.0"
 MANUAL_VERSION_DATE = "2026-07-28"
-OUTPUT_FILENAME = "nattfjarilar-manual.pdf"
-OUTPUT_FILE = OUTPUT_DIR / OUTPUT_FILENAME
 TMP_DIR = Path(".pdf_build_tmp")
 
-COVER_HTML = f"""
+
+def cover_html(title: str, subtitle: str, author_block: str) -> str:
+    """Generate the cover page HTML for one language edition."""
+    return f"""
 <html>
 <head>
 <style>
@@ -105,11 +111,10 @@ COVER_HTML = f"""
 </head>
 <body>
   <div class="cover">
-    <h1>Pilotprojekt nattfjärilar 2026</h1>
-    <h2>Fältmanual</h2>
+    <h1>{title}</h1>
+    <h2>{subtitle}</h2>
     <div class="meta">
-      Lars B. Pettersson<br>
-      Biologiska institutionen, Lunds universitet<br>
+      {author_block}<br>
       lars.pettersson@biol.lu.se<br>
       <br>
       Version {MANUAL_VERSION} &middot; {MANUAL_VERSION_DATE}
@@ -120,11 +125,37 @@ COVER_HTML = f"""
 """
 
 
-def render_cover_page(tmp_dir: Path) -> Path:
-    """Render the generated cover page (title/version/author) to its own PDF."""
+# One entry per language edition. Add/edit here if the site gets a third
+# language, or if either edition's cover text/page list needs a tweak.
+EDITIONS = [
+    {
+        "name": "Swedish",
+        "pages": SV_PAGES,
+        "output_filename": "nattfjarilar-manual.pdf",
+        "cover_html": cover_html(
+            "Pilotprojekt nattfjärilar 2026",
+            "Fältmanual",
+            "Lars B. Pettersson<br>Biologiska institutionen, Lunds universitet",
+        ),
+    },
+    {
+        "name": "English",
+        "pages": EN_PAGES,
+        "output_filename": "nattfjarilar-manual-en.pdf",
+        "cover_html": cover_html(
+            "Pilotprojekt nattfjärilar 2026",
+            "Field manual",
+            "Lars B. Pettersson<br>Department of Biology, Lund University",
+        ),
+    },
+]
+
+
+def render_cover_page(html: str, tmp_dir: Path) -> Path:
+    """Render a given cover page HTML string to its own PDF."""
     cover_html_path = tmp_dir / "cover.html"
     tmp_dir.mkdir(exist_ok=True)
-    cover_html_path.write_text(COVER_HTML, encoding="utf-8")
+    cover_html_path.write_text(html, encoding="utf-8")
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -187,6 +218,21 @@ def cleanup(tmp_dir: Path) -> None:
     tmp_dir.rmdir()
 
 
+def build_edition(edition: dict) -> Path:
+    """Build one language edition's PDF and return its output path."""
+    output_file = OUTPUT_DIR / edition["output_filename"]
+    print(f"--- Building {edition['name']} edition ---")
+
+    cover_path = render_cover_page(edition["cover_html"], TMP_DIR)
+    pdf_paths = [cover_path] + render_pages(BASE_URL, edition["pages"], TMP_DIR)
+    print(f"Merging {len(pdf_paths)} pages into {output_file} ...")
+    merge_pdfs(pdf_paths, output_file)
+    cleanup(TMP_DIR)
+
+    print(f"Done: {output_file}")
+    return output_file
+
+
 def main() -> int:
     if not (Path("docs") / "_config.yml").exists():
         print(
@@ -195,14 +241,12 @@ def main() -> int:
             file=sys.stderr,
         )
 
-    cover_path = render_cover_page(TMP_DIR)
-    pdf_paths = [cover_path] + render_pages(BASE_URL, PAGES, TMP_DIR)
-    print(f"Merging {len(pdf_paths)} pages into {OUTPUT_FILE} ...")
-    merge_pdfs(pdf_paths, OUTPUT_FILE)
-    cleanup(TMP_DIR)
+    output_files = [build_edition(edition) for edition in EDITIONS]
 
-    print(f"Done: {OUTPUT_FILE}")
-    print(f"Remember to git add/commit/push {OUTPUT_FILE}.")
+    print("\nAll editions built:")
+    for f in output_files:
+        print(f"  {f}")
+    print(f"Remember to git add/commit/push {', '.join(str(f) for f in output_files)}.")
     return 0
 
 

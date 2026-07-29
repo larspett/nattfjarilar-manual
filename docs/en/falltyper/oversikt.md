@@ -32,9 +32,9 @@ At your site in the gradient project, all four models are used at the same time,
 
 ![LED-Emmer standard, assembled](../../assets/images/falltyper/modell1-standard-monterad.jpg)
 
-<div class="video-wrapper" data-video-url="https://youtu.be/tYH48SZjwUo">
+<div class="video-wrapper" data-video-url="https://youtu.be/5JjvBHtwObg">
   <iframe
-    src="https://www.youtube.com/embed/tYH48SZjwUo?cc_load_policy=1&cc_lang_pref=en"
+    src="https://www.youtube.com/embed/5JjvBHtwObg?cc_load_policy=1&cc_lang_pref=en"
     title="Assembly: LED-Emmer | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -69,9 +69,9 @@ At your site in the gradient project, all four models are used at the same time,
 
 ![LED-Emmer 2.0 Quad, assembled](../../assets/images/falltyper/modell2-quad-monterad.jpg)
 
-<div class="video-wrapper" data-video-url="https://youtu.be/62XC7lHacvI">
+<div class="video-wrapper" data-video-url="https://youtu.be/KGVXMc3BJPg">
   <iframe
-    src="https://www.youtube.com/embed/62XC7lHacvI?cc_load_policy=1&cc_lang_pref=en"
+    src="https://www.youtube.com/embed/KGVXMc3BJPg?cc_load_policy=1&cc_lang_pref=en"
     title="Assembly: LED-Emmer Quad | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -82,9 +82,9 @@ At your site in the gradient project, all four models are used at the same time,
 
 **Note:** the LED-Emmer Quad funnel also needs small silicone dots fitted on the inside before it's assembled. See the video below:
 
-<div class="video-wrapper" data-video-url="https://youtu.be/OJanLABY1RU">
+<div class="video-wrapper" data-video-url="https://youtu.be/Tq-d2nS3o_Q">
   <iframe
-    src="https://www.youtube.com/embed/OJanLABY1RU?cc_load_policy=1&cc_lang_pref=en"
+    src="https://www.youtube.com/embed/Tq-d2nS3o_Q?cc_load_policy=1&cc_lang_pref=en"
     title="LED-Emmer Quad Funnels | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -117,9 +117,9 @@ At your site in the gradient project, all four models are used at the same time,
 
 ![EntoLight Twincolor, assembled](../../assets/images/falltyper/modell3-twincolor-monterad.jpg)
 
-<div class="video-wrapper" data-video-url="https://youtu.be/a891Pv0Imhc">
+<div class="video-wrapper" data-video-url="https://youtu.be/QI6Ho9qigdY">
   <iframe
-    src="https://www.youtube.com/embed/a891Pv0Imhc?cc_load_policy=1&cc_lang_pref=en"
+    src="https://www.youtube.com/embed/QI6Ho9qigdY?cc_load_policy=1&cc_lang_pref=en"
     title="Assembly: EntoLight (Twincolor & Multicolor) | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -150,9 +150,9 @@ At your site in the gradient project, all four models are used at the same time,
 - **Never** press the powerbank's power button — just unplug the cable, otherwise you'll need to wake it up again.
 - If the Quad module doesn't start via USBa: try USBc instead, it can draw more current than USBa can supply.
 
-<div class="video-wrapper" data-video-url="https://youtu.be/cDKbjC3L4cM">
+<div class="video-wrapper" data-video-url="https://youtu.be/qp0osTlcAnk">
   <iframe
-    src="https://www.youtube.com/embed/cDKbjC3L4cM?cc_load_policy=1&cc_lang_pref=en"
+    src="https://www.youtube.com/embed/qp0osTlcAnk?cc_load_policy=1&cc_lang_pref=en"
     title="Solve power bank issues | Pilotprojekt nattfjärilar 2026"
     frameborder="0"
     referrerpolicy="strict-origin-when-cross-origin"

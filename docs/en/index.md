@@ -1,57 +1,56 @@
 ---
-title: "Pilot study for monitoring moths in Sweden: landscape effects and latitude gradient"
-description: "Field manual for the pilot project using light-bucket traps"
+title: "Pilotförsök för övervakning av nattfjärilar i Sverige: landskapseffekter och latitudgradient"
 ---
 
-<img src="../assets/images/framsida.jpg" alt="Cover image: 2026 moth monitoring pilot project" class="header-cover-image">
+<img src="assets/images/framsida.jpg" alt="Omslagsbild: pilotprojekt nattfjärilar 2026" class="header-cover-image">
 
-Welcome to the manual for the 2026 pilot project. This page shows you where to find what you need, depending on which part of the project you're taking part in.
+Välkommen till manualen för 2026 års pilotprojekt. Den här sidan visar dig var du hittar det du behöver, beroende på vilken del av projektet du deltar i.
 
-*Produced by Lars B. Pettersson, Department of Biology, Lund University, with contributions from Harriet Arnberg, Amanda Ernstsson, and Ana Teodora Ştefan. [About this manual and the project](om-manualen.md)*
+*Framtagen av Lars B. Pettersson, Biologiska institutionen, Lunds universitet, med bidrag av Harriet Arnberg, Amanda Ernstsson och Ana Teodora Ştefan. [Om manualen och projektet](om-manualen.md)*
 
-## Why are we doing this?
+## Varför gör vi detta?
 
-Moths are important pollinators, but we know surprisingly little about how their populations are faring over time. EU member states are now starting to regularly monitor four different pollinator groups, and moths are one of them. Before Sweden can get properly under way, we need to answer a few practical questions — it has been decided that they will be surveyed using light traps, but which type of trap works best? How strong does the light need to be? Where in the landscape should the traps be placed? That's exactly what this pilot project aims to find out during 2026, ahead of monitoring starting in earnest from 2027.
+Nattfjärilar är viktiga pollinatörer, men vi vet förvånansvärt lite om hur deras populationer mår över tid. Nu ska EU:s medlemsländer börja övervaka fyra olika pollinatörsgrupper regelbundet, och nattfjärilar är en av dem. Innan Sverige kan sätta igång på allvar behöver vi svara på några praktiska frågor — det är bestämt att de ska inventeras med ljusfällor, men vilken typ av fälla fungerar bäst? Hur starkt ljus behövs? Var i landskapet bör fällorna stå? Det är precis det som det här pilotprojektet ska ta reda på under 2026, inför att övervakningen ska börja skarpt från 2027. 
 
-Read more about the project in [Background](bakgrund/bakgrund.md), including why we use these particular digital tools.
+Läs mer om projektet i [Bakgrund](bakgrund/bakgrund.md), inklusive varför vi använder de här digitala verktygen.
 
-## Which part of the project are you involved in?
+## Vilken del av projektet är du med i?
 
-- **Landscape effects (Lund/Uppsala)**: you manage a grid of 3 x 3 live traps for moths, so-called light buckets, within 1 x 1 km landscape squares. The traps are the Dutch standard model LED-Emmer, but version 2.0 from Veldshop. Go to [Deploying traps: grid](hur-du-satter-ut/rutnat-lund-uppsala.md).
-- **Latitude gradient (Lund-Abisko)**: you manage one of the 15 gradient sites, where all four trap models are tested in parallel at their own trap position within the site. Sampling happens once a week. Go to [Deploying traps: gradient](hur-du-satter-ut/gradient-lund-abisko.md).
+- **Landskapseffekter (Lund/Uppsala)**: du sköter rutnät med 3 x 3 levandefällor för nattfjärilar, s.k. ljushinkar, i 1 x 1 km landskapsrutor. Fällorna är den holländska standardmodellen LED-Emmer fast i version 2.0 från Veldshop. Gå till [Sätta ut fällor: rutnät](hur-du-satter-ut/rutnat-lund-uppsala.md).
+- **Latitudgradient (Lund-Abisko)**: du sköter en av de 15 gradientlokalerna, där alla fyra fällmodeller testas parallellt på var sin fällplats inom lokalen. Provtagning sker en gång i veckan. Gå till [Sätta ut fällor: gradient](hur-du-satter-ut/gradient-lund-abisko.md).
 
-See also [General principles for trap site selection and allocation](hur-du-satter-ut/site-specifikationer.md) and [Trap types](falltyper/oversikt.md).
+Se även [Allmänna principer för fällplatsval och lottning](hur-du-satter-ut/site-specifikationer.md) och [Fälltyper](falltyper/oversikt.md).
 
-## During the season
+## Under säsongen
 
-Once you're up and running, see [Weekly routine: putting out, emptying, reporting](under-experimentet/vecko-rutin.md) for the ongoing work.
+När du är igång, se [Veckorutin: sätta ut, tömma, rapportera](under-experimentet/vecko-rutin.md) för det löpande arbetet.
 
-## How to report
+## Hur du rapporterar
 
-- [Register your trap](hur-du-rapporterar/registrera-falla.md)
-- [How to use the app](hur-du-rapporterar/app-instrux.md)
-- [What should be reported](hur-du-rapporterar/vad-som-raknas.md)
-- [Editing observations afterwards](hur-du-rapporterar/andra-observationer.md)
+- [Registrera fälla](hur-du-rapporterar/registrera-falla.md)
+- [Så använder du appen](hur-du-rapporterar/app-instrux.md)
+- [Vad som ska rapporteras](hur-du-rapporterar/vad-som-raknas.md)
+- [Ändra observationer i efterhand](hur-du-rapporterar/andra-observationer.md)
 
-## After reporting
+## Efter inrapportering
 
-- [Validation](efter-inrapportering/validering.md)
-- [What happens to your data?](efter-inrapportering/forvantade-resultat.md)
+- [Validering](efter-inrapportering/validering.md)
+- [Vad blir det av dina data?](efter-inrapportering/forvantade-resultat.md)
 
-## Give feedback
+## Ge feedback
 
-You can give feedback and suggestions on an ongoing basis on [the page for comments and suggestions](kontakt-och-stod/synpunkter.md)
+Du kan ge feedback och förslag löpande på [sidan för synpunkter och förslag](kontakt-och-stod/synpunkter.md)
 
-## Consent: sharing of contact details
+## Samtycke: delning av kontaktuppgifter
 
-We will partly send out information via newsletter and email — if you don't want your email address to be visible there, just let us know at [nattflyn@gmail.com](mailto:nattflyn@gmail.com). To make it possible to quickly exchange experiences and get help with support, we will also have a WhatsApp group, but participation there is voluntary. Your contact details may therefore be shared with other participants in the project via these two channels, but your email can be anonymised and the WhatsApp group is optional.
+Vi kommer dels att skicka ut info via nyhetsbrev och e-post, om du inte vill att din epost-adress ska synas där så hör bara av dig till [nattflyn@gmail.com](mailto:nattflyn@gmail.com). För att kunna ge möjlighet till snabbt utbyte av erfarenheter och hjälp med support kommer vi även ha en WhatsApp-grupp men deltagande där är frivilligt. Dina kontaktuppgifter kan alltså komma att delas med andra deltagare i projektet via dessa två kanaler men e-posten kan anonymiseras och WhatsApp-gruppen är frivillig.
 
-## Contact and support
+## Kontakt och stöd
 
-Questions about method, placement, the WhatsApp group, or similar — see [Contact and support](kontakt-och-stod/whatsapp-och-kontakt.md).
+Frågor om metod, placering, WhatsApp-gruppen eller liknande, se [Kontakt och stöd](kontakt-och-stod/whatsapp-och-kontakt.md).
 
 ---
 
-**Current version**: {{ site.version }} — {{ site.version_date }} · This manual is updated on an ongoing basis, see also [News and experiences](kontakt-och-stod/nyheter.md) · For an overview of the manual, see [All pages](alla-sidor.md) · [About this manual](om-manualen.md)
+**Aktuell version**: {{ site.version }} — {{ site.version_date }} · Den här manualen uppdateras löpande, se även [Nyheter och erfarenheter](kontakt-och-stod/nyheter.md) · För en översikt av manualen, se [Alla sidor](alla-sidor.md) · [Om manualen](om-manualen.md)
 
-📄 [Download the manual as PDF](../assets/pdf/nattfjarilar-manual.pdf) — a print-friendly snapshot of the page. Video links are shown as clickable addresses instead of embedded players, and some of the layout (page breaks, image sizes) is a compromise between how it looks online and the ability to print it.
+📄 [Ladda ner manualen som PDF](assets/pdf/nattfjarilar-manual.pdf) — en utskriftsvänlig ögonblicksbild av sidan. Videolänkar visas som klickbara adresser istället för inbäddade spelare, och en del av layouten (sidbrytningar, bildstorlekar) är en kompromiss mellan hur det ser ut online och möjligheten till utskrift.
