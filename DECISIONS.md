@@ -68,7 +68,7 @@ Update it whenever a non-obvious choice is made.
 **2026-07 — Video files never go in git; hosted on YouTube instead**
 - **What:** All MP4 assembly videos are hosted as public YouTube videos and embedded via iframe. Local source files live in `docs/assets/videos/` but are gitignored. The 100MB GitHub file size limit makes large MP4s impossible; even files under the limit cause history bloat.
 - **Why:** Learned the hard way when a 238MB EntoLight video caused a rejected push. YouTube is the right tool for video hosting.
-- **Impact:** `docs/assets/videos/*_LU.mp4` is gitignored. EN edition videos stay local-only until that edition is underway.
+- **Impact:** `docs/assets/videos/*_LU.mp4` is gitignored. The English edition (completed 2026-07-29) reuses the same YouTube-hosted videos as the Swedish edition — each video already carries both language caption tracks, so no separate EN uploads were needed (see English translation section below).
 
 **2026-07 — Version managed via _config.yml variables**
 - **What:** `version` and `version_date` are set in `docs/_config.yml` and referenced in pages as `{{ site.version }}` and `{{ site.version_date }}`.
@@ -157,6 +157,7 @@ Update it whenever a non-obvious choice is made.
   the calculated dates, and observations near the boundaries are valuable for calibration.
 - **Impact:** Column headers in the results table now read "Bakgrundsljuset stör från /
   Provtagning kan återupptas" rather than "Fällorna stängs / öppnar igen".
+- **Follow-up (2026-07-29)**: the English translation of this page uses "background light interference" rather than a literal "disturbing"/"disruptive" translation of "störande" — see English translation section below for the reasoning.
 
 ## Project contact email
 
@@ -177,8 +178,8 @@ Update it whenever a non-obvious choice is made.
 - **Impact:** Real GPS confirmed and used for Skåne A/B. Uppland A/B use the square-derived grid (not real registered trap positions — still on the backlog, see Unreleased in CHANGELOG.md). Original real-position images kept for Lars's own bookkeeping in `docs/assets/images/precise-maps/`, gitignored, never pushed publicly. Displacement amounts unchanged from below.
 - **Displacement amounts:** Skåne A: 1km W + 500m S; Skåne B/Uppland B: 1km E + 500m S;
   Uppland A: 2km E + 500m S.
-  
-  ## PDF export
+
+## PDF export
 
 **2026-07-28 — Manual local build script over CI automation**
 - **What:** PDF export is a local script (`build_pdf.py`, Playwright + pypdf) run
@@ -203,3 +204,54 @@ Update it whenever a non-obvious choice is made.
   prior version if needed.
 - **Impact:** The PDF's own generated cover page (title, version, date) is the
   only place version information appears on the document itself.
+
+## English translation
+
+**2026-07-29 — /en/ folder mirror instead of Jekyll's built-in i18n**
+- **What:** English pages live under a new `/en/` folder, mirroring the
+  Swedish `docs/` structure exactly (e.g. `en/falltyper/oversikt.md`
+  parallels `falltyper/oversikt.md`).
+- **Why:** Jekyll's native internationalization typically relies on plugins
+  not in GitHub Pages' safe-mode whitelist. A plain folder mirror needs no
+  plugins at all, just standard Jekyll page generation, and keeps the two
+  languages' content clearly separated.
+- **Impact:** Every Swedish page has a predictable English counterpart at
+  `en/<same path>`. Adding a future third language would follow the same
+  pattern (e.g. `/de/`).
+
+**2026-07-29 — Single shared header toggle instead of per-page language links**
+- **What:** One Liquid conditional in docs/_layouts/default.html (checking
+  whether `page.url` contains `/en/`) drives the header's language-switch
+  button and the page-top-nav breadcrumb, rather than adding a manual link
+  to every individual page.
+- **Why:** Touching one shared layout file is far lower-risk than editing
+  all ~38 pages (19 Swedish + 19 English) individually, and guarantees the
+  toggle behaves consistently everywhere.
+- **Impact:** Any future page added to either language tree automatically
+  gets a working toggle with no extra work, as long as it lives at the
+  mirrored path.
+
+**2026-07-29 — YouTube videos: shared dual-caption videos, no separate EN uploads**
+- **What:** English pages reuse the exact same YouTube video IDs as the
+  Swedish pages, rather than pointing at separate English-only uploads.
+- **Why:** Each video already carries both Swedish and English caption
+  tracks from the original 2026-07-27 re-encoding fix. Attempting to force
+  a specific caption language via the `cc_lang_pref` URL parameter turned
+  out to be unreliable — YouTube remembers a viewer's own last-selected
+  caption language per account/browser and overrides the URL hint once a
+  viewer has ever changed it manually.
+- **Impact:** Viewers on either language page may need to manually pick
+  their preferred subtitle language via the video's own CC button the
+  first time; there is no reliable way to auto-select it from the embed.
+
+**2026-07-29 — English feedback form separate from the Swedish tracking sheet**
+- **What:** English speakers get a separate Google Form (linked from
+  synpunkter.md and whatsapp-och-kontakt.md) that emails submissions
+  directly, rather than feeding into the same "Publik vy" status-tracking
+  spreadsheet the Swedish form uses.
+- **Why:** After some friction getting a reliable Form-to-Email add-on
+  working, keeping the English form's output separate (email only) avoided
+  needing to merge two language sources into one tracked sheet.
+- **Impact:** English submissions won't show a visible status on
+  synpunkter.md the way Swedish ones do; Lars sees and handles them via
+  email individually.

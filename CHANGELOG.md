@@ -12,9 +12,6 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 ## Unreleased
 
 ### Planned / backlog
-- Add an option to export/print the whole site as a PDF manual (discussed early on, for participants who prefer offline/print over the website)
-- Full English translation of the site as a parallel version
-  - Note: EU-Lex regulation links (used in Bakgrund) switch language by swapping `/SV/` for `/EN/` in the URL, e.g. `.../legal-content/EN/TXT/HTML/?uri=OJ:L_202401991` — same pattern for both cited regulations
 - Add a **References** section (books, websites, apps cited/used throughout)
 - Add an **Acknowledgements** section
 - **Project contact email**: currently nattflyn@gmail.com — considering LU list alias (nattfjarilar@biol.lu.se), application submitted, pending
@@ -25,6 +22,39 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
 - App/site screenshots need updating once ButterflyCount UI is fully translated to Swedish
 - LU logos on EN assembly videos still to be confirmed consistent
 - Nets for trap emptying (in production, ~2 weeks from 2026-07-24) — add note to vecko-rutin.md when distributed
+
+## v0.11.0 — 2026-07-29
+
+### English translation
+- Full English translation of the manual added under a new `/en/` section,
+  mirroring the entire Swedish page structure 1:1 (19 pages: index, om-manualen,
+  bakgrund, falltyper, all four hur-du-satter-ut pages, all four
+  hur-du-rapporterar pages, both efter-inrapportering pages, all four
+  kontakt-och-stod pages, vecko-rutin, alla-sidor).
+- New EN/SV language toggle in the site header (docs/_layouts/default.html),
+  plus dual home/alla-sidor links in the page-top-nav breadcrumb.
+- EU-Lex regulation links in bakgrund.md swapped to their `/EN/` equivalents
+  on the English page.
+- English feedback form added (separate from the Swedish Google Form/sheet
+  tracker) — linked from synpunkter.md and whatsapp-och-kontakt.md.
+
+### PDF export
+- `build_pdf.py` now builds both language editions in one run
+  (`nattfjarilar-manual.pdf` and `nattfjarilar-manual-en.pdf`), each with its
+  own generated cover page. English download links on index.md/alla-sidor.md
+  now point to the English-specific PDF instead of the shared Swedish one.
+
+### Fixes
+- Corrected several English video embeds in falltyper/oversikt.md that were
+  pointing at nonexistent video IDs — now use the same real IDs as the
+  Swedish page (each video already carries both language caption tracks;
+  viewers select their preferred subtitle language manually via the CC
+  button, since YouTube's `cc_lang_pref` parameter proved unreliable at
+  forcing a specific language).
+- Various English terminology refinements: "put out"/"putting out" vs.
+  "deploying" (matching the two registers "sätta ut" spans in Swedish but
+  English distinguishes), and "background light interference" instead of
+  the earlier, misleadingly emotional "disturbing background light".
 
 ## v0.10.0 — 2026-07-28
 
@@ -43,8 +73,8 @@ Format: `vMAJOR.MINOR.PATCH — YYYY-MM-DD`
   fungerar annorlunda i utskrift jämfört med webbsidan.
 - Filnamnet är medvetet oversionerat (`nattfjarilar-manual.pdf`) så
   nedladdningslänken aldrig blir inaktuell vid en versionsuppdatering.
-  
-  ## v0.9.1 — 2026-07-28
+
+## v0.9.1 — 2026-07-28
 
 ### YouTube-videor: undertextproblemet löst
 Efter flera försök: alla fem svenska videor (LED-Emmer, Quad, Quad-tratt/silikonprickar, EntoLight, powerbank-felsökning) laddades om med nya YouTube-ID:n och riktiga undertextspår istället för inbrända undertexter, vilket var den faktiska orsaken till att iframes laddade extremt långsamt eller misslyckades helt ("An error occurred"-fel). `referrerpolicy="strict-origin-when-cross-origin"` tillagd på alla videoinbäddningar. SV-inbäddningar använder nu `cc_load_policy=1&cc_lang_pref=sv` (undertexter på som standard) istället för tidigare `cc_load_policy=0`.
