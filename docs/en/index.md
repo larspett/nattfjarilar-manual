@@ -13,7 +13,7 @@ Welcome to the manual for the 2026 pilot project. This page shows you where to f
 
 Moths are important pollinators, but we know surprisingly little about how their populations are faring over time. EU member states are now starting to regularly monitor four different pollinator groups, and moths are one of them. Before Sweden can get properly under way, we need to answer a few practical questions — it has been decided that they will be surveyed using light traps, but which type of trap works best? How strong does the light need to be? Where in the landscape should the traps be placed? That's exactly what this pilot project aims to find out during 2026, ahead of monitoring starting in earnest from 2027.
 
-Read more about the project in [Background](../bakgrund/bakgrund.md), including why we use these particular digital tools.
+Read more about the project in [Background](bakgrund/bakgrund.md), including why we use these particular digital tools.
 
 ## Which part of the project are you involved in?
 
@@ -24,7 +24,7 @@ See also [General principles for trap site selection and allocation](hur-du-satt
 
 ## During the season
 
-Once you're up and running, see [Weekly routine: putting out, emptying, reporting](../under-experimentet/vecko-rutin.md) for the ongoing work.
+Once you're up and running, see [Weekly routine: putting out, emptying, reporting](under-experimentet/vecko-rutin.md) for the ongoing work.
 
 ## How to report
 
@@ -35,12 +35,12 @@ Once you're up and running, see [Weekly routine: putting out, emptying, reportin
 
 ## After reporting
 
-- [Validation](../efter-inrapportering/validering.md)
-- [What happens to your data?](../efter-inrapportering/forvantade-resultat.md)
+- [Validation](efter-inrapportering/validering.md)
+- [What happens to your data?](efter-inrapportering/forvantade-resultat.md)
 
 ## Give feedback
 
-You can give feedback and suggestions on an ongoing basis on [the page for comments and suggestions](../kontakt-och-stod/synpunkter.md)
+You can give feedback and suggestions on an ongoing basis on [the page for comments and suggestions](kontakt-och-stod/synpunkter.md)
 
 ## Consent: sharing of contact details
 
@@ -48,10 +48,10 @@ We will partly send out information via newsletter and email — if you don't wa
 
 ## Contact and support
 
-Questions about method, placement, the WhatsApp group, or similar — see [Contact and support](../kontakt-och-stod/whatsapp-och-kontakt.md).
+Questions about method, placement, the WhatsApp group, or similar — see [Contact and support](kontakt-och-stod/whatsapp-och-kontakt.md).
 
 ---
 
-**Current version**: {{ site.version }} — {{ site.version_date }} · This manual is updated on an ongoing basis, see also [News and experiences](../kontakt-och-stod/nyheter.md) · For an overview of the manual, see [All pages](alla-sidor.md) · [About this manual](om-manualen.md)
+**Current version**: {{ site.version }} — {{ site.version_date }} · This manual is updated on an ongoing basis, see also [News and experiences](kontakt-och-stod/nyheter.md) · For an overview of the manual, see [All pages](alla-sidor.md) · [About this manual](om-manualen.md)
 
 📄 [Download the manual as PDF](../assets/pdf/nattfjarilar-manual.pdf) — a print-friendly snapshot of the page. Video links are shown as clickable addresses instead of embedded players, and some of the layout (page breaks, image sizes) is a compromise between how it looks online and the ability to print it.

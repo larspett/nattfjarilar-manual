@@ -79,4 +79,4 @@ See also [What should be reported](vad-som-raknas.md) and [Editing observations]
 
 ---
 
-*Did you run into a technical problem in the app or on the website that isn't covered here? See [Report a technical issue](../../kontakt-och-stod/rapportera-tekniskt-fel.md) for how to proceed.*
+*Did you run into a technical problem in the app or on the website that isn't covered here? See [Report a technical issue](../kontakt-och-stod/rapportera-tekniskt-fel.md) for how to proceed.*

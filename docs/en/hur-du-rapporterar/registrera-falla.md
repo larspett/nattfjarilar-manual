@@ -147,4 +147,4 @@ Once the trap is registered, see [How to use the app](app-instrux.md) for how to
 
 ---
 
-*Did you run into a technical problem during registration that isn't covered here? See [Report a technical issue](../../kontakt-och-stod/rapportera-tekniskt-fel.md) for how to proceed.*
+*Did you run into a technical problem during registration that isn't covered here? See [Report a technical issue](../kontakt-och-stod/rapportera-tekniskt-fel.md) for how to proceed.*

@@ -33,4 +33,4 @@ Parts of the content on this website have been produced with the support of gene
 
 ## Version history
 
-See [News and experiences](../kontakt-och-stod/nyheter.md) for an ongoing changelog.
+See [News and experiences](kontakt-och-stod/nyheter.md) for an ongoing changelog.

@@ -10,7 +10,7 @@ The gradient part is the pilot project's main component: 15 sites along a north-
 ## What applies if you're taking part in the gradient section
 
 - See [General principles for trap site selection and allocation](site-specifikationer.md) for how traps are placed and were assigned to your site
-- Sampling happens **once a week** — see [Weekly routine](../../under-experimentet/vecko-rutin.md) for when to start and practical details, including any pauses during light nights at northern sites
+- Sampling happens **once a week** — see [Weekly routine](../under-experimentet/vecko-rutin.md) for when to start and practical details, including any pauses during light nights at northern sites
 - All four trap types must be registered separately in the app/on the website, see [Register your trap](../hur-du-rapporterar/registrera-falla.md)
 
 ## The sites
