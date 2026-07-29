@@ -25,10 +25,10 @@ Vi återkommer med bilder på de mindre klisterlapparna för ljusmodulerna så s
 
 Vill du dubbelkolla att en etikett hamnat på rätt enhet kan du skanna QR-koden med mobilen. Du får då upp information om enheten, till exempel:
 
-> **Enhetsinformation**
-> **Enhets-ID:** nfj-0001
-> **Typ av enhet:** ljusfälla
-> **Tillverkare:** EntoLight
+> **Enhetsinformation**<br>
+> **Enhets-ID:** nfj-0001<br>
+> **Typ av enhet:** ljusfälla<br>
+> **Tillverkare:** EntoLight<br>
 > **Modell:** Twincolor LED-trattfälla (7 W ljusmodul) + fotocellsstyrning + GaN-laddare (65 W)
 
 ## Varför QR-koder?

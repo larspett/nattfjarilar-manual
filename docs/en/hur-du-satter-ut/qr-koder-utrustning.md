@@ -26,10 +26,10 @@ We'll follow up with photos of the smaller light-module stickers as soon as we r
 
 If you'd like to double-check that a label has ended up on the right unit, you can scan the QR code with your phone. This will bring up information about the unit, for example:
 
-> **Device information**
-> **Device ID:** nfj-0001
-> **Device type:** light trap
-> **Manufacturer:** EntoLight
+> **Device information**<br>
+> **Device ID:** nfj-0001<br>
+> **Device type:** light trap<br>
+> **Manufacturer:** EntoLight<br>
 > **Model:** Twincolor LED funnel trap (7 W light module) + photocell controller + GaN charger (65 W)
 
 ## Why QR codes?
