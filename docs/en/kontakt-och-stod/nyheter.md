@@ -30,7 +30,7 @@ This page collects both changes to the manual and practical experiences that com
 - Filmed walkthrough of registering in the app added under [Register your trap](../hur-du-rapporterar/registrera-falla.md)
 - Filmed walkthroughs of viewing and editing observations added under [Editing observations](../hur-du-rapporterar/andra-observationer.md)
 - Page on the [site documentation protocol](../hur-du-satter-ut/site-specifikationer.md) updated with illustrations and LUCAS methodology
-- New in-depth page: [Disturbing background light and sampling conditions](../hur-du-satter-ut/ljusberakningar.md) — formula, calibration, and diagram for northern sites
+- New in-depth page: [Background light interference and sampling conditions](../hur-du-satter-ut/ljusberakningar.md) — formula, calibration, and diagram for northern sites
 
 ### v0.3.0 — 2026-07-24
 - Step-by-step guide for registering a trap directly in the app added under [Register your trap](../hur-du-rapporterar/registrera-falla.md)
