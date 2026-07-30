@@ -64,8 +64,8 @@ OUTPUT_DIR = Path("docs/assets/pdf")
 # these appear on the generated cover page only. Output filenames are
 # intentionally NOT versioned so the download links on index.md/alla-sidor.md
 # (both languages) never go stale on a version bump.
-MANUAL_VERSION = "0.10.0"
-MANUAL_VERSION_DATE = "2026-07-28"
+MANUAL_VERSION = "0.11.0"
+MANUAL_VERSION_DATE = "2026-07-29"
 TMP_DIR = Path(".pdf_build_tmp")
 
 
@@ -115,7 +115,7 @@ def cover_html(title: str, subtitle: str, author_block: str) -> str:
     <h2>{subtitle}</h2>
     <div class="meta">
       {author_block}<br>
-      lars.pettersson@biol.lu.se<br>
+      <a href="mailto:lars.pettersson@biol.lu.se" style="color:#63533F;">lars.pettersson@biol.lu.se</a><br>
       <br>
       Version {MANUAL_VERSION} &middot; {MANUAL_VERSION_DATE}
     </div>
@@ -143,7 +143,7 @@ EDITIONS = [
         "pages": EN_PAGES,
         "output_filename": "nattfjarilar-manual-en.pdf",
         "cover_html": cover_html(
-            "Pilotprojekt nattfjärilar 2026",
+            "Moth Pilot Project 2026",
             "Field manual",
             "Lars B. Pettersson<br>Department of Biology, Lund University",
         ),

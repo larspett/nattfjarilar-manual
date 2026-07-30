@@ -41,6 +41,7 @@ At your site in the gradient project, all four models are used at the same time,
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/5JjvBHtwObg">&#9654; Watch the video: https://youtu.be/5JjvBHtwObg</a>
 </div>
 
 **Grid-section variant**: a closely related model from Veldshop is used in the grid section (not the gradient section). Same UV specification as above, but it lacks a light sensor and has minor differences in funnel, lid, and light-module shape. Still registered as **LED-Emmer (standard)**, since the UV specification is identical. See [Grid (Lund and Uppsala)](rutnat-lund-uppsala.md) for details.
@@ -78,6 +79,7 @@ At your site in the gradient project, all four models are used at the same time,
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/KGVXMc3BJPg">&#9654; Watch the video: https://youtu.be/KGVXMc3BJPg</a>
 </div>
 
 **Note:** the LED-Emmer Quad funnel also needs small silicone dots fitted on the inside before it's assembled. See the video below:
@@ -91,6 +93,7 @@ At your site in the gradient project, all four models are used at the same time,
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/Tq-d2nS3o_Q">&#9654; Watch the video: https://youtu.be/Tq-d2nS3o_Q</a>
 </div>
 
 ## 3. EntoLight Twincolor
@@ -126,6 +129,7 @@ At your site in the gradient project, all four models are used at the same time,
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/QI6Ho9qigdY">&#9654; Watch the video: https://youtu.be/QI6Ho9qigdY</a>
 </div>
 
 ## 4. EntoLight Multicolor
@@ -159,4 +163,5 @@ At your site in the gradient project, all four models are used at the same time,
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/qp0osTlcAnk">&#9654; Watch the video: https://youtu.be/qp0osTlcAnk</a>
 </div>

@@ -205,7 +205,37 @@ Update it whenever a non-obvious choice is made.
 - **Impact:** The PDF's own generated cover page (title, version, date) is the
   only place version information appears on the document itself.
 
-## Methods paper (planned, not started)
+## Methods paper (prime target set 2026-07-30 — initiation targeted for next week)
+
+**2026-07-30 — Approaches in Entomology set as prime target; preprint-first via EcoEvoRxiv**
+- **What:** Of the three candidates logged below, Approaches in Entomology
+  (Wiley/Royal Entomological Society) is now the prime target. Plan: post a
+  preprint to EcoEvoRxiv first, then submit to Approaches in Entomology,
+  citing the preprint. Lars is targeting initiation as early as the following
+  week.
+- **Why:** Preprinting first gives immediate citability while the journal
+  submission goes through review. Confirmed via Ecological Entomology's
+  (RES's sister journal, same publisher) author guidelines that prior/
+  concurrent preprints are explicitly fine — "Authors may also post the
+  submitted version of a manuscript to a preprint server at any time." Not
+  yet independently confirmed for Approaches in Entomology's own guidelines
+  specifically (it's new enough that detailed author guidelines may not be
+  posted), so worth a quick direct check with the AIE editors before
+  depositing.
+- **Also confirmed:** RES Members/Fellows get a 20% APC discount on
+  Approaches in Entomology specifically — moot given the Bibsam agreement
+  already covers the APC at zero cost (see entry below), but worth having on
+  record.
+- **Impact:** Practical steps before deposit: (1) draft the manuscript,
+  likely via the same dialogue-based approach used for the ADMIRE Moths
+  application; (2) decide whether Harriet Arnberg, Amanda Ernstsson, and Ana
+  Teodora Ştefan (manual contributors) are co-authors on the paper, and get
+  their sign-off before anything goes public; (3) deposit on EcoEvoRxiv
+  (OSF-based platform — needs an account, finalized author list, abstract,
+  manuscript); (4) submit to Approaches in Entomology afterward, citing the
+  preprint.
+
+## Methods paper — background (2026-07-29, still applies)
 
 **2026-07-29 — Manual's DOI backlog item refined into a methods-paper plan**
 - **What:** Rather than getting a bare DOI for the manual (e.g. via Zenodo), the
@@ -230,6 +260,36 @@ Update it whenever a non-obvious choice is made.
   Separately: the ADMIRE Moths application itself, if accepted, should also
   result in its own RIO Journal submission — a distinct piece of work from
   this manual's methods paper.
+
+**2026-07-30 — Third candidate journal identified: Approaches in Entomology (Wiley/RES)**
+- **What:** A brand-new (2025) journal from the Royal Entomological Society,
+  published by Wiley, explicitly scoped to "innovative and exciting advances
+  to methods and techniques across the broad remit of entomology... including
+  the philosophical and ethical underpinnings of insect science." Arguably an
+  even more precisely-targeted fit than Biodiversity Data Journal — this
+  manual's standardised workflow is entomology methodology specifically, not
+  general biodiversity data.
+- **Why it's viable cost-wise:** Confirmed directly via Wiley's own author
+  guidance that Wiley has a Bibsam Consortium agreement covering Swedish
+  institutions — corresponding authors affiliated with a Bibsam member
+  (Lund University is one) can publish open access with **no article
+  publication charge**. Separately confirmed Pensoft (BDJ/RIO) also signed a
+  new Bibsam OA agreement in January 2026, explicitly naming Lund University
+  as covered, for their full portfolio. **Practical implication: cost is
+  very unlikely to be the deciding factor between any of the three
+  candidates (BDJ, RIO, Approaches in Entomology) — all should be free via
+  Lund's existing national agreements, as long as the corresponding author
+  uses their @lu.se/@biol.lu.se affiliation at submission.** The choice
+  should instead come down to fit: Approaches in Entomology's narrow
+  entomology-methods focus vs. BDJ/RIO's data-paper/DOI/versioning model.
+- **Caveat:** Being a brand-new journal, Approaches in Entomology has no
+  track record yet (no impact factor, no citation history) to judge review
+  rigor or turnaround against — worth weighing against its very strong
+  topical fit. Also worth double-checking at submission time whether the
+  specific Pensoft-Bibsam agreement covers RIO Journal by name or only the
+  explicitly-listed titles (BDJ, ZooKeys, NeoBiota, IMA Fungus) — the source
+  found says "including" those titles, suggesting the full portfolio, but
+  this wasn't explicitly confirmed for RIO specifically.
 
 **2026-07-29 — /en/ folder mirror instead of Jekyll's built-in i18n**
 - **What:** English pages live under a new `/en/` folder, mirroring the

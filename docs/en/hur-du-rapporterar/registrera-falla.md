@@ -62,6 +62,7 @@ Here's a filmed walkthrough of the whole registration process:
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtube.com/shorts/VuQDXFuceyQ">&#9654; Watch the video: https://youtube.com/shorts/VuQDXFuceyQ</a>
 </div>
 
 Step by step:

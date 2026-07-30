@@ -27,6 +27,7 @@ Here's a short walkthrough of how to change the count for a species directly in 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtube.com/shorts/jnCcrTTZ6Nk">&#9654; Watch the video: https://youtube.com/shorts/jnCcrTTZ6Nk</a>
 </div>
 
 ## On the website
@@ -42,6 +43,7 @@ Log in at [butterfly-monitoring.net](https://butterfly-monitoring.net/) with the
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtube.com/shorts/HNRSdiz2gkQ">&#9654; Watch the video: https://youtube.com/shorts/HNRSdiz2gkQ</a>
 </div>
 
 You can also browse all Swedish moth observations (including your own) under **eBMS data → Explore data**, filtering by method **Moth Trap** and country **Sweden** to see only moth data.

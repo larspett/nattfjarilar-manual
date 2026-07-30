@@ -61,6 +61,7 @@ Här är en filmad genomgång av hela registreringsprocessen:
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtube.com/shorts/VuQDXFuceyQ">&#9654; Se videon: https://youtube.com/shorts/VuQDXFuceyQ</a>
 </div>
 
 Steg för steg:

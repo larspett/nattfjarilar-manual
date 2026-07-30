@@ -74,6 +74,12 @@ body {
   background-color: #FFFDF9;
 }
 
+// Print-only fallback link shown instead of a video iframe (see print media
+// block below) — hidden entirely on the live site.
+.print-video-link {
+  display: none;
+}
+
 // Landscape video embeds (16:9) — assembly videos
 .video-wrapper {
   position: relative;
@@ -188,16 +194,40 @@ body {
   }
 
   // Nudge the cover illustration down slightly so its top edge isn't flush
-  // against the page edge / print margin, where it was reading as cut off
+  // against the page edge / print margin, where it was reading as cut off.
+  // Also strip the live-site box-shadow/border-radius — box-shadow prints as
+  // a visible grey halo around the image on a light page background.
   .header-cover-image {
     margin-top: 0.4in !important;
     display: block;
+    box-shadow: none !important;
+    border-radius: 0 !important;
   }
 
-  // Show link URLs since paper readers can't click
-  .main-content a[href]::after {
+  // Show link URLs since paper readers can't click — but skip links whose
+  // entire content is an image (e.g. a clickable screenshot linking out):
+  // appending "(url)" right after a photo reads as an odd, often-duplicate
+  // extra copy of a URL already given as visible text nearby.
+  .main-content a[href]:not(:has(img))::after {
     content: " (" attr(href) ")";
     font-size: 0.8em;
     color: #63533F;
+  }
+
+  // Video embeds: the iframe can't work on paper, so hide it and show the
+  // real, clickable fallback link instead (added as an actual <a> in the
+  // HTML — a CSS ::after can display a URL as text but can never be a real
+  // link, so that approach never worked here). Kept hidden on the live site.
+  .video-wrapper iframe, .video-wrapper-portrait iframe {
+    display: none;
+  }
+  .print-video-link {
+    display: block !important;
+    font-style: italic;
+    color: #63533F;
+    border: 1px solid #63533F;
+    padding: 0.5em;
+    word-break: break-all;
+    page-break-inside: avoid;
   }
 }

@@ -40,6 +40,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/5JjvBHtwObg">&#9654; Se videon: https://youtu.be/5JjvBHtwObg</a>
 </div>
 
 **Variant i rutnätsdelen**: en näraliggande modell från Veldshop används i rutnätsdelen (ej gradientdelen). Samma UV-specifikation som ovan, men saknar ljussensor, med mindre skillnader i tratt-, lock- och ljusmodulform. Registreras ändå som **LED-Emmer (standard)** eftersom UV-specifikationen är identisk. Se [Rutnät (Lund och Uppsala)](../hur-du-satter-ut/rutnat-lund-uppsala.md) för detaljer.
@@ -77,6 +78,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/KGVXMc3BJPg">&#9654; Se videon: https://youtu.be/KGVXMc3BJPg</a>
 </div>
 
 **Obs:** LED-Emmer Quad-tratten behöver också ha små silikonprickar monterade på insidan innan den sätts ihop. Se videon nedan:
@@ -90,6 +92,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/Tq-d2nS3o_Q">&#9654; Se videon: https://youtu.be/Tq-d2nS3o_Q</a>
 </div>
 
 ## 3. EntoLight Twincolor
@@ -125,6 +128,7 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/QI6Ho9qigdY">&#9654; Se videon: https://youtu.be/QI6Ho9qigdY</a>
 </div>
 
 ## 4. EntoLight Multicolor
@@ -158,4 +162,5 @@ På din lokal i gradientprojektet används alla fyra modeller samtidigt, placera
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtu.be/qp0osTlcAnk">&#9654; Se videon: https://youtu.be/qp0osTlcAnk</a>
 </div>

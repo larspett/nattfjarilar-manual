@@ -26,6 +26,7 @@ Här är en kort genomgång av hur du ändrar antal för en art direkt i appen:
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtube.com/shorts/jnCcrTTZ6Nk">&#9654; Se videon: https://youtube.com/shorts/jnCcrTTZ6Nk</a>
 </div>
 
 ## På hemsidan
@@ -41,6 +42,7 @@ Logga in på [butterfly-monitoring.net](https://butterfly-monitoring.net/) med s
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+  <a class="print-video-link" href="https://youtube.com/shorts/HNRSdiz2gkQ">&#9654; Se videon: https://youtube.com/shorts/HNRSdiz2gkQ</a>
 </div>
 
 Du kan också bläddra bland alla svenska nattfjärilsobservationer (inklusive dina egna) under **eBMS-data → Utforska data**, filtrera på metod **Moth Trap** och land **Sweden** för att bara se nattfjärilsdata.
